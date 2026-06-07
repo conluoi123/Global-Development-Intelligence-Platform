@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GDIP — Senior Architecture Overview</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #05080c;
+  --s1:       #0a0f16;
+  --s2:       #0f1820;
+  --s3:       #162030;
+  --border:   #1c2d40;
+  --border2:  #243d56;
+  --text:     #d4e0ed;
+  --text2:    #6a8aaa;
+  --text3:    #334d66;
+  --de:       #00c9ff;
+  --ai:       #9b6dff;
+  --both:     #00e5a0;
+  --warn:     #ffb830;
+  --err:      #ff4d6d;
+  --grid-c:   rgba(0,201,255,.04);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* Scanline + grid bg */
+body::before {
+  content:'';
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    linear-gradient(var(--grid-c) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-c) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+body::after {
+  content:'';
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0,0,0,.12) 0px,
+    rgba(0,0,0,.12) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.wrap { max-width:1120px; margin:0 auto; padding:0 24px; position:relative; z-index:1; }
+
+/* ─── HEADER ─── */
+.header {
+  padding: 56px 0 44px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.header-glow {
+  position:absolute; top:-80px; left:-100px;
+  width:500px; height:400px;
+  background: radial-gradient(ellipse, rgba(0,201,255,.06) 0%, transparent 70%);
+  pointer-events:none;
+}
+.header-glow2 {
+  position:absolute; top:-40px; right:-80px;
+  width:400px; height:300px;
+  background: radial-gradient(ellipse, rgba(155,109,255,.05) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+.tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:.62rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--de);
+  margin-bottom:18px;
+  display:flex; align-items:center; gap:10px;
+}
+.tag::before { content:''; width:28px; height:1px; background:var(--de); }
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  line-height: .95;
+  letter-spacing: .01em;
+  color: var(--text);
+  margin-bottom:6px;
+}
+h1 .accent { color: var(--de); }
+h1 .sub { font-size:.45em; color:var(--text3); display:block; }
+
+.header-desc {
+  font-size:.88rem; font-weight:300;
+  color:var(--text2); max-width:560px;
+  margin-top:20px; line-height:1.75;
+}
+
+.kpi-row {
+  display:flex; flex-wrap:wrap; gap:20px; margin-top:32px;
+}
+.kpi {
+  border-left:2px solid var(--border2);
+  padding:0 0 0 14px;
+}
+.kpi-n {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:2rem; line-height:1;
+  color:var(--text);
+}
+.kpi-n .unit { font-size:.9rem; color:var(--text2); font-family:'IBM Plex Sans',sans-serif; }
+.kpi-l {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.6rem; color:var(--text3);
+  text-transform:uppercase; letter-spacing:.1em;
+  margin-top:2px;
+}
+
+/* ─── NAV ─── */
+.nav {
+  display:flex; gap:0;
+  border-bottom:1px solid var(--border);
+  position:sticky; top:0;
+  background:rgba(5,8,12,.9);
+  backdrop-filter:blur(12px);
+  z-index:99; overflow-x:auto;
+}
+.nb {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.66rem; letter-spacing:.1em;
+  text-transform:uppercase;
+  padding:14px 18px;
+  background:none; border:none;
+  color:var(--text3); cursor:pointer;
+  border-bottom:2px solid transparent;
+  margin-bottom:-1px; white-space:nowrap;
+  transition:color .15s, border-color .15s;
+}
+.nb:hover { color:var(--text2); }
+.nb.active { color:var(--de); border-bottom-color:var(--de); }
+
+/* ─── PANELS ─── */
+.panel { display:none; padding:40px 0 60px; }
+.panel.active { display:block; }
+
+/* ─── SECTION LABEL ─── */
+.sl {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.62rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--text3);
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:22px;
+}
+.sl::after { content:''; flex:1; height:1px; background:var(--border); }
+
+h2 {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.8rem; letter-spacing:.02em;
+  color:var(--text); margin-bottom:20px;
+}
+h3 {
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.9rem; font-weight:600;
+  color:var(--text); margin-bottom:8px;
+}
+
+/* ─── CARDS ─── */
+.grid { display:grid; gap:14px; }
+.g2 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.g3 { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.g4 { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+
+.card {
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:6px; padding:20px;
+  position:relative; overflow:hidden;
+  transition:border-color .18s, transform .18s;
+}
+.card:hover { border-color:var(--border2); transform:translateY(-2px); }
+.card::after {
+  content:''; position:absolute;
+  top:0; left:0; right:0; height:1px;
+}
+.card.de::after { background:var(--de); }
+.card.ai::after { background:var(--ai); }
+.card.both::after { background:linear-gradient(90deg,var(--de),var(--ai)); }
+.card.warn::after { background:var(--warn); }
+
+.ci { font-size:1.4rem; margin-bottom:10px; }
+.ct { font-size:.88rem; font-weight:600; margin-bottom:6px; }
+.badge {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.58rem; padding:2px 8px;
+  border-radius:3px; letter-spacing:.06em;
+  text-transform:uppercase; display:inline-block;
+  margin-bottom:10px;
+}
+.b-de  { background:rgba(0,201,255,.1); color:var(--de);  border:1px solid rgba(0,201,255,.2); }
+.b-ai  { background:rgba(155,109,255,.1); color:var(--ai); border:1px solid rgba(155,109,255,.2); }
+.b-both{ background:rgba(0,229,160,.1); color:var(--both);border:1px solid rgba(0,229,160,.2); }
+.b-warn{ background:rgba(255,184,48,.1); color:var(--warn);border:1px solid rgba(255,184,48,.2); }
+.cb { font-size:.76rem; color:var(--text2); line-height:1.75; }
+.cb li { margin-left:16px; margin-bottom:3px; }
+
+/* ─── CODE ─── */
+.code {
+  background:var(--s2);
+  border:1px solid var(--border);
+  border-radius:6px; padding:16px 18px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.68rem; color:var(--text2);
+  line-height:1.8; overflow-x:auto;
+  margin:12px 0;
+}
+.kw  { color:var(--ai); }
+.str { color:var(--both); }
+.cm  { color:var(--text3); font-style:italic; }
+.fn  { color:var(--de); }
+.num { color:var(--warn); }
+
+/* ─── FLOW PIPELINE ─── */
+.flow {
+  display:flex; align-items:stretch;
+  overflow-x:auto; gap:0;
+  padding:4px 0 16px; margin-bottom:28px;
+}
+.fs {
+  flex:1; min-width:120px; text-align:center;
+}
+.fb {
+  background:var(--s2);
+  border:1px solid var(--border);
+  border-radius:6px; padding:16px 10px;
+  margin:0 5px; height:100%;
+  display:flex; flex-direction:column;
+  align-items:center;
+  transition:border-color .18s;
+}
+.fb:hover { border-color:var(--de); }
+.fn2 {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.56rem; color:var(--text3);
+  letter-spacing:.1em; margin-bottom:8px;
+}
+.fi { font-size:1.4rem; margin-bottom:8px; }
+.fl {
+  font-family:'IBM Plex Sans',monospace;
+  font-size:.72rem; font-weight:600;
+  color:var(--text); margin-bottom:6px;
+}
+.ft { font-size:.62rem; color:var(--text3); line-height:1.6; }
+.fa { color:var(--border2); font-size:1.2rem; flex-shrink:0; align-self:center; padding:0 2px; }
+
+/* ─── MEDALLION ─── */
+.med { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:28px; }
+.mc {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:6px; padding:18px; text-align:center;
+}
+.mi { font-size:2rem; display:block; margin-bottom:8px; }
+.mn { font-family:'Bebas Neue',sans-serif; font-size:1.1rem; margin-bottom:2px; }
+.ms {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.58rem; color:var(--text3);
+  letter-spacing:.08em; margin-bottom:10px; display:block;
+}
+.mb { font-size:.72rem; color:var(--text2); text-align:left; line-height:1.75; }
+.mb li { margin-left:14px; margin-bottom:2px; }
+
+/* ─── PRINCIPLE TABLE ─── */
+.ptable { width:100%; border-collapse:collapse; font-size:.76rem; margin-bottom:24px; }
+.ptable th {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.6rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--text3);
+  padding:9px 14px; border-bottom:1px solid var(--border);
+  text-align:left; font-weight:400;
+}
+.ptable td {
+  padding:11px 14px; border-bottom:1px solid var(--border);
+  color:var(--text2); vertical-align:top;
+}
+.ptable tr:last-child td { border:none; }
+.ptable tr:hover td { background:rgba(255,255,255,.02); }
+.ptable td:first-child { color:var(--de); font-family:'IBM Plex Mono',monospace; font-size:.72rem; }
+
+/* ─── METRIC CARDS ─── */
+.metric-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:14px; }
+.mc2 {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:6px; padding:16px;
+}
+.mc2-h { display:flex; align-items:center; gap:8px; margin-bottom:12px; }
+.mc2-i { font-size:1.1rem; }
+.mc2-t { font-size:.82rem; font-weight:600; }
+.mc2-row {
+  display:flex; justify-content:space-between;
+  align-items:center; padding:5px 0;
+  border-bottom:1px solid var(--border);
+  font-size:.71rem;
+}
+.mc2-row:last-child { border:none; }
+.mc2-m { color:var(--text2); }
+.mc2-v {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.65rem; color:var(--both);
+}
+.mc2-v.warn { color:var(--warn); }
+.mc2-v.err  { color:var(--err); }
+
+/* ─── TIMELINE ─── */
+.tl { position:relative; padding-left:32px; }
+.tl::before {
+  content:''; position:absolute;
+  left:9px; top:0; bottom:0; width:1px;
+  background:linear-gradient(to bottom, var(--de) 0%, var(--ai) 50%, var(--both) 100%);
+  opacity:.3;
+}
+.tlp { position:relative; margin-bottom:24px; }
+.tld {
+  position:absolute; left:-27px; top:6px;
+  width:11px; height:11px; border-radius:50%;
+  border:2px solid var(--de); background:var(--bg);
+}
+.tlp:nth-child(2) .tld { border-color:var(--ai); }
+.tlp:nth-child(3) .tld { border-color:var(--both); }
+.tlp:nth-child(4) .tld { border-color:var(--warn); }
+.tlh { display:flex; align-items:baseline; gap:10px; margin-bottom:8px; flex-wrap:wrap; }
+.tlt {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.58rem; padding:2px 7px;
+  border-radius:3px; border:1px solid; letter-spacing:.07em;
+}
+.tlp:nth-child(1) .tlt { color:var(--de);  border-color:rgba(0,201,255,.3); background:rgba(0,201,255,.06); }
+.tlp:nth-child(2) .tlt { color:var(--ai);  border-color:rgba(155,109,255,.3); background:rgba(155,109,255,.06); }
+.tlp:nth-child(3) .tlt { color:var(--both);border-color:rgba(0,229,160,.3); background:rgba(0,229,160,.06); }
+.tlp:nth-child(4) .tlt { color:var(--warn);border-color:rgba(255,184,48,.3); background:rgba(255,184,48,.06); }
+.tln { font-family:'IBM Plex Sans',sans-serif; font-size:.95rem; font-weight:600; }
+.tldur {
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.6rem; color:var(--text3); margin-left:auto;
+}
+.tlb {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:6px; padding:14px 16px;
+  font-size:.76rem; color:var(--text2); line-height:1.75;
+}
+.tlb strong { color:var(--text); font-weight:500; }
+.tltags { display:flex; flex-wrap:wrap; gap:5px; margin-top:10px; }
+.tltag {
+  font-family:'IBM Plex Mono',monospace; font-size:.58rem;
+  padding:2px 7px; border-radius:3px;
+  background:var(--s2); border:1px solid var(--border);
+  color:var(--text2);
+}
+
+/* ─── FAILURE TABLE ─── */
+.ftable { width:100%; border-collapse:collapse; font-size:.73rem; }
+.ftable th {
+  font-family:'IBM Plex Mono',monospace; font-size:.58rem;
+  letter-spacing:.1em; text-transform:uppercase;
+  color:var(--text3); padding:9px 12px;
+  border-bottom:1px solid var(--border); text-align:left; font-weight:400;
+}
+.ftable td { padding:10px 12px; border-bottom:1px solid var(--border); color:var(--text2); }
+.ftable tr:last-child td { border:none; }
+.ftable tr:hover td { background:rgba(255,255,255,.02); }
+.sev-h { color:var(--err); font-family:'IBM Plex Mono',monospace; font-size:.65rem; }
+.sev-m { color:var(--warn); font-family:'IBM Plex Mono',monospace; font-size:.65rem; }
+.sev-l { color:var(--both); font-family:'IBM Plex Mono',monospace; font-size:.65rem; }
+.pill2 {
+  display:inline-block; font-family:'IBM Plex Mono',monospace;
+  font-size:.6rem; padding:1px 7px; border-radius:3px;
+  background:var(--s2); border:1px solid var(--border);
+  color:var(--text); margin:2px;
+}
+
+/* ─── CONTRACT BOX ─── */
+.contract {
+  background:var(--s2); border:1px solid var(--border2);
+  border-radius:6px; padding:18px;
+  margin-bottom:14px;
+}
+.contract-h {
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:10px;
+}
+.contract-num {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.2rem; color:var(--de);
+  background:rgba(0,201,255,.08);
+  border:1px solid rgba(0,201,255,.2);
+  border-radius:4px; padding:0 8px;
+}
+.contract-title { font-size:.85rem; font-weight:600; }
+.contract-body { font-size:.74rem; color:var(--text2); line-height:1.75; }
+.contract-body strong { color:var(--text); font-weight:500; }
+
+footer {
+  margin-top:60px; padding:24px 0;
+  border-top:1px solid var(--border);
+  display:flex; justify-content:space-between;
+  align-items:center; flex-wrap:wrap; gap:10px;
+}
+.fb2 { font-family:'Bebas Neue',sans-serif; font-size:1rem; color:var(--text3); letter-spacing:.05em; }
+.fn3 { font-family:'IBM Plex Mono',monospace; font-size:.6rem; color:var(--text3); letter-spacing:.08em; }
+
+@media(max-width:640px){
+  .med { grid-template-columns:1fr; }
+  .flow { flex-direction:column; }
+  .fa { transform:rotate(90deg); }
+  h1 { font-size:3.2rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-glow"></div>
+  <div class="header-glow2"></div>
+  <div class="tag">Portfolio Project · Senior Design · v2.0</div>
+  <h1>
+    <span class="accent">GDIP</span>
+    <span class="sub">Global Development Intelligence Platform</span>
+  </h1>
+  <p class="header-desc">
+    Production-grade pipeline tự động hoá toàn bộ: từ World Bank API ingestion đến AI-powered forecasting, anomaly detection, RAG chatbot và auto-reporting — với đầy đủ idempotency, observability, và evaluation frameworks.
+  </p>
+  <div class="kpi-row">
+    <div class="kpi"><div class="kpi-n">1K<span class="unit">+</span></div><div class="kpi-l">Indicators</div></div>
+    <div class="kpi"><div class="kpi-n">200<span class="unit">+</span></div><div class="kpi-l">Countries</div></div>
+    <div class="kpi"><div class="kpi-n">60<span class="unit">yr</span></div><div class="kpi-l">History</div></div>
+    <div class="kpi"><div class="kpi-n">9</div><div class="kpi-l">Airflow DAGs</div></div>
+    <div class="kpi"><div class="kpi-n">2K<span class="unit">+</span></div><div class="kpi-l">ML Models</div></div>
+    <div class="kpi"><div class="kpi-n">6</div><div class="kpi-l">Design Principles</div></div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+  <button class="nb active" onclick="show('principles',this)">Principles</button>
+  <button class="nb" onclick="show('pipeline',this)">DE Pipeline</button>
+  <button class="nb" onclick="show('ai',this)">AI System</button>
+  <button class="nb" onclick="show('contracts',this)">Contracts</button>
+  <button class="nb" onclick="show('phases',this)">Phases</button>
+  <button class="nb" onclick="show('failures',this)">Failure Modes</button>
+  <button class="nb" onclick="show('stack',this)">Stack</button>
+</nav>
+
+<!-- ══ PRINCIPLES ══ -->
+<div id="principles" class="panel active">
+  <div class="sl">Design Principles — Trước khi nhìn vào diagram</div>
+  <p style="font-size:.82rem;color:var(--text2);max-width:680px;margin-bottom:24px;line-height:1.8">
+    Senior Engineer thiết kế cho <em style="color:var(--text)">failure</em>, không phải cho happy path.
+    Mỗi quyết định kỹ thuật trong GDIP đều có thể justify bằng một trong 6 nguyên tắc sau:
+  </p>
+  <table class="ptable">
+    <thead><tr><th>Principle</th><th>Vấn đề nó giải quyết</th><th>Áp dụng trong GDIP</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Idempotency</td>
+        <td style="color:var(--text)">Pipeline re-run tạo duplicate data</td>
+        <td>fetch_id = sha256(params) → check manifest trước khi fetch. DAG re-run 100 lần = 1 lần.</td>
+      </tr>
+      <tr>
+        <td>Fail-fast</td>
+        <td style="color:var(--text)">Bad data lan vào Gold, khó debug sau</td>
+        <td>Great Expectations CRITICAL gate chặn tại Bronze→Silver. Bad data không bao giờ vào Gold.</td>
+      </tr>
+      <tr>
+        <td>Immutability</td>
+        <td style="color:var(--text)">Bronze bị overwrite → mất audit trail</td>
+        <td>Delta table Bronze: appendOnly=true. Mọi fetch đều preserved forever.</td>
+      </tr>
+      <tr>
+        <td>Schema Evolution</td>
+        <td style="color:var(--text)">WB thêm column mới → pipeline crash</td>
+        <td>dbt on_schema_change='append_new_columns'. API response schema versioned /v1/ /v2/.</td>
+      </tr>
+      <tr>
+        <td>Observability-first</td>
+        <td style="color:var(--text)">Bug production không debug được vì thiếu log</td>
+        <td>Structured JSON log mọi request. OpenTelemetry traces. Prometheus metrics từ ngày 1.</td>
+      </tr>
+      <tr>
+        <td>Interface Contracts</td>
+        <td style="color:var(--text)">AI model query Bronze trực tiếp → coupling</td>
+        <td>AI chỉ đọc Gold qua defined interfaces. Schema version + SLA documented.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ DE PIPELINE ══ -->
+<div id="pipeline" class="panel">
+  <div class="sl">Data Engineering — Chi tiết Senior</div>
+
+  <h2>End-to-End Flow</h2>
+  <div class="flow">
+    <div class="fs"><div class="fb"><div class="fn2">01</div><div class="fi">🌐</div><div class="fl">Source</div><div class="ft">WB API<br>PDF Reports</div></div></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="fb"><div class="fn2">02</div><div class="fi">🔐</div><div class="fl">Manifest</div><div class="ft">Idempotency<br>check</div></div></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="fb"><div class="fn2">03</div><div class="fi">🥉</div><div class="fl">Bronze</div><div class="ft">Raw · Append<br>Delta Lake</div></div></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="fb"><div class="fn2">04</div><div class="fi">🚦</div><div class="fl">GE Gate</div><div class="ft">CRITICAL<br>checks</div></div></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="fb"><div class="fn2">05</div><div class="fi">🥈</div><div class="fl">Silver</div><div class="ft">Typed · Clean<br>dbt + tests</div></div></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="fb"><div class="fn2">06</div><div class="fi">🥇</div><div class="fl">Gold</div><div class="ft">Features<br>Vectors</div></div></div>
+    <div class="fa">→</div>
+    <div class="fs"><div class="fb"><div class="fn2">07</div><div class="fi">🧠</div><div class="fl">AI / BI</div><div class="ft">Serve<br>consumers</div></div></div>
+  </div>
+
+  <div class="sl">Medallion — Schema Design</div>
+  <div class="med">
+    <div class="mc">
+      <span class="mi">🥉</span>
+      <div class="mn">Bronze</div>
+      <span class="ms">Raw · Immutable · Append-only</span>
+      <div class="mb"><ul>
+        <li>Schema permissive (string)</li>
+        <li>Delta appendOnly = true</li>
+        <li>Partition: country/indicator/year</li>
+        <li>Mọi fetch đều có fetch_id</li>
+        <li>Manifest table track status</li>
+      </ul></div>
+    </div>
+    <div class="mc">
+      <span class="mi">🥈</span>
+      <div class="mn">Silver</div>
+      <span class="ms">Cleaned · Typed · Tested</span>
+      <div class="mb"><ul>
+        <li>PK enforced: country+indicator+year</li>
+        <li>TRY_CAST (safe, không crash)</li>
+        <li>Z-score outlier flag</li>
+        <li>Imputation flag</li>
+        <li>dbt_run_id cho lineage</li>
+      </ul></div>
+    </div>
+    <div class="mc">
+      <span class="mi">🥇</span>
+      <div class="mn">Gold</div>
+      <span class="ms">Analytics · Features · Vectors</span>
+      <div class="mb"><ul>
+        <li>Pre-computed lags &amp; rolling avgs</li>
+        <li>YoY growth %, Z-score global</li>
+        <li>Denormalized (no joins for BI)</li>
+        <li>Feature Store versioned</li>
+        <li>pgvector embeddings</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="sl">Idempotency &amp; Error Handling</div>
+  <div class="grid g2">
+    <div class="card de">
+      <div class="ci">🔐</div>
+      <div class="ct">Idempotency Pattern</div>
+      <span class="badge b-de">DE Core</span>
+      <div class="cb">
+        <code style="font-size:.68rem;color:var(--de)">fetch_id = sha256(country + indicator + date_range + api_version)</code><br><br>
+        Mỗi ingest run check manifest trước. Nếu fetch_id đã tồn tại → skip. DAG có thể re-run bao nhiêu lần cũng được mà không tạo duplicate.
+      </div>
+    </div>
+    <div class="card warn">
+      <div class="ci">⚡</div>
+      <div class="ct">Retry &amp; Circuit Breaker</div>
+      <span class="badge b-warn">Resilience</span>
+      <div class="cb"><ul>
+        <li>429 Rate limit → exponential backoff: 1s, 2s, 4s, 8s</li>
+        <li>504 Timeout → chunk date range nhỏ hơn, retry</li>
+        <li>&gt;10 consecutive failures → Circuit breaker OPEN → PagerDuty</li>
+        <li>Schema change → HALT + alert (không retry)</li>
+      </ul></div>
+    </div>
+    <div class="card de">
+      <div class="ci">💧</div>
+      <div class="ct">Incremental Loading</div>
+      <span class="badge b-de">Efficiency</span>
+      <div class="cb">
+        Watermark table track <code style="font-size:.68rem;color:var(--de)">last_fetched_year</code> per indicator. Chỉ fetch data mới hơn watermark. Kết hợp với manifest check để đảm bảo không bao giờ có gap hoặc duplicate.
+      </div>
+    </div>
+    <div class="card de">
+      <div class="ci">🚦</div>
+      <div class="ct">Quality Gates (3 Levels)</div>
+      <span class="badge b-de">Data Quality</span>
+      <div class="cb"><ul>
+        <li><strong style="color:var(--err)">CRITICAL</strong> → Pipeline HALT, Slack alert</li>
+        <li><strong style="color:var(--warn)">WARNING</strong> → Log + alert, pipeline tiếp tục</li>
+        <li><strong style="color:var(--both)">INFO</strong> → Log only</li>
+        <li>Row count drop &gt;5% → automatic HALT</li>
+      </ul></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ AI SYSTEM ══ -->
+<div id="ai" class="panel">
+  <div class="sl">AI Engineering — System Design</div>
+
+  <div class="sl">Model Versioning (2000+ Models)</div>
+  <div class="card ai" style="margin-bottom:20px">
+    <div class="ci">📦</div>
+    <div class="ct">MLflow Registry Architecture</div>
+    <span class="badge b-ai">Model Management</span>
+    <div class="cb">
+      200 countries × 10+ indicators = 2000+ models. Không thể track thủ công.<br><br>
+      <strong style="color:var(--text)">Experiment structure:</strong> <code style="font-size:.68rem;color:var(--ai)">gdip/forecasting/{indicator_code}</code><br>
+      <strong style="color:var(--text)">Model lifecycle:</strong> None → Staging → Production → Archived<br>
+      <strong style="color:var(--text)">Auto-promote nếu:</strong> MAPE holdout không tệ hơn current Production &gt; 5%, coverage_90 &gt; 88%, latency p95 &lt; 500ms<br>
+      <strong style="color:var(--text)">Auto-rollback:</strong> Nếu drift detected → rollback &lt; 5 phút, alert on-call
+    </div>
+  </div>
+
+  <div class="sl">Evaluation Framework</div>
+  <div class="grid g2" style="margin-bottom:24px">
+    <div class="card ai">
+      <div class="ci">📊</div>
+      <div class="ct">Walk-Forward CV (Không Random Split)</div>
+      <span class="badge b-ai">Time-Series</span>
+      <div class="cb">
+        <strong style="color:var(--err)">Random split = look-ahead bias = sai lầm nghiêm trọng nhất.</strong><br><br>
+        Walk-forward: train [1960–2010] → validate [2011–2013]<br>
+        Slide forward 4 lần. Holdout [2021–2023] chỉ dùng 1 lần duy nhất.<br>
+        <code style="font-size:.68rem;color:var(--ai)">std_mape</code> cao → model không stable → red flag.
+      </div>
+    </div>
+    <div class="card ai">
+      <div class="ci">🎯</div>
+      <div class="ct">Anomaly Calibration</div>
+      <span class="badge b-ai">Threshold</span>
+      <div class="cb">
+        Ground truth = historical crises (2008, 1997 Asian, 2020 COVID).<br><br>
+        Optimize threshold: maximize F1 <strong style="color:var(--text)">subject to</strong> FPR &lt; 5%.<br>
+        Hard constraint trước, accuracy sau. FPR cao = alert fatigue = engineer ignore alert.
+      </div>
+    </div>
+    <div class="card ai">
+      <div class="ci">📡</div>
+      <div class="ct">Production Drift Monitoring</div>
+      <span class="badge b-ai">MLOps</span>
+      <div class="cb"><ul>
+        <li><strong style="color:var(--text)">Data drift:</strong> KS test daily, PSI per feature</li>
+        <li><strong style="color:var(--text)">Prediction drift:</strong> distribution shift weekly</li>
+        <li><strong style="color:var(--text)">Ground truth:</strong> compare vs WB actual khi có</li>
+        <li><strong style="color:var(--text)">Staleness:</strong> &gt;90 ngày → force retrain</li>
+      </ul></div>
+    </div>
+    <div class="card ai">
+      <div class="ci">💬</div>
+      <div class="ct">RAG Evaluation (RAGAS)</div>
+      <span class="badge b-ai">NLP</span>
+      <div class="cb">
+        Eval dataset: 50 QA pairs = 20 manual + 20 LLM-generated + <strong style="color:var(--err)">10 adversarial</strong>.<br><br>
+        Adversarial = câu hỏi không có answer trong corpus. Đo <strong style="color:var(--text)">hallucination rate</strong> và abstention behavior. Target: hallucination &lt; 5%.
+      </div>
+    </div>
+  </div>
+
+  <div class="sl">Model Serving Architecture</div>
+  <div class="code">
+<span class="cm"># Request flow với caching</span>
+Client
+  → API Gateway (<span class="kw">rate limit</span>: 100 req/min, <span class="kw">auth</span>: JWT)
+  → FastAPI (<span class="kw">load balanced</span>, async)
+  → Redis Cache (<span class="kw">TTL=24h</span>)
+       ├── <span class="str">HIT</span>  → return cached prediction   <span class="cm"># P50 &lt; 100ms</span>
+       └── <span class="str">MISS</span> → MLflow <span class="fn">load_model()</span> → <span class="fn">predict()</span> → cache → return
+
+<span class="cm"># API Response Schema (versioned)</span>
+GET /v1/forecast/<span class="kw">{country}</span>/<span class="kw">{indicator}</span>
+→ {
+    predictions: [{year, value, lower_90, upper_90}],
+    model_version: <span class="str">"gdip-prophet-VNM-GDP-v12"</span>,
+    data_as_of:    <span class="str">"2023-12-31"</span>,
+    mape_holdout:  <span class="num">0.087</span>,
+    warning:       <span class="kw">null</span> | <span class="str">"model_stale"</span> | <span class="str">"low_confidence"</span>
+  }
+
+<span class="cm"># SLA targets</span>
+P50 &lt; <span class="num">100ms</span>  (cache hit)
+P95 &lt; <span class="num">500ms</span>  (cache miss)
+P99 &lt; <span class="num">2000ms</span>
+Availability: <span class="num">99.5%</span>
+  </div>
+
+  <div class="sl">RAG — Production Retrieval Pipeline</div>
+  <div class="code">
+<span class="cm"># Hybrid search (không chỉ vector search)</span>
+user_query
+  → [VN query] <span class="fn">translate</span>(EN)           <span class="cm"># WB docs English-dominant</span>
+  → <span class="fn">embed</span>(text-embedding-3-small)
+  → Dense vector search   → top-<span class="num">20</span> candidates
+  → BM25 keyword search   → top-<span class="num">20</span> candidates
+  → <span class="fn">RRF_merge</span>()              → top-<span class="num">10</span>
+  → Cross-encoder <span class="fn">rerank</span>() → top-<span class="num">3</span>    <span class="cm"># most expensive, done last</span>
+  → Context assembly (prepend section headers)
+  → LLM <span class="fn">generate</span>(context + query)
+  → Response + citations
+
+<span class="cm"># Chunking strategy (adaptive, không fixed)</span>
+section.type == <span class="str">"data_table"</span>  → structured JSON (không chunk)
+section.type == <span class="str">"appendix"</span>    → skip (noise)
+section.token_count &gt; <span class="num">600</span>    → sub-chunk theo sentence boundary
+section.token_count &lt; <span class="num">100</span>    → merge với section kế tiếp
+  </div>
+</div>
+
+<!-- ══ CONTRACTS ══ -->
+<div id="contracts" class="panel">
+  <div class="sl">Interface Contracts — DE ↔ AIE Boundary</div>
+  <p style="font-size:.82rem;color:var(--text2);max-width:680px;margin-bottom:24px;line-height:1.8">
+    AI models <strong style="color:var(--err)">không được</strong> query Bronze/Silver trực tiếp. Mọi AI consumption phải qua defined Gold interfaces. Đây là ranh giới quan trọng nhất giữa DE và AIE ownership.
+  </p>
+
+  <div class="contract">
+    <div class="contract-h">
+      <span class="contract-num">01</span>
+      <span class="contract-title">Feature Store Interface</span>
+    </div>
+    <div class="contract-body">
+      <strong>Table:</strong> <code style="font-family:monospace;color:var(--de)">gold.feature_store</code> — versioned, schema v3<br>
+      <strong>SLA:</strong> Data available by 08:00 UTC sau mỗi DAG run<br>
+      <strong>Breaking change protocol:</strong> 2-week notice + versioned table song song<br>
+      <strong>Owned by:</strong> DE team. AI team là consumer, không modify.
+    </div>
+  </div>
+
+  <div class="contract">
+    <div class="contract-h">
+      <span class="contract-num">02</span>
+      <span class="contract-title">Model Input Specification</span>
+    </div>
+    <div class="contract-body">
+      Mỗi model có <code style="font-family:monospace;color:var(--ai)">input_schema.json</code> explicit:<br><br>
+      <code style="font-family:monospace;font-size:.7rem;color:var(--ai)">{"features": ["value_lag_1y", "rolling_avg_5y"], "min_history_required": 10}</code><br><br>
+      <strong>Nếu entity có &lt; 10 năm data:</strong> model trả về null + warning, không crash. Caller phải handle warning.
+    </div>
+  </div>
+
+  <div class="contract">
+    <div class="contract-h">
+      <span class="contract-num">03</span>
+      <span class="contract-title">API Versioning Policy</span>
+    </div>
+    <div class="contract-body">
+      <strong>Endpoint versioned:</strong> /v1/, /v2/ — consumers phải specify version<br>
+      <strong>Deprecation:</strong> v(n-1) supported 6 tháng sau v(n) release<br>
+      <strong>Breaking change:</strong> yêu cầu major version bump + migration guide<br>
+      <strong>Non-breaking:</strong> thêm optional field = không cần version bump
+    </div>
+  </div>
+
+  <div class="contract">
+    <div class="contract-h">
+      <span class="contract-num">04</span>
+      <span class="contract-title">SQL Safety Contract (Text-to-SQL)</span>
+    </div>
+    <div class="contract-body">
+      <strong>Allowed:</strong> SELECT only, max 1000 rows, timeout 10s<br>
+      <strong>Forbidden:</strong> INSERT, UPDATE, DELETE, DROP, CREATE, pg_sleep, UNION injection<br>
+      <strong>Validation:</strong> SQL parsed và validated TRƯỚC khi execute — 100% enforced<br>
+      <strong>Exposed schema:</strong> Chỉ Gold tables, không expose Bronze/Silver hoặc audit tables
+    </div>
+  </div>
+</div>
+
+<!-- ══ PHASES ══ -->
+<div id="phases" class="panel">
+  <div class="sl">Roadmap 16 Tuần — Engineering Milestones</div>
+  <div class="tl">
+    <div class="tlp">
+      <div class="tld"></div>
+      <div class="tlh">
+        <span class="tlt">PHASE 1</span>
+        <span class="tln">🏗️ Foundation & DE Pipeline</span>
+        <span class="tldur">Tuần 01–04</span>
+      </div>
+      <div class="tlb">
+        <strong>DoR:</strong> Docker + WB API key ready. <strong>DoD:</strong> Pipeline idempotent (3 re-runs clean), dbt tests 100%, không có secrets trong git.<br><br>
+        Docker Compose infra → WB API ingestion với manifest → Bronze → Silver → Gold với dbt → Great Expectations gates → Superset dashboard.
+        <div class="tltags">
+          <span class="tltag">Airflow</span><span class="tltag">dbt</span><span class="tltag">Delta Lake</span>
+          <span class="tltag">Great Expectations</span><span class="tltag">MinIO</span><span class="tltag">Idempotency</span>
+        </div>
+      </div>
+    </div>
+    <div class="tlp">
+      <div class="tld"></div>
+      <div class="tlh">
+        <span class="tlt">PHASE 2</span>
+        <span class="tln">🤖 AI Forecasting & Drift Monitoring</span>
+        <span class="tldur">Tuần 05–08</span>
+      </div>
+      <div class="tlb">
+        <strong>DoD:</strong> Walk-forward CV implemented (no look-ahead bias), MAPE holdout &lt;15%, anomaly recall &gt;80% trên 2008+2020, drift detector chạy được.<br><br>
+        Feature store → Walk-forward CV → Prophet + NeuralForecast → MLflow registry → auto-promotion → Anomaly calibration → Drift monitoring → FastAPI serve.
+        <div class="tltags">
+          <span class="tltag">Walk-forward CV</span><span class="tltag">Prophet</span><span class="tltag">MLflow</span>
+          <span class="tltag">KS Test</span><span class="tltag">PSI</span><span class="tltag">FastAPI</span>
+        </div>
+      </div>
+    </div>
+    <div class="tlp">
+      <div class="tld"></div>
+      <div class="tlh">
+        <span class="tlt">PHASE 3</span>
+        <span class="tln">💬 RAG, Agents & Auto-Reports</span>
+        <span class="tldur">Tuần 09–12</span>
+      </div>
+      <div class="tlb">
+        <strong>DoD:</strong> RAGAS faithfulness &gt;0.85, adversarial abstention &gt;90%, SQL safety 100%, Text-to-SQL accuracy &gt;80%.<br><br>
+        Eval dataset TRƯỚC khi build RAG → Adaptive chunking → Hybrid search + rerank → RAGAS eval → Text-to-SQL với safety validator → LangChain agent → Auto-report PDF.
+        <div class="tltags">
+          <span class="tltag">RAGAS</span><span class="tltag">Hybrid Search</span><span class="tltag">Cross-encoder rerank</span>
+          <span class="tltag">SQL Safety</span><span class="tltag">LangChain</span><span class="tltag">Adversarial eval</span>
+        </div>
+      </div>
+    </div>
+    <div class="tlp">
+      <div class="tld"></div>
+      <div class="tlh">
+        <span class="tlt">PHASE 4</span>
+        <span class="tln">🚀 Production, Observability & Showcase</span>
+        <span class="tldur">Tuần 13–16</span>
+      </div>
+      <div class="tlb">
+        <strong>DoD:</strong> Production readiness checklist 100%, load test pass (100 concurrent users), public demo accessible, architecture documented.<br><br>
+        Country clustering + SHAP explainability → Security checklist → Terraform GCP → CI/CD → OpenLineage lineage → Grafana + PagerDuty → Public demo.
+        <div class="tltags">
+          <span class="tltag">SHAP</span><span class="tltag">Terraform</span><span class="tltag">OpenTelemetry</span>
+          <span class="tltag">OpenLineage</span><span class="tltag">PagerDuty</span><span class="tltag">Locust load test</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FAILURES ══ -->
+<div id="failures" class="panel">
+  <div class="sl">Failure Modes — Hệ thống fail như thế nào?</div>
+  <p style="font-size:.82rem;color:var(--text2);max-width:680px;margin-bottom:20px;line-height:1.8">
+    Senior Engineer thiết kế bằng cách enumerate mọi cách hệ thống có thể fail, sau đó mitigation từng cái. Không phải sau khi fail mới fix.
+  </p>
+  <table class="ftable" style="margin-bottom:28px">
+    <thead><tr><th>Failure</th><th>Impact</th><th>Detection</th><th>Mitigation</th></tr></thead>
+    <tbody>
+      <tr>
+        <td style="color:var(--text)">WB API down</td>
+        <td><span class="sev-h">HIGH</span></td>
+        <td>Airflow task failure alert</td>
+        <td>Circuit breaker → fallback cached Bronze, retry queue, alert on-call</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">WB schema change</td>
+        <td><span class="sev-h">HIGH</span></td>
+        <td>APISchemaChangedError exception</td>
+        <td>HALT pipeline, Slack alert, manifest.mark_failed → human review required</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">Bad data into pipeline</td>
+        <td><span class="sev-h">HIGH</span></td>
+        <td>Great Expectations CRITICAL gate</td>
+        <td>Fail-fast ở Bronze→Silver, không bao giờ vào Gold, detailed error log</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">Row count giảm bất thường</td>
+        <td><span class="sev-m">MEDIUM</span></td>
+        <td>dbt test row_count_vs_previous_run</td>
+        <td>Auto-halt nếu &gt;5% drop, alert team để investigate</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">Model performance degraded</td>
+        <td><span class="sev-m">MEDIUM</span></td>
+        <td>Drift detector, ground truth validation</td>
+        <td>Auto-rollback &lt;5 phút, alert, flag cho manual review</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">LLM API down (OpenAI)</td>
+        <td><span class="sev-m">MEDIUM</span></td>
+        <td>Circuit breaker + health check</td>
+        <td>Fallback sang smaller local model, graceful degradation response</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">RAG hallucination spike</td>
+        <td><span class="sev-m">MEDIUM</span></td>
+        <td>RAGAS hallucination rate monitoring</td>
+        <td>Alert + disable RAG endpoint, fallback to keyword-only search</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">Gold data stale (&gt;26h)</td>
+        <td><span class="sev-h">HIGH</span></td>
+        <td>Airflow SLA miss alert</td>
+        <td>PagerDuty alert, API returns stale_data warning in response</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">Storage near full</td>
+        <td><span class="sev-h">CRITICAL</span></td>
+        <td>MinIO capacity metric in Grafana</td>
+        <td>Alert at 80%, auto-archive Bronze &gt;3 years, block writes at 95%</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text)">SQL injection via Text-to-SQL</td>
+        <td><span class="sev-h">CRITICAL</span></td>
+        <td>SQL validator trước execute</td>
+        <td>Reject non-SELECT, parameterized queries, isolated read-only user</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sl">Observability Stack</div>
+  <div class="metric-grid">
+    <div class="mc2">
+      <div class="mc2-h"><span class="mc2-i">📊</span><span class="mc2-t">Metrics (Grafana)</span></div>
+      <div class="mc2-row"><span class="mc2-m">DAG duration</span><span class="mc2-v">per task</span></div>
+      <div class="mc2-row"><span class="mc2-m">Row count delta</span><span class="mc2-v">per layer</span></div>
+      <div class="mc2-row"><span class="mc2-m">MAPE rolling 7d</span><span class="mc2-v">&lt;15%</span></div>
+      <div class="mc2-row"><span class="mc2-m">API error rate</span><span class="mc2-v">&lt;1%</span></div>
+      <div class="mc2-row"><span class="mc2-m">Cache hit ratio</span><span class="mc2-v">&gt;80%</span></div>
+    </div>
+    <div class="mc2">
+      <div class="mc2-h"><span class="mc2-i">📝</span><span class="mc2-t">Logs (Elasticsearch)</span></div>
+      <div class="mc2-row"><span class="mc2-m">ERROR</span><span class="mc2-v err">→ PagerDuty</span></div>
+      <div class="mc2-row"><span class="mc2-m">WARNING</span><span class="mc2-v warn">→ Slack (15min batch)</span></div>
+      <div class="mc2-row"><span class="mc2-m">INFO</span><span class="mc2-v">7-day retention</span></div>
+      <div class="mc2-row"><span class="mc2-m">DEBUG</span><span class="mc2-v">Local only</span></div>
+      <div class="mc2-row"><span class="mc2-m">Format</span><span class="mc2-v">Structured JSON</span></div>
+    </div>
+    <div class="mc2">
+      <div class="mc2-h"><span class="mc2-i">🔗</span><span class="mc2-t">Traces (OpenTelemetry)</span></div>
+      <div class="mc2-row"><span class="mc2-m">E2E request trace</span><span class="mc2-v">query → LLM → resp</span></div>
+      <div class="mc2-row"><span class="mc2-m">Pipeline trace</span><span class="mc2-v">ingest → gold</span></div>
+      <div class="mc2-row"><span class="mc2-m">Bottleneck ID</span><span class="mc2-v">latency breakdown</span></div>
+    </div>
+    <div class="mc2">
+      <div class="mc2-h"><span class="mc2-i">🗺️</span><span class="mc2-t">Lineage (OpenLineage)</span></div>
+      <div class="mc2-row"><span class="mc2-m">Source → Gold tracing</span><span class="mc2-v">full path</span></div>
+      <div class="mc2-row"><span class="mc2-m">Impact analysis</span><span class="mc2-v">upstream changes</span></div>
+      <div class="mc2-row"><span class="mc2-m">Marquez UI</span><span class="mc2-v">visual lineage</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ STACK ══ -->
+<div id="stack" class="panel">
+  <div class="sl">Technology Stack — Với Lý Do</div>
+  <table class="ptable">
+    <thead><tr><th>Layer</th><th>Tools</th><th>Tại sao — justify được khi phỏng vấn</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Ingest</td>
+        <td><span class="pill2">wbgapi</span><span class="pill2">Scrapy</span></td>
+        <td style="color:var(--text2)">WB official Python lib. Scrapy production-grade crawler, có middleware cho retry/rate limit.</td>
+      </tr>
+      <tr>
+        <td>Orchestration</td>
+        <td><span class="pill2">Airflow</span></td>
+        <td style="color:var(--text2)">Industry standard, 80%+ JD DE. Được chọn vì ecosystem &amp; employer familiarity, bù lại bằng Dagster-style patterns trong DAG design.</td>
+      </tr>
+      <tr>
+        <td>Storage</td>
+        <td><span class="pill2">Delta Lake</span><span class="pill2">MinIO</span><span class="pill2">PostgreSQL</span></td>
+        <td style="color:var(--text2)">Delta: ACID + time travel + appendOnly enforcement cho Bronze immutability. MinIO: S3-compatible, no vendor lock-in. PG: metadata + pgvector.</td>
+      </tr>
+      <tr>
+        <td>Transform</td>
+        <td><span class="pill2">dbt</span><span class="pill2">DuckDB</span></td>
+        <td style="color:var(--text2)">dbt: SQL-first, version controlled, auto-docs, test framework. DuckDB: 3–5x faster than Spark local cho &lt;50GB data. Right tool for the scale.</td>
+      </tr>
+      <tr>
+        <td>Data Quality</td>
+        <td><span class="pill2">Great Expectations</span><span class="pill2">dbt tests</span></td>
+        <td style="color:var(--text2)">GE cho CRITICAL gates tại layer transitions. dbt tests cho business logic assertions. Two-layer defense.</td>
+      </tr>
+      <tr>
+        <td>Forecasting</td>
+        <td><span class="pill2">Prophet</span><span class="pill2">NeuralForecast</span></td>
+        <td style="color:var(--text2)">Prophet: handles missing data + multiple seasonality natively. NeuralForecast: SOTA NHITS model cho multivariate. Không dùng basic ARIMA vì WB data có complex seasonality.</td>
+      </tr>
+      <tr>
+        <td>MLOps</td>
+        <td><span class="pill2">MLflow</span><span class="pill2">FastAPI</span></td>
+        <td style="color:var(--text2)">MLflow: track 2000+ model experiments, auto-promotion rules, rollback. FastAPI: async, Pydantic validation, OpenAPI docs auto-generated.</td>
+      </tr>
+      <tr>
+        <td>LLM / RAG</td>
+        <td><span class="pill2">LangChain</span><span class="pill2">pgvector</span><span class="pill2">Claude API</span></td>
+        <td style="color:var(--text2)">pgvector: không cần thêm vector DB service, leverage existing PostgreSQL. Hybrid search + cross-encoder rerank: precision cao hơn pure vector search ~15%.</td>
+      </tr>
+      <tr>
+        <td>Evaluation</td>
+        <td><span class="pill2">RAGAS</span><span class="pill2">Walk-forward CV</span></td>
+        <td style="color:var(--text2)">RAGAS: automated RAG evaluation, không vibe-check. Walk-forward CV: time-series best practice, prevent look-ahead bias.</td>
+      </tr>
+      <tr>
+        <td>Observability</td>
+        <td><span class="pill2">OpenTelemetry</span><span class="pill2">OpenLineage</span><span class="pill2">Grafana</span></td>
+        <td style="color:var(--text2)">Three pillars: metrics + logs + traces. OpenLineage: data lineage là production requirement, không phải nice-to-have.</td>
+      </tr>
+      <tr>
+        <td>Deploy</td>
+        <td><span class="pill2">Terraform</span><span class="pill2">GCP</span><span class="pill2">GitHub Actions</span></td>
+        <td style="color:var(--text2)">Terraform IaC: infra reproducible. GCP: Cloud Composer (managed Airflow), Cloud Run (serverless API), GCS (object storage). CI/CD từ đầu, không phải cuối.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <span class="fb2">GDIP — Senior Architecture v2.0</span>
+  <span class="fn3">DE + AIE · Idempotency · Observability · Evaluation-driven</span>
+</footer>
+
+</div>
+<script>
+function show(id, btn) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nb').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
