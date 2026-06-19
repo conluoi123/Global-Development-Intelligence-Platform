@@ -11,6 +11,7 @@ GDIP được xây dựng dựa trên nền tảng Data Engineering vững chắ
 ![Context Diagram](docs/context_diagram_system.png)
 
 ### Các Trụ Cột Kiến Trúc Chính:
+
 - **Data Layer (Tầng Dữ Liệu):** Tiêu thụ dữ liệu từ World Bank (JSON) một cách an toàn (Idempotent) vào tầng Bronze, làm sạch tại tầng Silver (CSV/Delta), và tổng hợp thành các Feature Store tại tầng Gold.
 - **ML Layer (Tầng Học Máy):** Mô hình phân loại sức khỏe kinh tế có giám sát (XGBoost, LightGBM) sử dụng các đặc trưng kinh tế vĩ mô tự tinh chỉnh (lag, ratio, momentum, z-score).
 - **MLOps Layer:** Theo dõi toàn bộ vòng đời mô hình qua MLflow, đánh giá theo khung Champion-Challenger với kiểm định Diebold-Mariano, và giám sát độ lệch liên tục (Data, Prediction, Concept Drift).
@@ -24,6 +25,7 @@ Thành phần tương tác cốt lõi của GDIP là **Economic Copilot** (Trợ
 ![Economic Agent Workflow](docs/economic_agent.png)
 
 ### Các Agent Chuyên Trách:
+
 1. **SQL Agent (Text-to-SQL):** Chuyển đổi ngôn ngữ tự nhiên thành câu lệnh SQL trên Gold Feature Store, kết hợp giới hạn schema (schema-constrained) để ngăn chặn rủi ro sinh mã sai (hallucinations).
 2. **Forecast & Risk Agent (Dự báo & Đánh giá Rủi ro):** Kết hợp kết quả từ mô hình Machine Learning với các quy tắc chuyên gia (rule-based heuristics) để tính toán Điểm Rủi ro Kinh tế toàn diện từ 0-100.
 3. **RAG Agent:** Truy xuất ngữ cảnh chuyên sâu từ các tài liệu của World Bank sử dụng cơ chế tìm kiếm lai (Hybrid search: Dense + BM25 + Cross-Encoder Reranking) tự xây dựng với pgvector.
@@ -32,7 +34,7 @@ Thành phần tương tác cốt lõi của GDIP là **Economic Copilot** (Trợ
 
 ## 🔄 Luồng Truy Vấn Của Người Dùng
 
-Khi người dùng đặt các câu hỏi kinh tế phức tạp (ví dụ: *"Tại sao GDP của Argentina lại đang suy giảm?"*), hệ thống sẽ điều phối nhiều luồng truy xuất và suy luận cùng lúc.
+Khi người dùng đặt các câu hỏi kinh tế phức tạp (ví dụ: _"Tại sao GDP của Argentina lại đang suy giảm?"_), hệ thống sẽ điều phối nhiều luồng truy xuất và suy luận cùng lúc.
 
 ![User Query Architecture](docs/architecture_user_query.png)
 
@@ -56,5 +58,3 @@ Repository được tổ chức theo chuẩn Production, tách biệt rõ ràng 
 - `docs/`: Tài liệu kỹ thuật, sơ đồ kiến trúc, và phương pháp testing.
 
 ---
-
-*Dự án này được thiết kế để minh chứng cho năng lực AI Engineering chuẩn Production, nhấn mạnh vào việc tự xây dựng từ đầu (from-scratch), các chỉ số đánh giá khắt khe, và quy trình MLOps hiện đại nhất.*
