@@ -1034,3 +1034,192 @@ jobs:
              --exit-code-on-error 1
              --html tests/load/report.html
 ```
+
+
+---
+
+## PHASE 3 — AI Agent Layer
+
+> Mục tiêu: Build Multi-Agent System bằng LangGraph. Tự code từng agent — không dùng FinRobot framework. Đủ nhỏ để hiểu hoàn toàn, đủ thực để ghi CV.
+
+### Definition of Ready
+- [ ] Tầng Gold data đã có ≥ 10 indicators, ≥ 100 quốc gia
+- [ ] RAG pipeline từ Tháng 2 đang chạy (pgvector + hybrid search)
+- [ ] ML Classifier từ Tháng 1 đã có API endpoint (`/v1/classify/{country}`)
+- [ ] OpenAI API key còn credit (hoặc dùng local LLM Ollama làm fallback)
+- [ ] `pip install langgraph` đã cài xong
+
+### Tuần 1-2: Economic Copilot + SQL Agent
+
+**Definition of Done:**
+- [ ] `AgentState` TypedDict định nghĩa đầy đủ, có docstring cho mỗi field
+- [ ] `route_intent()` phân loại đúng ≥ 90% query trong test set (10 câu hỏi manual)
+- [ ] `sql_agent_node()`: chỉ generate SELECT, validated schema, không hallucinate tên cột
+- [ ] `rag_agent_node()`: reuse pipeline từ Tháng 2, trả về top-5 chunks
+- [ ] LangGraph graph build + compile thành công, không có dangling edge
+- [ ] End-to-end test: query "What is Vietnam GDP in 2020?" → trả về đúng số liệu
+- [ ] `tests/unit/test_sql_agent.py`: ≥ 5 test cases (valid query, injection attempt, unknown table)
+
+### Tuần 3: Risk Scoring Agent
+
+**Definition of Done:**
+- [ ] `RiskComponents` dataclass: 4 components, mỗi cái có công thức tính rõ ràng trong docstring
+- [ ] `compute_risk_score()`: test trên 3 known cases
+  - Thailand 1997 → score ≥ 70 (crisis)
+  - Vietnam 2022 → score 20-40 (stable)
+  - Argentina 2001 → score ≥ 80 (crisis)
+- [ ] `explain_score()`: output dạng bullet points, interviewer đọc hiểu được ngay
+- [ ] ML classifier override hoạt động: nếu XGBoost P(crisis) > 0.7 → boost score +15
+
+### Tuần 4: Country Research Agent + Integration
+
+**Definition of Done:**
+- [ ] `country_research_agent()`: generate structured report có 4 sections (Growth, Risk, Forecast, Key Risks)
+- [ ] Multi-agent orchestration: Supervisor gọi đúng combination agents tùy intent
+- [ ] FastAPI endpoint `POST /v1/agent/query` nhận free-text, trả về JSON response
+- [ ] Latency p95 < 5 giây (acceptable với LLM in the loop)
+- [ ] `tests/integration/test_agent_e2e.py`: 3 test cases cover 3 intent types
+
+### Tests Quan Trọng nhất
+
+```python
+# tests/unit/test_sql_agent.py
+
+class TestSQLAgent:
+
+    def test_rejects_delete_statement(self):
+        """SQL Agent không được phép generate DELETE."""
+        result = sql_agent_node(AgentState(
+            query="Delete all records from feature_store",
+            ...
+        ))
+        assert result["sql_result"]["error"] is not None
+        assert "SELECT only" in result["sql_result"]["error"]
+
+    def test_rejects_unknown_table(self):
+        """SQL Agent không được query bảng không có trong ALLOWED_TABLES."""
+        result = sql_agent_node(AgentState(
+            query="Select * from users",
+            ...
+        ))
+        assert "not allowed" in result["sql_result"]["error"].lower()
+
+    def test_returns_correct_vnm_2020_gdp(self):
+        """End-to-end: query Vietnam GDP 2020 phải trả về số đúng từ DB."""
+        result = sql_agent_node(AgentState(
+            query="What is Vietnam GDP growth in 2020?",
+            ...
+        ))
+        # VNM 2020 GDP growth = 2.91% (WB data)
+        assert abs(result["sql_result"]["value"] - 2.91) < 0.1
+
+class TestRiskScorer:
+
+    def test_thailand_1997_high_risk(self):
+        """Asian Financial Crisis 1997 phải có risk score cao."""
+        score = compute_risk_score("THA", 1997)
+        total = (score.inflation_score + score.debt_score +
+                 score.unemployment_score + score.gdp_decline_score)
+        assert total >= 70, f"Thailand 1997 score {total} quá thấp"
+
+    def test_explain_score_readable(self):
+        """explain_score() phải trả về string có số liệu cụ thể."""
+        components = compute_risk_score("ARG", 2001)
+        explanation = explain_score(components)
+        assert "inflation" in explanation.lower()
+        assert any(char.isdigit() for char in explanation)
+```
+
+---
+
+## PHASE 4 — MLOps Layer
+
+> Mục tiêu: Mọi model đều có "giấy khai sinh" (Model Card), được so sánh thống kê trước khi lên Production, và được monitor 3 loại drift liên tục.
+
+### Definition of Ready
+- [ ] MLflow tracking server đang chạy và accessible
+- [ ] Ít nhất 2 model đã được train và logged vào MLflow (Prophet + XGBoost)
+- [ ] Holdout set [2019-2023] vẫn locked — không được touch khi train
+- [ ] `thư mục models/cards/` đã tạo sẵn
+
+### Việc 1: Model Card cho mọi model Production
+
+**Definition of Done:**
+- [ ] Mỗi model lên Production có 1 file YAML trong `models/cards/`
+- [ ] YAML có đủ 7 sections: model_name, algorithm, training, performance, limitations, fairness, deployment
+- [ ] `performance.diebold_mariano_vs_arima` field phải có giá trị thật (không được để placeholder)
+- [ ] `fairness` section evaluate separately: Low-income vs High-income countries
+- [ ] Script `ai/mlops/validate_model_card.py` auto-validate YAML schema trước khi merge PR
+
+### Việc 2: Champion-Challenger Framework
+
+**Definition of Done:**
+- [ ] `ChampionChallengerFramework.evaluate_and_promote()` implement đầy đủ
+- [ ] Promotion criteria cứng: improvement ≥ 5% MAPE + DM test p < 0.05 + latency < 1000ms
+- [ ] Kết quả mỗi lần evaluate được log vào MLflow với tag `evaluation_type=champion_challenger`
+- [ ] Airflow DAG `ml_retrain.py` gọi framework này sau mỗi lần retrain
+- [ ] `tests/unit/test_champion_challenger.py`:
+  - Test case: Challenger tệt hơn → KHÔNG promote
+  - Test case: Challenger tốt hơn nhưng DM test không significant → KHÔNG promote
+  - Test case: Challenger tốt hơn, DM significant, latency ok → PROMOTE
+
+### Việc 3: 3 loại Drift Monitoring
+
+```python
+# tests/ai/test_monitoring.py
+
+class TestDriftMonitoring:
+
+    def test_ks_test_detects_inflation_spike(self):
+        """
+        Simulate post-COVID inflation spike.
+        Baseline: inflation mean=3%, std=2%
+        Current: inflation mean=12%, std=5%
+        KS-test phải detect significant drift.
+        """
+        baseline = np.random.normal(3, 2, 1000)
+        current = np.random.normal(12, 5, 1000)  # Simulated spike
+
+        monitor = ProductionMonitor()
+        report = monitor.check_data_drift(
+            pd.DataFrame({'inflation': baseline}),
+            pd.DataFrame({'inflation': current})
+        )
+        assert report.is_drifted == True
+        assert report.p_value < 0.05
+
+    def test_psi_detects_prediction_shift(self):
+        """
+        PSI > 0.2 phải trigger alert.
+        Baseline: 95% predict 'stable', 5% predict 'crisis'
+        Current:  60% predict 'stable', 40% predict 'crisis'
+        """
+        baseline_preds = [0] * 950 + [1] * 50   # 5% crisis
+        current_preds  = [0] * 600 + [1] * 400  # 40% crisis
+
+        monitor = ProductionMonitor()
+        report = monitor.check_prediction_drift(current_preds)
+        assert report.psi > 0.2
+        assert report.severity == "HIGH"
+```
+
+### Definition of Done — Phase 4
+- [ ] ≥ 3 Model Cards YAML đầy đủ (Prophet, XGBoost, LightGBM)
+- [ ] Champion-Challenger chạy được end-to-end với 2 models thật
+- [ ] `ProductionMonitor` implement đủ 3 loại drift với alert thresholds documented
+- [ ] Grafana dashboard có ≥ 5 panels: prediction distribution, feature drift score, model latency, champion MAPE trend, drift alerts
+- [ ] `tests/ai/test_monitoring.py`: ≥ 6 test cases, cover cả 3 loại drift
+- [ ] CI/CD: `model_card_validate` step trong GitHub Actions chặn merge nếu Model Card thiếu field
+
+### Benchmark Targets — Phase 3 + 4
+
+| Component | Metric | Target |
+|-----------|--------|--------|
+| SQL Agent | Query accuracy (manual eval) | ≥ 90% |
+| SQL Agent | Rejection rate của invalid SQL | 100% |
+| Risk Scorer | Thailand 1997 score | ≥ 70/100 |
+| Risk Scorer | Vietnam 2022 score | 20–40/100 |
+| Country Research Agent | Report generation latency | < 8s |
+| Champion-Challenger | False promotion rate | 0% |
+| Drift Monitor (Data) | KS-test recall | ≥ 95% |
+| Drift Monitor (Prediction) | PSI false alarm rate | < 5% |

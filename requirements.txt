@@ -1,0 +1,42 @@
+# ==========================================
+# GDIP - DEPENDENCIES (Production Grade)
+# ==========================================
+
+# 1. Core Data Engineering (Pipeline & Transform)
+apache-airflow==2.9.1         # Orchestration
+dbt-postgres==1.7.0           # Transformation
+pandas==2.2.1                 # Data manipulation
+boto3==1.34.0                 # MinIO / S3 client
+requests==2.31.0              # API calls
+psycopg2-binary==2.9.9        # Postgres driver
+
+# 2. Data Quality & MLOps
+great-expectations==0.18.12   # Quality gates (Bronze -> Silver)
+mlflow==2.11.3                # Model registry & tracking
+
+# 3. Machine Learning (Tháng 1 - Classifier & Forecasting)
+scikit-learn==1.4.2           # Baseline models & metrics
+xgboost==2.0.3                # Core classifier
+lightgbm==4.3.0               # Benchmark classifier
+prophet==1.1.5                # Time-series forecasting
+shap==0.45.0                  # Interpretability / Feature importance
+
+# 4. RAG from Scratch & NLP (Tháng 2)
+openai==1.14.0                # Embeddings & LLM Generation
+sentence-transformers==2.5.1  # Cross-encoder Reranker
+tiktoken==0.6.0               # Token counting for chunking
+pgvector==0.2.5               # Vector search in Postgres
+nltk==3.8.1                   # Sentence boundary detection
+
+# 5. Fine-Tuning QLoRA (Tháng 2 - Chạy trên GPU)
+# Lưu ý: Các thư viện này nên cài riêng môi trường có CUDA
+torch>=2.2.0
+transformers==4.39.0
+peft==0.10.0                  # Parameter-Efficient Fine-Tuning
+bitsandbytes==0.43.0          # Quantization (4-bit / 8-bit)
+accelerate==0.28.0            # Memory optimization
+
+# 6. Serving Layer (Tháng 3)
+fastapi==0.110.0              # Model serving API
+uvicorn==0.29.0               # ASGI server
+pydantic==2.6.4               # Data validation

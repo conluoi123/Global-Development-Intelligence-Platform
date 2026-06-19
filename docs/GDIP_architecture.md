@@ -1225,3 +1225,443 @@ After:
                Calibration plot + threshold analysis cho classifier.
                Error analysis theo region, income group, decade."
 ```
+
+---
+
+## SECTION 12 — AI Agent Layer (Phase 3)
+
+> Mục tiêu: Biến GDIP từ "Dashboard + Forecast" thành "AI Ra Quyết Định". Đây là phần phân biệt CV AI Engineer với CV Data Engineer thuần túy.
+
+### 12.1 Kiến trúc Tổng Quan
+
+```
+User Query
+     │
+     ▼
+Supervisor Agent (LangGraph StateGraph)
+     │
+     ├──────────────────────────────────┐
+     ▼                                  ▼                      ▼
+SQL Agent                     Forecast Agent             RAG Agent
+(Text-to-SQL)                 (Prophet/XGBoost)          (pgvector)
+     │                                  │                      │
+     └──────────────────────────────────┘                      │
+                         │                                     │
+                         ▼                                     │
+                 Risk Scoring Agent ◄──────────────────────────┘
+                         │
+                         ▼
+               Country Research Report
+```
+
+**Quan điểm thiết kế:** Không dùng FinRobot framework (quá nặng, abstraction cao). Tự build từng agent bằng LangGraph + thuần Python. Đủ nhỏ để hiểu internals, đủ thực để ghi CV.
+
+### 12.2 Economic Copilot Agent
+
+**Use case:** User hỏi câu hỏi tự nhiên về kinh tế, agent tự tìm data và trả lời.
+
+```
+User: "Why is Argentina GDP declining?"
+          │
+          ▼
+  Copilot Agent phân tích intent
+          │
+    ┌─────┴──────┐
+    ▼            ▼
+SQL Agent    RAG Agent
+(query WB    (search WB
+ Gold data)   docs/reports)
+    │            │
+    └─────┬──────┘
+          ▼
+    Tổng hợp context
+          │
+          ▼
+    Generate insight (OpenAI GPT-4o-mini)
+          │
+          ▼
+  "Argentina GDP fell -2.1% in 2023 due to:
+   1. Inflation spike to 211% (highest since 1989)
+   2. Currency depreciation 54% vs USD
+   3. Drought reducing soy exports 40%..."
+```
+
+**Nguyên tắc triển khai:**
+- Dùng **LangGraph StateGraph** để orchestrate, không dùng LangChain Agent
+- Mỗi Agent là một Python function thuần, có input/output rõ ràng
+- State được pass qua các node dưới dạng TypedDict
+- Không có "magic" hidden abstraction
+
+```python
+# ai/agents/economic_copilot.py
+
+from langgraph.graph import StateGraph, END
+from typing import TypedDict
+
+class AgentState(TypedDict):
+    query: str
+    intent: str                 # "data_query" | "explanation" | "forecast"
+    sql_result: dict | None
+    rag_context: str | None
+    risk_score: float | None
+    final_response: str
+
+def route_intent(state: AgentState) -> str:
+    """Supervisor: phân tích query, quyết định gọi agent nào."""
+    ...
+
+def sql_agent_node(state: AgentState) -> AgentState:
+    """Text-to-SQL: convert query thành SQL, chạy trên Gold DB."""
+    ...
+
+def rag_agent_node(state: AgentState) -> AgentState:
+    """Hybrid search pgvector, rerank, trả về context."""
+    ...
+
+def risk_agent_node(state: AgentState) -> AgentState:
+    """Tính Risk Score từ ML model + rules."""
+    ...
+
+def generate_response_node(state: AgentState) -> AgentState:
+    """Gọi LLM tổng hợp tất cả context thành narrative."""
+    ...
+
+# Build graph
+graph = StateGraph(AgentState)
+graph.add_node("route", route_intent)
+graph.add_node("sql", sql_agent_node)
+graph.add_node("rag", rag_agent_node)
+graph.add_node("risk", risk_agent_node)
+graph.add_node("generate", generate_response_node)
+
+graph.add_conditional_edges("route", lambda s: s["intent"], {
+    "data_query": "sql",
+    "explanation": "rag",
+    "forecast": "risk",
+})
+graph.add_edge("sql", "generate")
+graph.add_edge("rag", "generate")
+graph.add_edge("risk", "generate")
+graph.add_edge("generate", END)
+```
+
+### 12.3 Risk Scoring Agent
+
+**Mục tiêu:** Kết hợp ML model output + rule-based heuristics → một con số từ 0-100 dễ đọc.
+
+```python
+# ai/agents/risk_scorer.py
+
+from dataclasses import dataclass
+
+@dataclass
+class RiskComponents:
+    inflation_score: float      # 0-25: dựa trên CPI so với threshold
+    debt_score: float           # 0-25: Debt/GDP ratio
+    unemployment_score: float   # 0-25: unemployment trend
+    gdp_decline_score: float    # 0-25: GDP momentum (lag + acceleration)
+    ml_classifier_score: float  # Override nếu XGBoost predict crisis > 0.7
+
+def compute_risk_score(country_code: str, year: int) -> RiskComponents:
+    """
+    Không phải blackbox. Mỗi component có công thức riêng,
+    documenting rõ ràng để interviewer có thể hỏi từng phần.
+
+    Ví dụ inflation_score:
+        if inflation > 50%  → 25 (hyperinflation)
+        if inflation > 20%  → 18
+        if inflation > 10%  → 10
+        else                → inflation / 10 * 5  (linear)
+    """
+    ...
+
+def explain_score(components: RiskComponents) -> str:
+    """
+    Giải thích bằng ngôn ngữ tự nhiên:
+    "High risk (score: 78/100). Primary drivers:
+     - Debt/GDP at 142% (threshold: 90%) → +25 pts
+     - Inflation at 34% → +18 pts
+     - ML model probability: 0.81 (crisis) → weight boosted"
+    """
+    ...
+```
+
+### 12.4 Country Research Agent
+
+**Use case:** Generate báo cáo toàn diện cho 1 quốc gia.
+
+```
+Input: "Analyze Vietnam economy from 2015-2025"
+
+Output (structured report):
+  ┌─────────────────────────────────┐
+  │ VIETNAM ECONOMIC REPORT         │
+  │ Generated: 2026-06-19           │
+  ├─────────────────────────────────┤
+  │ 1. Growth Trajectory            │
+  │    GDP: 6.8% avg (2015-2019)    │
+  │    COVID impact: -2.8% (2021)   │
+  │    Recovery: +8.0% (2022)       │
+  │                                 │
+  │ 2. Risk Assessment              │
+  │    Current Score: 28/100 (Low)  │
+  │    Inflation: Under control     │
+  │    Debt: Manageable             │
+  │                                 │
+  │ 3. Forecast (12 months)         │
+  │    GDP: 6.1-6.5% (Prophet)      │
+  │    Confidence: 80%              │
+  │                                 │
+  │ 4. Key Risks                    │
+  │    - External debt rising       │
+  │    - Exchange rate pressure     │
+  └─────────────────────────────────┘
+```
+
+### 12.5 Text-to-SQL Agent
+
+**Quan trọng:** Không dùng LLM generate SQL "tự do" vì dễ bị SQL injection hoặc hallucinate tên cột. Dùng approach "constrained generation":
+
+```python
+# ai/agents/text_to_sql.py
+
+ALLOWED_TABLES = ["gold.feature_store", "gold.country_risk", "gold.forecasts"]
+SCHEMA_CONTEXT = """
+Table: gold.feature_store
+Columns: country_code, country_name, year, gdp_growth, inflation,
+         fdi_inflow, unemployment, external_debt, total_reserves
+"""
+
+def text_to_sql(query: str) -> str:
+    """
+    1. Inject schema context vào prompt
+    2. LLM generate SQL (temperature=0 cho deterministic)
+    3. Validate: chỉ cho phép SELECT, không UPDATE/DELETE
+    4. Validate: chỉ query trên ALLOWED_TABLES
+    5. Thực thi trên read-only DB connection
+    """
+    prompt = f"""
+    Given this database schema:
+    {SCHEMA_CONTEXT}
+
+    Convert this question to SQL (SELECT only):
+    {query}
+
+    Rules:
+    - Only use tables: {ALLOWED_TABLES}
+    - No subqueries more than 2 levels deep
+    - Always include LIMIT 1000
+    """
+    ...
+```
+
+---
+
+## SECTION 13 — MLOps Layer (Phase 4)
+
+> Mục tiêu: Mọi model đều được track, compare, và deploy có kiểm soát. Không có "tôi train xong rồi copy file pkl vào server".
+
+### 13.1 Model Card (YAML Standard)
+
+Mỗi model lên Production bắt buộc phải có Model Card:
+
+```yaml
+# models/cards/gdp_forecast_vnm_v1.2.yaml
+
+model_name: GDP Forecast VNM
+version: "1.2"
+created_at: "2026-06-19"
+owner: GDIP Team
+mlflow_run_id: "abc123def456"
+
+algorithm: Prophet
+task: time_series_forecasting
+target: gdp_growth
+
+training:
+  period: "1960-2022"
+  n_samples: 63
+  features: [gdp_growth, inflation, fdi_inflow]
+  cv_strategy: walk_forward_5_folds
+
+performance:
+  holdout_period: "2023"
+  mape: 8.2
+  rmse: 0.94
+  diebold_mariano_vs_arima: {p_value: 0.031, better: true}
+
+limitations:
+  - "Không reliable cho các quốc gia conflict zone (data gaps > 5 years)"
+  - "Accuracy giảm 30% khi có structural break (war, pandemic)"
+
+fairness:
+  - "Evaluate separately: Low-income vs High-income countries"
+  - "MAPE: 9.1% (low-income) vs 6.8% (high-income)"
+
+deployment:
+  endpoint: /v1/forecast/{country_code}
+  sla_latency_p95: 800ms
+  monitoring: prometheus + grafana
+```
+
+### 13.2 Champion-Challenger Framework
+
+```python
+# ai/mlops/champion_challenger.py
+
+class ChampionChallengerFramework:
+    """
+    Không để tay chọn model. Auto-evaluate dựa trên holdout set.
+
+    Challenger: model mới vừa train
+    Champion: model đang chạy Production
+
+    Chỉ promote Challenger khi:
+    1. MAPE thấp hơn Champion ít nhất 5%
+    2. Diebold-Mariano test: p < 0.05
+    3. Không có data leakage (walk-forward CV verified)
+    4. Latency p95 < 1000ms
+    """
+
+    def evaluate_and_promote(
+        self,
+        challenger_run_id: str,
+        champion_run_id: str,
+        holdout_df: pd.DataFrame
+    ) -> PromotionDecision:
+
+        challenger_mape = self._compute_mape(challenger_run_id, holdout_df)
+        champion_mape   = self._compute_mape(champion_run_id, holdout_df)
+
+        improvement_pct = (champion_mape - challenger_mape) / champion_mape
+
+        dm_result = diebold_mariano_test(
+            actual=holdout_df['actual'],
+            pred1=challenger_preds,
+            pred2=champion_preds
+        )
+
+        should_promote = (
+            improvement_pct >= 0.05 and
+            dm_result.p_value < 0.05 and
+            self._check_latency(challenger_run_id) < 1000
+        )
+
+        if should_promote:
+            mlflow.MlflowClient().transition_model_version_stage(
+                name="gdp_forecast",
+                version=challenger_version,
+                stage="Production"
+            )
+
+        return PromotionDecision(
+            promoted=should_promote,
+            reason=self._explain_decision(improvement_pct, dm_result)
+        )
+```
+
+### 13.3 Feature Store Versioning
+
+```sql
+-- gold.feature_store_v2 (thêm metadata)
+CREATE TABLE gold.feature_store (
+    country_code        VARCHAR(3),
+    year                INT,
+
+    -- Core features
+    gdp_growth          FLOAT,
+    inflation           FLOAT,
+    fdi_inflow          FLOAT,
+    unemployment        FLOAT,
+    external_debt       FLOAT,
+    total_reserves      FLOAT,
+
+    -- Engineered features (AI Engineer tạo ra)
+    gdp_growth_lag1     FLOAT,
+    gdp_growth_lag3     FLOAT,
+    inflation_momentum  FLOAT,   -- YoY change in inflation
+    debt_to_gdp         FLOAT,
+    reserves_to_imports FLOAT,
+    gdp_zscore          FLOAT,   -- cross-country normalized
+
+    -- Feature lineage (quan trọng cho MLOps)
+    feature_version     VARCHAR(10),   -- "v2.1"
+    pipeline_run_id     VARCHAR(64),   -- link to Airflow DAG run
+    computed_at         TIMESTAMP,
+
+    PRIMARY KEY (country_code, year, feature_version)
+);
+```
+
+### 13.4 Online Monitoring (3 loại Drift)
+
+```python
+# ai/mlops/monitoring.py
+
+class ProductionMonitor:
+    """
+    3 loại drift cần monitor — mỗi loại có alert riêng.
+    """
+
+    def check_data_drift(self, baseline_df, current_df) -> DriftReport:
+        """
+        Data Drift: Phân phối input feature thay đổi.
+        Ví dụ: Inflation trung bình tăng từ 3% lên 12% post-COVID.
+        Dùng: KS-test (continuous) hoặc Chi-square (categorical)
+        Alert threshold: p < 0.05 cho ≥ 3 features
+        """
+        ...
+
+    def check_prediction_drift(self, recent_preds) -> DriftReport:
+        """
+        Prediction Drift: Model đột ngột predict rất khác thường.
+        Ví dụ: Trước đây 95% predict "stable", giờ 60% predict "crisis".
+        Dùng: PSI (Population Stability Index) > 0.2 → alert
+        """
+        ...
+
+    def check_concept_drift(self, recent_errors) -> DriftReport:
+        """
+        Concept Drift: Relationship giữa features và target thay đổi.
+        Ví dụ: Sau 2020, model trained trên pre-COVID data không còn
+        đúng nữa vì rules kinh tế thay đổi.
+        Dùng: ADWIN algorithm hoặc Page-Hinkley test
+        Đây là loại drift khó phát hiện nhất.
+        """
+        ...
+
+    def export_to_prometheus(self, report: DriftReport):
+        """Push metrics lên Prometheus → Grafana dashboard."""
+        ...
+```
+
+### 13.5 Story Sau Khi Có Phase 3 + Phase 4
+
+```
+CV Before (chỉ có DE + ML):
+  "Tôi build pipeline WB data, train XGBoost predict crisis."
+
+CV After (Phase 3 + Phase 4):
+  "Tôi build end-to-end AI Platform:
+
+   Agent Layer: Multi-agent system dùng LangGraph.
+     Supervisor orchestrate 4 specialized agents:
+     SQL Agent (Text-to-SQL với schema-constrained generation),
+     RAG Agent (hybrid pgvector + BM25, cross-encoder reranking),
+     Forecast Agent (Champion-Challenger Prophet vs XGBoost),
+     Risk Scoring Agent (ML + explainable rule-based combination).
+     Country Research Agent generate structured report tự động.
+
+   MLOps Layer: Mọi model có Model Card YAML (standard).
+     Champion-Challenger với Diebold-Mariano statistical test
+     để validate improvement trước khi promote lên Production.
+     3 loại monitoring: Data Drift (KS-test), Prediction Drift (PSI),
+     Concept Drift (ADWIN). Dashboard Prometheus + Grafana."
+
+Interview Q: "Supervisor của bạn handle conflict giữa agents thế nào?"
+A: "Trong LangGraph StateGraph, mỗi agent trả về partial state update.
+    Supervisor node đọc intent field trong State, route sang đúng agent.
+    Nếu cả SQL Agent và RAG Agent đều chạy, generate_response node
+    nhận cả hai outputs trong State và LLM tổng hợp. Không có conflict
+    vì state là immutable — mỗi node chỉ add, không overwrite."
+```
