@@ -16,3 +16,29 @@ Thumbs.db
 # IDEs
 .vscode/
 .idea/
+
+# Airflow & Docker temporary files
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+*.db
+
+# Data files (Gold, Silver, Bronze layers)
+*.csv
+*.xlsx
+*.parquet
+*.json
+airflow/dags/data/
+
+# Machine Learning Models (pkl, joblib, etc.)
+*.pkl
+*.joblib
+*.h5
+*.pth
+*.bin
+airflow/dags/models/
+models/
+catboost_info/
+mlruns/
+.ipynb_checkpoints/
