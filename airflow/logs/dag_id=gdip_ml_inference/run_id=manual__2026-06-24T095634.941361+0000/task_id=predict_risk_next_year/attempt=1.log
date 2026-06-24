@@ -1,0 +1,36 @@
+[2026-06-24T09:56:39.591+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-24T09:56:39.656+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gdip_ml_inference.predict_risk_next_year manual__2026-06-24T09:56:34.941361+00:00 [queued]>
+[2026-06-24T09:56:39.673+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gdip_ml_inference.predict_risk_next_year manual__2026-06-24T09:56:34.941361+00:00 [queued]>
+[2026-06-24T09:56:39.674+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-24T09:56:39.700+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): predict_risk_next_year> on 2026-06-24 09:56:34.941361+00:00
+[2026-06-24T09:56:39.730+0000] {standard_task_runner.py:63} INFO - Started process 775 to run task
+[2026-06-24T09:56:39.739+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'gdip_ml_inference', 'predict_risk_next_year', 'manual__2026-06-24T09:56:34.941361+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/ml_inference_dag.py', '--cfg-path', '/tmp/tmp24xvltbs']
+[2026-06-24T09:56:39.748+0000] {standard_task_runner.py:91} INFO - Job 24: Subtask predict_risk_next_year
+[2026-06-24T09:56:39.901+0000] {task_command.py:426} INFO - Running <TaskInstance: gdip_ml_inference.predict_risk_next_year manual__2026-06-24T09:56:34.941361+00:00 [running]> on host fcd616dc1457
+[2026-06-24T09:56:40.148+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gdip_admin' AIRFLOW_CTX_DAG_ID='gdip_ml_inference' AIRFLOW_CTX_TASK_ID='predict_risk_next_year' AIRFLOW_CTX_EXECUTION_DATE='2026-06-24T09:56:34.941361+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-24T09:56:34.941361+00:00'
+[2026-06-24T09:56:40.150+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-24T09:56:40.181+0000] {logging_mixin.py:188} INFO - === BẮT ĐẦU DỰ BÁO RỦI RO KINH TẾ VĨ MÔ (T+1) ===
+[2026-06-24T09:56:43.087+0000] {logging_mixin.py:188} INFO - -> Đã load mô hình. Số lượng đặc trưng yêu cầu: 42
+[2026-06-24T09:56:43.092+0000] {logging_mixin.py:188} INFO - -> Dự báo rủi ro cho năm 2026 dựa trên dữ liệu năm 2025 (182 quốc gia)
+[2026-06-24T09:56:43.223+0000] {logging_mixin.py:188} INFO - === DỰ BÁO HOÀN TẤT! ===
+[2026-06-24T09:56:43.225+0000] {logging_mixin.py:188} INFO - Đã lưu kết quả dự báo tại: /opt/***/dags/data/predictions/risk_predictions_next_year.csv
+[2026-06-24T09:56:43.226+0000] {logging_mixin.py:188} INFO - 
+Top 10 quốc gia có rủi ro cao nhất trong năm tới:
+[2026-06-24T09:56:43.242+0000] {logging_mixin.py:188} INFO -                          country_name  ...  prob_high_risk
+7481                          Namibia  ...        0.832321
+11068  St. Vincent and the Grenadines  ...        0.772212
+10389                     Timor-Leste  ...        0.366884
+328                         Argentina  ...        0.304478
+4639                            Haiti  ...        0.266936
+11557                        Zimbabwe  ...        0.226387
+11132                   Venezuela, RB  ...        0.202927
+11165           Virgin Islands (U.S.)  ...        0.189970
+70                        Afghanistan  ...        0.164213
+7373                           Malawi  ...        0.160766
+
+[10 rows x 4 columns]
+[2026-06-24T09:56:43.250+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-24T09:56:43.252+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-24T09:56:43.274+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=gdip_ml_inference, task_id=predict_risk_next_year, run_id=manual__2026-06-24T09:56:34.941361+00:00, execution_date=20260624T095634, start_date=20260624T095639, end_date=20260624T095643
+[2026-06-24T09:56:43.472+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-24T09:56:43.501+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

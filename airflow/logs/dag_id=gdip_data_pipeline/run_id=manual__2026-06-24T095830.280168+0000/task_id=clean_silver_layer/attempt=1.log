@@ -1,0 +1,25 @@
+[2026-06-24T09:58:35.714+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-24T09:58:35.814+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gdip_data_pipeline.clean_silver_layer manual__2026-06-24T09:58:30.280168+00:00 [queued]>
+[2026-06-24T09:58:35.838+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gdip_data_pipeline.clean_silver_layer manual__2026-06-24T09:58:30.280168+00:00 [queued]>
+[2026-06-24T09:58:35.839+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-24T09:58:35.866+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): clean_silver_layer> on 2026-06-24 09:58:30.280168+00:00
+[2026-06-24T09:58:35.903+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'gdip_data_pipeline', 'clean_silver_layer', 'manual__2026-06-24T09:58:30.280168+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline_dag.py', '--cfg-path', '/tmp/tmpsisoanx_']
+[2026-06-24T09:58:35.911+0000] {standard_task_runner.py:91} INFO - Job 25: Subtask clean_silver_layer
+[2026-06-24T09:58:35.915+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1158) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-24T09:58:35.917+0000] {standard_task_runner.py:63} INFO - Started process 1220 to run task
+[2026-06-24T09:58:36.072+0000] {task_command.py:426} INFO - Running <TaskInstance: gdip_data_pipeline.clean_silver_layer manual__2026-06-24T09:58:30.280168+00:00 [running]> on host fcd616dc1457
+[2026-06-24T09:58:36.294+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='gdip_admin' AIRFLOW_CTX_DAG_ID='gdip_data_pipeline' AIRFLOW_CTX_TASK_ID='clean_silver_layer' AIRFLOW_CTX_EXECUTION_DATE='2026-06-24T09:58:30.280168+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-24T09:58:30.280168+00:00'
+[2026-06-24T09:58:36.301+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-24T09:58:36.340+0000] {logging_mixin.py:188} INFO - === BẮT ĐẦU CLEAN & IMPUTE (SILVER LAYER) ===
+[2026-06-24T09:58:36.474+0000] {logging_mixin.py:188} INFO - -> Số dòng ban đầu: 14792
+[2026-06-24T09:58:36.488+0000] {logging_mixin.py:188} INFO - -> Giữ lại 215 quốc gia thực tế.
+[2026-06-24T09:58:36.702+0000] {logging_mixin.py:188} INFO - -> Phát hiện Imputer đã tồn tại. Đang load: /opt/***/dags/transform/knn_imputer.pkl
+[2026-06-24T09:59:45.841+0000] {logging_mixin.py:188} INFO - -> Kiểm tra dữ liệu sau xử lý: còn 0 dòng trống.
+[2026-06-24T09:59:46.255+0000] {logging_mixin.py:188} INFO -  Đã lưu dữ liệu Silver sạch tại: /opt/***/dags/data/silver/wb_macro_clean.csv
+[2026-06-24T09:59:46.256+0000] {logging_mixin.py:188} INFO - === HOÀN THÀNH SILVER LAYER (Shape: (11988, 11)) ===
+[2026-06-24T09:59:46.259+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-24T09:59:46.261+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-24T09:59:46.293+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=gdip_data_pipeline, task_id=clean_silver_layer, run_id=manual__2026-06-24T09:58:30.280168+00:00, execution_date=20260624T095830, start_date=20260624T095835, end_date=20260624T095946
+[2026-06-24T09:59:46.451+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-24T09:59:46.547+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-24T09:59:46.552+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
