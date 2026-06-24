@@ -57,7 +57,7 @@ def clean_and_impute_data():
         os.makedirs(os.path.dirname(IMPUTER_PATH), exist_ok=True)
         with open(IMPUTER_PATH, 'wb') as f:
             pickle.dump(imputer, f)
-        print(f"✅ Đã lưu Imputer mới tại: {IMPUTER_PATH}")
+        print(f" Đã lưu Imputer mới tại: {IMPUTER_PATH}")
         
     # Điền khuyết bằng Imputer
     df_cleaned[numeric_cols] = imputer.transform(df_cleaned[numeric_cols])

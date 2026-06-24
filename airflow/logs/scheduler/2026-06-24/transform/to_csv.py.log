@@ -1,0 +1,10 @@
+[2026-06-24T07:32:21.348+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/transform/to_csv.py
+[2026-06-24T07:32:21.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform/to_csv.py for tasks to queue
+[2026-06-24T07:32:21.356+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:21.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform/to_csv.py
+[2026-06-24T07:32:22.393+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform/to_csv.py
+[2026-06-24T07:32:22.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform/to_csv.py took 1.114 seconds
+[2026-06-24T07:32:55.284+0000] {processor.py:161} INFO - Started process (PID=352) to work on /opt/airflow/dags/transform/to_csv.py
+[2026-06-24T07:32:55.287+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform/to_csv.py for tasks to queue
+[2026-06-24T07:32:55.290+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:55.290+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform/to_csv.py
+[2026-06-24T07:32:55.859+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/transform/to_csv.py
+[2026-06-24T07:32:55.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform/to_csv.py took 0.614 seconds

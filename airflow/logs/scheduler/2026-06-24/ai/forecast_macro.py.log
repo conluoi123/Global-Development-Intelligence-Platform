@@ -1,0 +1,10 @@
+[2026-06-24T07:32:18.232+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/ai/forecast_macro.py
+[2026-06-24T07:32:18.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ai/forecast_macro.py for tasks to queue
+[2026-06-24T07:32:18.237+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:18.236+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ai/forecast_macro.py
+[2026-06-24T07:32:21.294+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ai/forecast_macro.py
+[2026-06-24T07:32:21.335+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ai/forecast_macro.py took 3.115 seconds
+[2026-06-24T07:32:52.467+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/ai/forecast_macro.py
+[2026-06-24T07:32:52.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ai/forecast_macro.py for tasks to queue
+[2026-06-24T07:32:52.473+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:52.473+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ai/forecast_macro.py
+[2026-06-24T07:32:55.110+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ai/forecast_macro.py
+[2026-06-24T07:32:55.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ai/forecast_macro.py took 2.705 seconds

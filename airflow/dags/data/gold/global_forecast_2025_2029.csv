@@ -1,0 +1,3226 @@
+country_code,country_name,indicator,year,forecast_value
+AFG,Afghanistan,gdp_growth,2026,-0.8073370122938941
+AFG,Afghanistan,gdp_growth,2027,-0.99825463913312
+AFG,Afghanistan,gdp_growth,2028,-1.189172265972346
+AFG,Afghanistan,gdp_growth,2029,-1.3800898928115717
+AFG,Afghanistan,gdp_growth,2030,-1.5710075196507978
+AFG,Afghanistan,inflation,2026,0.9204935435054331
+AFG,Afghanistan,inflation,2027,0.5846474566498262
+AFG,Afghanistan,inflation,2028,0.2488013697942193
+AFG,Afghanistan,inflation,2029,-0.08704471706138772
+AFG,Afghanistan,inflation,2030,-0.42289080391699474
+AFG,Afghanistan,fdi_inflow,2026,0.04350073828336465
+AFG,Afghanistan,fdi_inflow,2027,-0.05746546853561796
+AFG,Afghanistan,fdi_inflow,2028,-0.15843167535460057
+AFG,Afghanistan,fdi_inflow,2029,-0.25939788217358317
+AFG,Afghanistan,fdi_inflow,2030,-0.3603640889925658
+ALB,Albania,gdp_growth,2026,4.52845197638031
+ALB,Albania,gdp_growth,2027,4.592178751750393
+ALB,Albania,gdp_growth,2028,4.655905527120477
+ALB,Albania,gdp_growth,2029,4.7196323024905595
+ALB,Albania,gdp_growth,2030,4.783359077860642
+ALB,Albania,inflation,2026,-17.81745560455796
+ALB,Albania,inflation,2027,-25.36281292195347
+ALB,Albania,inflation,2028,-32.908170239348976
+ALB,Albania,inflation,2029,-40.45352755674448
+ALB,Albania,inflation,2030,-47.99888487413999
+ALB,Albania,fdi_inflow,2026,6.464017647960198
+ALB,Albania,fdi_inflow,2027,6.60454063314066
+ALB,Albania,fdi_inflow,2028,6.745063618321122
+ALB,Albania,fdi_inflow,2029,6.885586603501585
+ALB,Albania,fdi_inflow,2030,7.026109588682048
+DZA,Algeria,gdp_growth,2026,2.110825649826885
+DZA,Algeria,gdp_growth,2027,2.0661698893892835
+DZA,Algeria,gdp_growth,2028,2.0215141289516816
+DZA,Algeria,gdp_growth,2029,1.9768583685140797
+DZA,Algeria,gdp_growth,2030,1.9322026080764778
+DZA,Algeria,inflation,2026,-6.2871821641528856
+DZA,Algeria,inflation,2027,-6.922656661520546
+DZA,Algeria,inflation,2028,-7.558131158888207
+DZA,Algeria,inflation,2029,-8.193605656255867
+DZA,Algeria,inflation,2030,-8.82908015362353
+DZA,Algeria,fdi_inflow,2026,0.2096597933477094
+DZA,Algeria,fdi_inflow,2027,0.1386759331154481
+DZA,Algeria,fdi_inflow,2028,0.0676920728831868
+DZA,Algeria,fdi_inflow,2029,-0.0032917873490745375
+DZA,Algeria,fdi_inflow,2030,-0.07427564758133587
+ASM,American Samoa,gdp_growth,2026,1.2390143930637811
+ASM,American Samoa,gdp_growth,2027,1.6188093869196805
+ASM,American Samoa,gdp_growth,2028,1.99860438077558
+ASM,American Samoa,gdp_growth,2029,2.3783993746314795
+ASM,American Samoa,gdp_growth,2030,2.758194368487379
+ASM,American Samoa,inflation,2026,18.70069081892528
+ASM,American Samoa,inflation,2027,18.887456690617118
+ASM,American Samoa,inflation,2028,19.074222562308957
+ASM,American Samoa,inflation,2029,19.260988434000794
+ASM,American Samoa,inflation,2030,19.447754305692634
+ASM,American Samoa,fdi_inflow,2026,40.95475748709387
+ASM,American Samoa,fdi_inflow,2027,42.163147820388694
+ASM,American Samoa,fdi_inflow,2028,43.37153815368351
+ASM,American Samoa,fdi_inflow,2029,44.57992848697833
+ASM,American Samoa,fdi_inflow,2030,45.788318820273155
+AND,Andorra,gdp_growth,2026,3.507901185332979
+AND,Andorra,gdp_growth,2027,3.4672216402338383
+AND,Andorra,gdp_growth,2028,3.426542095134698
+AND,Andorra,gdp_growth,2029,3.3858625500355575
+AND,Andorra,gdp_growth,2030,3.345183004936417
+AND,Andorra,inflation,2026,90.77723059985762
+AND,Andorra,inflation,2027,92.4718398514758
+AND,Andorra,inflation,2028,94.16644910309401
+AND,Andorra,inflation,2029,95.8610583547122
+AND,Andorra,inflation,2030,97.55566760633039
+AND,Andorra,fdi_inflow,2026,9.106275436682177
+AND,Andorra,fdi_inflow,2027,9.231054687308522
+AND,Andorra,fdi_inflow,2028,9.355833937934866
+AND,Andorra,fdi_inflow,2029,9.480613188561211
+AND,Andorra,fdi_inflow,2030,9.605392439187558
+AGO,Angola,gdp_growth,2026,3.5352380179706806
+AGO,Angola,gdp_growth,2027,3.568393561240429
+AGO,Angola,gdp_growth,2028,3.6015491045101773
+AGO,Angola,gdp_growth,2029,3.6347046477799254
+AGO,Angola,gdp_growth,2030,3.6678601910496735
+AGO,Angola,inflation,2026,26.870207250511818
+AGO,Angola,inflation,2027,27.03638361375542
+AGO,Angola,inflation,2028,27.202559976999023
+AGO,Angola,inflation,2029,27.368736340242624
+AGO,Angola,inflation,2030,27.534912703486224
+AGO,Angola,fdi_inflow,2026,-1.8835604665147354
+AGO,Angola,fdi_inflow,2027,-1.9492748759901115
+AGO,Angola,fdi_inflow,2028,-2.0149892854654876
+AGO,Angola,fdi_inflow,2029,-2.0807036949408637
+AGO,Angola,fdi_inflow,2030,-2.14641810441624
+ATG,Antigua and Barbuda,gdp_growth,2026,0.4915899972875958
+ATG,Antigua and Barbuda,gdp_growth,2027,0.37072132364370936
+ATG,Antigua and Barbuda,gdp_growth,2028,0.24985264999982298
+ATG,Antigua and Barbuda,gdp_growth,2029,0.12898397635593656
+ATG,Antigua and Barbuda,gdp_growth,2030,0.008115302712050187
+ATG,Antigua and Barbuda,inflation,2026,4.381777164883153
+ATG,Antigua and Barbuda,inflation,2027,4.37904948139883
+ATG,Antigua and Barbuda,inflation,2028,4.376321797914509
+ATG,Antigua and Barbuda,inflation,2029,4.373594114430186
+ATG,Antigua and Barbuda,inflation,2030,4.370866430945864
+ATG,Antigua and Barbuda,fdi_inflow,2026,11.962286060495344
+ATG,Antigua and Barbuda,fdi_inflow,2027,12.179131152501062
+ATG,Antigua and Barbuda,fdi_inflow,2028,12.39597624450678
+ATG,Antigua and Barbuda,fdi_inflow,2029,12.612821336512498
+ATG,Antigua and Barbuda,fdi_inflow,2030,12.829666428518216
+ARG,Argentina,gdp_growth,2026,0.7019613431268805
+ARG,Argentina,gdp_growth,2027,0.6517822238337767
+ARG,Argentina,gdp_growth,2028,0.6016031045406729
+ARG,Argentina,gdp_growth,2029,0.551423985247569
+ARG,Argentina,gdp_growth,2030,0.5012448659544652
+ARG,Argentina,inflation,2026,187.3335161792127
+ARG,Argentina,inflation,2027,207.29777259198679
+ARG,Argentina,inflation,2028,227.26202900476088
+ARG,Argentina,inflation,2029,247.22628541753497
+ARG,Argentina,inflation,2030,267.19054183030903
+ARG,Argentina,fdi_inflow,2026,2.123166884376203
+ARG,Argentina,fdi_inflow,2027,2.1289831367208247
+ARG,Argentina,fdi_inflow,2028,2.134799389065446
+ARG,Argentina,fdi_inflow,2029,2.140615641410068
+ARG,Argentina,fdi_inflow,2030,2.1464318937546896
+ARM,Armenia,gdp_growth,2026,7.643820812749074
+ARM,Armenia,gdp_growth,2027,8.066952494161972
+ARM,Armenia,gdp_growth,2028,8.490084175574871
+ARM,Armenia,gdp_growth,2029,8.913215856987769
+ARM,Armenia,gdp_growth,2030,9.336347538400666
+ARM,Armenia,inflation,2026,-132.55863455213046
+ARM,Armenia,inflation,2027,-145.478991737829
+ARM,Armenia,inflation,2028,-158.3993489235275
+ARM,Armenia,inflation,2029,-171.31970610922605
+ARM,Armenia,inflation,2030,-184.24006329492454
+ARM,Armenia,fdi_inflow,2026,0.6085042910204047
+ARM,Armenia,fdi_inflow,2027,0.5534397526524837
+ARM,Armenia,fdi_inflow,2028,0.4983752142845626
+ARM,Armenia,fdi_inflow,2029,0.44331067591664153
+ARM,Armenia,fdi_inflow,2030,0.3882461375487205
+ABW,Aruba,gdp_growth,2026,0.1617447956683649
+ABW,Aruba,gdp_growth,2027,-0.01211638881358379
+ABW,Aruba,gdp_growth,2028,-0.1859775732955325
+ABW,Aruba,gdp_growth,2029,-0.35983875777748114
+ABW,Aruba,gdp_growth,2030,-0.5336999422594297
+ABW,Aruba,inflation,2026,4.109765918575285
+ABW,Aruba,inflation,2027,4.130480155770224
+ABW,Aruba,inflation,2028,4.151194392965162
+ABW,Aruba,inflation,2029,4.1719086301601
+ABW,Aruba,inflation,2030,4.192622867355039
+ABW,Aruba,fdi_inflow,2026,2.115365255345086
+ABW,Aruba,fdi_inflow,2027,2.067016031323232
+ABW,Aruba,fdi_inflow,2028,2.0186668073013783
+ABW,Aruba,fdi_inflow,2029,1.9703175832795243
+ABW,Aruba,fdi_inflow,2030,1.9219683592576704
+AUS,Australia,gdp_growth,2026,2.2191434531561116
+AUS,Australia,gdp_growth,2027,2.1855611774520214
+AUS,Australia,gdp_growth,2028,2.1519789017479316
+AUS,Australia,gdp_growth,2029,2.1183966260438414
+AUS,Australia,gdp_growth,2030,2.0848143503397516
+AUS,Australia,inflation,2026,3.157916601545027
+AUS,Australia,inflation,2027,3.1492665489309783
+AUS,Australia,inflation,2028,3.1406164963169303
+AUS,Australia,inflation,2029,3.1319664437028822
+AUS,Australia,inflation,2030,3.1233163910888337
+AUS,Australia,fdi_inflow,2026,3.5894519424160864
+AUS,Australia,fdi_inflow,2027,3.6304488079531954
+AUS,Australia,fdi_inflow,2028,3.671445673490304
+AUS,Australia,fdi_inflow,2029,3.7124425390274123
+AUS,Australia,fdi_inflow,2030,3.753439404564521
+AUT,Austria,gdp_growth,2026,0.4226825943206375
+AUT,Austria,gdp_growth,2027,0.3592287489608554
+AUT,Austria,gdp_growth,2028,0.2957749036010733
+AUT,Austria,gdp_growth,2029,0.23232105824129112
+AUT,Austria,gdp_growth,2030,0.16886721288150897
+AUT,Austria,inflation,2026,2.9534527548560896
+AUT,Austria,inflation,2027,2.9685191274161062
+AUT,Austria,inflation,2028,2.9835854999761224
+AUT,Austria,inflation,2029,2.9986518725361386
+AUT,Austria,inflation,2030,3.0137182450961553
+AUT,Austria,fdi_inflow,2026,1.031438353099073
+AUT,Austria,fdi_inflow,2027,1.0197643321063612
+AUT,Austria,fdi_inflow,2028,1.0080903111136492
+AUT,Austria,fdi_inflow,2029,0.9964162901209372
+AUT,Austria,fdi_inflow,2030,0.9847422691282254
+AZE,Azerbaijan,gdp_growth,2026,4.011612487801781
+AZE,Azerbaijan,gdp_growth,2027,3.9518229264049354
+AZE,Azerbaijan,gdp_growth,2028,3.89203336500809
+AZE,Azerbaijan,gdp_growth,2029,3.832243803611245
+AZE,Azerbaijan,gdp_growth,2030,3.7724542422144
+AZE,Azerbaijan,inflation,2026,1.8368659445679743
+AZE,Azerbaijan,inflation,2027,1.461560005529431
+AZE,Azerbaijan,inflation,2028,1.0862540664908882
+AZE,Azerbaijan,inflation,2029,0.710948127452345
+AZE,Azerbaijan,inflation,2030,0.3356421884138019
+AZE,Azerbaijan,fdi_inflow,2026,-1.7041466023143172
+AZE,Azerbaijan,fdi_inflow,2027,-2.552180176138548
+AZE,Azerbaijan,fdi_inflow,2028,-3.400213749962779
+AZE,Azerbaijan,fdi_inflow,2029,-4.24824732378701
+AZE,Azerbaijan,fdi_inflow,2030,-5.09628089761124
+BHS,"Bahamas, The",gdp_growth,2026,0.19839317809605161
+BHS,"Bahamas, The",gdp_growth,2027,0.10820727790039972
+BHS,"Bahamas, The",gdp_growth,2028,0.01802137770474782
+BHS,"Bahamas, The",gdp_growth,2029,-0.07216452249090405
+BHS,"Bahamas, The",gdp_growth,2030,-0.16235042268655592
+BHS,"Bahamas, The",inflation,2026,1.2170153814391331
+BHS,"Bahamas, The",inflation,2027,1.1076785815373476
+BHS,"Bahamas, The",inflation,2028,0.998341781635562
+BHS,"Bahamas, The",inflation,2029,0.8890049817337764
+BHS,"Bahamas, The",inflation,2030,0.7796681818319909
+BHS,"Bahamas, The",fdi_inflow,2026,1.6293097714850275
+BHS,"Bahamas, The",fdi_inflow,2027,1.6139314797818178
+BHS,"Bahamas, The",fdi_inflow,2028,1.598553188078608
+BHS,"Bahamas, The",fdi_inflow,2029,1.5831748963753982
+BHS,"Bahamas, The",fdi_inflow,2030,1.5677966046721883
+BHR,Bahrain,gdp_growth,2026,3.056684574291968
+BHR,Bahrain,gdp_growth,2027,3.005894026550272
+BHR,Bahrain,gdp_growth,2028,2.955103478808576
+BHR,Bahrain,gdp_growth,2029,2.90431293106688
+BHR,Bahrain,gdp_growth,2030,2.853522383325184
+BHR,Bahrain,inflation,2026,0.8843975918214145
+BHR,Bahrain,inflation,2027,0.8595691352082523
+BHR,Bahrain,inflation,2028,0.8347406785950902
+BHR,Bahrain,inflation,2029,0.809912221981928
+BHR,Bahrain,inflation,2030,0.7850837653687658
+BHR,Bahrain,fdi_inflow,2026,6.790379335756379
+BHR,Bahrain,fdi_inflow,2027,7.277407576208898
+BHR,Bahrain,fdi_inflow,2028,7.764435816661417
+BHR,Bahrain,fdi_inflow,2029,8.251464057113935
+BHR,Bahrain,fdi_inflow,2030,8.738492297566456
+BGD,Bangladesh,gdp_growth,2026,6.667595230045964
+BGD,Bangladesh,gdp_growth,2027,6.7359982588984835
+BGD,Bangladesh,gdp_growth,2028,6.804401287751002
+BGD,Bangladesh,gdp_growth,2029,6.8728043166035215
+BGD,Bangladesh,gdp_growth,2030,6.941207345456041
+BGD,Bangladesh,inflation,2026,8.897868792324475
+BGD,Bangladesh,inflation,2027,9.327275258081979
+BGD,Bangladesh,inflation,2028,9.756681723839485
+BGD,Bangladesh,inflation,2029,10.186088189596989
+BGD,Bangladesh,inflation,2030,10.615494655354494
+BGD,Bangladesh,fdi_inflow,2026,0.24105569340161756
+BGD,Bangladesh,fdi_inflow,2027,0.2056316117211604
+BGD,Bangladesh,fdi_inflow,2028,0.17020753004070321
+BGD,Bangladesh,fdi_inflow,2029,0.13478344836024606
+BGD,Bangladesh,fdi_inflow,2030,0.0993593666797889
+BRB,Barbados,gdp_growth,2026,-0.6228342084902053
+BRB,Barbados,gdp_growth,2027,-0.7011830148110456
+BRB,Barbados,gdp_growth,2028,-0.7795318211318858
+BRB,Barbados,gdp_growth,2029,-0.857880627452726
+BRB,Barbados,gdp_growth,2030,-0.9362294337735662
+BRB,Barbados,inflation,2026,1.527646163837104
+BRB,Barbados,inflation,2027,1.4224733434414594
+BRB,Barbados,inflation,2028,1.3173005230458146
+BRB,Barbados,inflation,2029,1.21212770265017
+BRB,Barbados,inflation,2030,1.1069548822545254
+BRB,Barbados,fdi_inflow,2026,3.86716612524424
+BRB,Barbados,fdi_inflow,2027,3.867465437773302
+BRB,Barbados,fdi_inflow,2028,3.8677647503023644
+BRB,Barbados,fdi_inflow,2029,3.8680640628314267
+BRB,Barbados,fdi_inflow,2030,3.868363375360489
+BLR,Belarus,gdp_growth,2026,3.8512534314762017
+BLR,Belarus,gdp_growth,2027,3.699273861156888
+BLR,Belarus,gdp_growth,2028,3.5472942908375744
+BLR,Belarus,gdp_growth,2029,3.3953147205182606
+BLR,Belarus,gdp_growth,2030,3.2433351501989467
+BLR,Belarus,inflation,2026,5.683150623978308
+BLR,Belarus,inflation,2027,5.580982145199064
+BLR,Belarus,inflation,2028,5.478813666419821
+BLR,Belarus,inflation,2029,5.376645187640578
+BLR,Belarus,inflation,2030,5.274476708861335
+BLR,Belarus,fdi_inflow,2026,-9.655001966186731
+BLR,Belarus,fdi_inflow,2027,-10.66166417037697
+BLR,Belarus,fdi_inflow,2028,-11.668326374567208
+BLR,Belarus,fdi_inflow,2029,-12.674988578757446
+BLR,Belarus,fdi_inflow,2030,-13.681650782947685
+BEL,Belgium,gdp_growth,2026,0.765143693475558
+BEL,Belgium,gdp_growth,2027,0.7112359080910584
+BEL,Belgium,gdp_growth,2028,0.6573281227065587
+BEL,Belgium,gdp_growth,2029,0.6034203373220591
+BEL,Belgium,gdp_growth,2030,0.5495125519375595
+BEL,Belgium,inflation,2026,3.1906101225828163
+BEL,Belgium,inflation,2027,3.2340017349585013
+BEL,Belgium,inflation,2028,3.277393347334186
+BEL,Belgium,inflation,2029,3.320784959709871
+BEL,Belgium,inflation,2030,3.364176572085556
+BEL,Belgium,fdi_inflow,2026,5.841390125418692
+BEL,Belgium,fdi_inflow,2027,5.789079652433844
+BEL,Belgium,fdi_inflow,2028,5.736769179448995
+BEL,Belgium,fdi_inflow,2029,5.684458706464147
+BEL,Belgium,fdi_inflow,2030,5.632148233479299
+BLZ,Belize,gdp_growth,2026,2.819296542692515
+BLZ,Belize,gdp_growth,2027,2.76062425623508
+BLZ,Belize,gdp_growth,2028,2.701951969777645
+BLZ,Belize,gdp_growth,2029,2.64327968332021
+BLZ,Belize,gdp_growth,2030,2.584607396862775
+BLZ,Belize,inflation,2026,0.6531812473633754
+BLZ,Belize,inflation,2027,0.5593203530921557
+BLZ,Belize,inflation,2028,0.4654594588209359
+BLZ,Belize,inflation,2029,0.37159856454971624
+BLZ,Belize,inflation,2030,0.27773767027849655
+BLZ,Belize,fdi_inflow,2026,3.6808275990821038
+BLZ,Belize,fdi_inflow,2027,3.6980706662425726
+BLZ,Belize,fdi_inflow,2028,3.7153137334030415
+BLZ,Belize,fdi_inflow,2029,3.7325568005635104
+BLZ,Belize,fdi_inflow,2030,3.749799867723979
+BEN,Benin,gdp_growth,2026,5.730769574664504
+BEN,Benin,gdp_growth,2027,5.782324508155938
+BEN,Benin,gdp_growth,2028,5.833879441647372
+BEN,Benin,gdp_growth,2029,5.885434375138805
+BEN,Benin,gdp_growth,2030,5.936989308630239
+BEN,Benin,inflation,2026,1.5805010147392209
+BEN,Benin,inflation,2027,1.4708127559855804
+BEN,Benin,inflation,2028,1.36112449723194
+BEN,Benin,inflation,2029,1.2514362384782998
+BEN,Benin,inflation,2030,1.1417479797246592
+BEN,Benin,fdi_inflow,2026,2.721433809506941
+BEN,Benin,fdi_inflow,2027,2.7894141310941327
+BEN,Benin,fdi_inflow,2028,2.8573944526813246
+BEN,Benin,fdi_inflow,2029,2.925374774268517
+BEN,Benin,fdi_inflow,2030,2.9933550958557094
+BMU,Bermuda,gdp_growth,2026,3.756781894482353
+BMU,Bermuda,gdp_growth,2027,3.729828240082051
+BMU,Bermuda,gdp_growth,2028,3.7028745856817493
+BMU,Bermuda,gdp_growth,2029,3.6759209312814476
+BMU,Bermuda,gdp_growth,2030,3.648967276881146
+BMU,Bermuda,inflation,2026,10.546884398170146
+BMU,Bermuda,inflation,2027,10.458724473538766
+BMU,Bermuda,inflation,2028,10.370564548907385
+BMU,Bermuda,inflation,2029,10.282404624276005
+BMU,Bermuda,inflation,2030,10.194244699644624
+BMU,Bermuda,fdi_inflow,2026,1.425293940438867
+BMU,Bermuda,fdi_inflow,2027,1.378590695024178
+BMU,Bermuda,fdi_inflow,2028,1.3318874496094892
+BMU,Bermuda,fdi_inflow,2029,1.2851842041948005
+BMU,Bermuda,fdi_inflow,2030,1.2384809587801118
+BTN,Bhutan,gdp_growth,2026,5.273944996055738
+BTN,Bhutan,gdp_growth,2027,5.246417505167893
+BTN,Bhutan,gdp_growth,2028,5.218890014280048
+BTN,Bhutan,gdp_growth,2029,5.191362523392204
+BTN,Bhutan,gdp_growth,2030,5.16383503250436
+BTN,Bhutan,inflation,2026,2.7317859944244525
+BTN,Bhutan,inflation,2027,2.428774618719159
+BTN,Bhutan,inflation,2028,2.125763243013865
+BTN,Bhutan,inflation,2029,1.8227518673085719
+BTN,Bhutan,inflation,2030,1.5197404916032784
+BTN,Bhutan,fdi_inflow,2026,0.2676454575296058
+BTN,Bhutan,fdi_inflow,2027,0.25479173600289357
+BTN,Bhutan,fdi_inflow,2028,0.2419380144761814
+BTN,Bhutan,fdi_inflow,2029,0.22908429294946925
+BTN,Bhutan,fdi_inflow,2030,0.21623057142275706
+BOL,Bolivia,gdp_growth,2026,0.36737259067036704
+BOL,Bolivia,gdp_growth,2027,0.3088334396515767
+BOL,Bolivia,gdp_growth,2028,0.25029428863278635
+BOL,Bolivia,gdp_growth,2029,0.19175513761399604
+BOL,Bolivia,gdp_growth,2030,0.13321598659520573
+BOL,Bolivia,inflation,2026,64.6132273795266
+BOL,Bolivia,inflation,2027,60.08866861321009
+BOL,Bolivia,inflation,2028,55.56410984689357
+BOL,Bolivia,inflation,2029,51.039551080577056
+BOL,Bolivia,inflation,2030,46.51499231426054
+BOL,Bolivia,fdi_inflow,2026,-1.2912018746427436
+BOL,Bolivia,fdi_inflow,2027,-1.490003932524972
+BOL,Bolivia,fdi_inflow,2028,-1.6888059904072004
+BOL,Bolivia,fdi_inflow,2029,-1.8876080482894286
+BOL,Bolivia,fdi_inflow,2030,-2.086410106171657
+BIH,Bosnia and Herzegovina,gdp_growth,2026,3.3338540165608244
+BIH,Bosnia and Herzegovina,gdp_growth,2027,3.6961905659572136
+BIH,Bosnia and Herzegovina,gdp_growth,2028,4.058527115353603
+BIH,Bosnia and Herzegovina,gdp_growth,2029,4.420863664749993
+BIH,Bosnia and Herzegovina,gdp_growth,2030,4.783200214146382
+BIH,Bosnia and Herzegovina,inflation,2026,2.855328617176304
+BIH,Bosnia and Herzegovina,inflation,2027,1.6871631265367788
+BIH,Bosnia and Herzegovina,inflation,2028,0.5189976358972537
+BIH,Bosnia and Herzegovina,inflation,2029,-0.649167854742271
+BIH,Bosnia and Herzegovina,inflation,2030,-1.8173333453817957
+BIH,Bosnia and Herzegovina,fdi_inflow,2026,3.517160366629747
+BIH,Bosnia and Herzegovina,fdi_inflow,2027,3.5623334927961086
+BIH,Bosnia and Herzegovina,fdi_inflow,2028,3.6075066189624696
+BIH,Bosnia and Herzegovina,fdi_inflow,2029,3.6526797451288306
+BIH,Bosnia and Herzegovina,fdi_inflow,2030,3.697852871295192
+BWA,Botswana,gdp_growth,2026,0.2429920397983366
+BWA,Botswana,gdp_growth,2027,0.15152820626641625
+BWA,Botswana,gdp_growth,2028,0.060064372734495886
+BWA,Botswana,gdp_growth,2029,-0.03139946079742445
+BWA,Botswana,gdp_growth,2030,-0.12286329432934479
+BWA,Botswana,inflation,2026,-3.901252892369887
+BWA,Botswana,inflation,2027,-4.523008372871125
+BWA,Botswana,inflation,2028,-5.144763853372363
+BWA,Botswana,inflation,2029,-5.766519333873601
+BWA,Botswana,inflation,2030,-6.38827481437484
+BWA,Botswana,fdi_inflow,2026,1.1628576165126152
+BWA,Botswana,fdi_inflow,2027,1.098896826948249
+BWA,Botswana,fdi_inflow,2028,1.0349360373838832
+BWA,Botswana,fdi_inflow,2029,0.9709752478195173
+BWA,Botswana,fdi_inflow,2030,0.9070144582551513
+BRA,Brazil,gdp_growth,2026,3.012322480636685
+BRA,Brazil,gdp_growth,2027,2.9649177498841643
+BRA,Brazil,gdp_growth,2028,2.917513019131644
+BRA,Brazil,gdp_growth,2029,2.8701082883791234
+BRA,Brazil,gdp_growth,2030,2.822703557626603
+BRA,Brazil,inflation,2026,4.379060225760357
+BRA,Brazil,inflation,2027,4.163987012107936
+BRA,Brazil,inflation,2028,3.948913798455514
+BRA,Brazil,inflation,2029,3.7338405848030924
+BRA,Brazil,inflation,2030,3.5187673711506706
+BRA,Brazil,fdi_inflow,2026,-2.8879466859006144
+BRA,Brazil,fdi_inflow,2027,-3.133812964892235
+BRA,Brazil,fdi_inflow,2028,-3.3796792438838557
+BRA,Brazil,fdi_inflow,2029,-3.625545522875476
+BRA,Brazil,fdi_inflow,2030,-3.871411801867097
+BRN,Brunei Darussalam,gdp_growth,2026,0.24469590953157283
+BRN,Brunei Darussalam,gdp_growth,2027,0.22559108822585042
+BRN,Brunei Darussalam,gdp_growth,2028,0.20648626692012798
+BRN,Brunei Darussalam,gdp_growth,2029,0.18738144561440556
+BRN,Brunei Darussalam,gdp_growth,2030,0.16827662430868312
+BRN,Brunei Darussalam,inflation,2026,-4.401970734047019
+BRN,Brunei Darussalam,inflation,2027,-4.733664721474829
+BRN,Brunei Darussalam,inflation,2028,-5.0653587089026395
+BRN,Brunei Darussalam,inflation,2029,-5.39705269633045
+BRN,Brunei Darussalam,inflation,2030,-5.72874668375826
+BRN,Brunei Darussalam,fdi_inflow,2026,1.9613601647921755
+BRN,Brunei Darussalam,fdi_inflow,2027,1.9404667798331718
+BRN,Brunei Darussalam,fdi_inflow,2028,1.9195733948741682
+BRN,Brunei Darussalam,fdi_inflow,2029,1.8986800099151646
+BRN,Brunei Darussalam,fdi_inflow,2030,1.877786624956161
+BGR,Bulgaria,gdp_growth,2026,2.9916079808714575
+BGR,Bulgaria,gdp_growth,2027,2.966598930611276
+BGR,Bulgaria,gdp_growth,2028,2.9415898803510947
+BGR,Bulgaria,gdp_growth,2029,2.9165808300909135
+BGR,Bulgaria,gdp_growth,2030,2.891571779830732
+BGR,Bulgaria,inflation,2026,-31.127865662352853
+BGR,Bulgaria,inflation,2027,-35.11729986776138
+BGR,Bulgaria,inflation,2028,-39.10673407316992
+BGR,Bulgaria,inflation,2029,-43.096168278578446
+BGR,Bulgaria,inflation,2030,-47.085602483986975
+BGR,Bulgaria,fdi_inflow,2026,3.200784600824893
+BGR,Bulgaria,fdi_inflow,2027,3.270366691584432
+BGR,Bulgaria,fdi_inflow,2028,3.3399487823439706
+BGR,Bulgaria,fdi_inflow,2029,3.4095308731035097
+BGR,Bulgaria,fdi_inflow,2030,3.4791129638630487
+BFA,Burkina Faso,gdp_growth,2026,5.8020631400851785
+BFA,Burkina Faso,gdp_growth,2027,5.843112169497485
+BFA,Burkina Faso,gdp_growth,2028,5.8841611989097915
+BFA,Burkina Faso,gdp_growth,2029,5.925210228322098
+BFA,Burkina Faso,gdp_growth,2030,5.966259257734404
+BFA,Burkina Faso,inflation,2026,2.1179690893575716
+BFA,Burkina Faso,inflation,2027,2.052220371126544
+BFA,Burkina Faso,inflation,2028,1.986471652895516
+BFA,Burkina Faso,inflation,2029,1.9207229346644883
+BFA,Burkina Faso,inflation,2030,1.8549742164334604
+BFA,Burkina Faso,fdi_inflow,2026,-5.968007377975017
+BFA,Burkina Faso,fdi_inflow,2027,-6.289018959080297
+BFA,Burkina Faso,fdi_inflow,2028,-6.610030540185579
+BFA,Burkina Faso,fdi_inflow,2029,-6.93104212129086
+BFA,Burkina Faso,fdi_inflow,2030,-7.252053702396141
+BDI,Burundi,gdp_growth,2026,2.415168630992082
+BDI,Burundi,gdp_growth,2027,2.402677543139085
+BDI,Burundi,gdp_growth,2028,2.3901864552860874
+BDI,Burundi,gdp_growth,2029,2.3776953674330903
+BDI,Burundi,gdp_growth,2030,2.3652042795800927
+BDI,Burundi,inflation,2026,26.772492259113992
+BDI,Burundi,inflation,2027,30.103264470045424
+BDI,Burundi,inflation,2028,33.43403668097686
+BDI,Burundi,inflation,2029,36.76480889190829
+BDI,Burundi,inflation,2030,40.09558110283972
+BDI,Burundi,fdi_inflow,2026,-1.216624396619752
+BDI,Burundi,fdi_inflow,2027,-1.3105985900324262
+BDI,Burundi,fdi_inflow,2028,-1.4045727834451003
+BDI,Burundi,fdi_inflow,2029,-1.4985469768577746
+BDI,Burundi,fdi_inflow,2030,-1.592521170270449
+CPV,Cabo Verde,gdp_growth,2026,3.8017990048424415
+CPV,Cabo Verde,gdp_growth,2027,3.703226122195402
+CPV,Cabo Verde,gdp_growth,2028,3.6046532395483633
+CPV,Cabo Verde,gdp_growth,2029,3.5060803569013244
+CPV,Cabo Verde,gdp_growth,2030,3.4075074742542855
+CPV,Cabo Verde,inflation,2026,-18.12896587323038
+CPV,Cabo Verde,inflation,2027,-26.11838552299138
+CPV,Cabo Verde,inflation,2028,-34.107805172752386
+CPV,Cabo Verde,inflation,2029,-42.09722482251339
+CPV,Cabo Verde,inflation,2030,-50.08664447227439
+CPV,Cabo Verde,fdi_inflow,2026,4.465153747598197
+CPV,Cabo Verde,fdi_inflow,2027,4.563556630183493
+CPV,Cabo Verde,fdi_inflow,2028,4.661959512768789
+CPV,Cabo Verde,fdi_inflow,2029,4.760362395354084
+CPV,Cabo Verde,fdi_inflow,2030,4.85876527793938
+KHM,Cambodia,gdp_growth,2026,9.279104864301384
+KHM,Cambodia,gdp_growth,2027,9.4654643221939
+KHM,Cambodia,gdp_growth,2028,9.651823780086419
+KHM,Cambodia,gdp_growth,2029,9.838183237978935
+KHM,Cambodia,gdp_growth,2030,10.024542695871453
+KHM,Cambodia,inflation,2026,0.6191418078149405
+KHM,Cambodia,inflation,2027,0.4302416019080593
+KHM,Cambodia,inflation,2028,0.2413413960011781
+KHM,Cambodia,inflation,2029,0.05244119009429693
+KHM,Cambodia,inflation,2030,-0.13645901581258424
+KHM,Cambodia,fdi_inflow,2026,9.669795431268565
+KHM,Cambodia,fdi_inflow,2027,9.858692539565222
+KHM,Cambodia,fdi_inflow,2028,10.047589647861878
+KHM,Cambodia,fdi_inflow,2029,10.236486756158536
+KHM,Cambodia,fdi_inflow,2030,10.425383864455194
+CMR,Cameroon,gdp_growth,2026,3.462480827301894
+CMR,Cameroon,gdp_growth,2027,3.480545392787413
+CMR,Cameroon,gdp_growth,2028,3.4986099582729318
+CMR,Cameroon,gdp_growth,2029,3.5166745237584505
+CMR,Cameroon,gdp_growth,2030,3.5347390892439696
+CMR,Cameroon,inflation,2026,-17.217678023972436
+CMR,Cameroon,inflation,2027,-18.31667223017849
+CMR,Cameroon,inflation,2028,-19.415666436384544
+CMR,Cameroon,inflation,2029,-20.5146606425906
+CMR,Cameroon,inflation,2030,-21.61365484879665
+CMR,Cameroon,fdi_inflow,2026,2.329727543930004
+CMR,Cameroon,fdi_inflow,2027,2.362055101922766
+CMR,Cameroon,fdi_inflow,2028,2.3943826599155282
+CMR,Cameroon,fdi_inflow,2029,2.4267102179082904
+CMR,Cameroon,fdi_inflow,2030,2.459037775901053
+CAN,Canada,gdp_growth,2026,1.1610414978682864
+CAN,Canada,gdp_growth,2027,1.1054941404110463
+CAN,Canada,gdp_growth,2028,1.0499467829538063
+CAN,Canada,gdp_growth,2029,0.9943994254965662
+CAN,Canada,gdp_growth,2030,0.9388520680393262
+CAN,Canada,inflation,2026,2.3973205763530787
+CAN,Canada,inflation,2027,2.4130573196599316
+CAN,Canada,inflation,2028,2.4287940629667846
+CAN,Canada,inflation,2029,2.4445308062736375
+CAN,Canada,inflation,2030,2.4602675495804904
+CAN,Canada,fdi_inflow,2026,7.044884005807721
+CAN,Canada,fdi_inflow,2027,7.541024646781735
+CAN,Canada,fdi_inflow,2028,8.037165287755748
+CAN,Canada,fdi_inflow,2029,8.533305928729762
+CAN,Canada,fdi_inflow,2030,9.029446569703776
+CYM,Cayman Islands,gdp_growth,2026,4.864264396809571
+CYM,Cayman Islands,gdp_growth,2027,5.216019886170204
+CYM,Cayman Islands,gdp_growth,2028,5.567775375530838
+CYM,Cayman Islands,gdp_growth,2029,5.91953086489147
+CYM,Cayman Islands,gdp_growth,2030,6.271286354252104
+CYM,Cayman Islands,inflation,2026,-1.8488023313962578
+CYM,Cayman Islands,inflation,2027,-2.120471766187989
+CYM,Cayman Islands,inflation,2028,-2.3921412009797196
+CYM,Cayman Islands,inflation,2029,-2.6638106357714504
+CYM,Cayman Islands,inflation,2030,-2.9354800705631816
+CYM,Cayman Islands,fdi_inflow,2026,34.77659184895019
+CYM,Cayman Islands,fdi_inflow,2027,-6.810694208243916
+CYM,Cayman Islands,fdi_inflow,2028,-48.39798026543802
+CYM,Cayman Islands,fdi_inflow,2029,-89.98526632263213
+CYM,Cayman Islands,fdi_inflow,2030,-131.57255237982622
+CAF,Central African Republic,gdp_growth,2026,0.9728013002926218
+CAF,Central African Republic,gdp_growth,2027,0.9587642055751381
+CAF,Central African Republic,gdp_growth,2028,0.9447271108576544
+CAF,Central African Republic,gdp_growth,2029,0.9306900161401707
+CAF,Central African Republic,gdp_growth,2030,0.916652921422687
+CAF,Central African Republic,inflation,2026,1.3274899850744504
+CAF,Central African Republic,inflation,2027,1.189153835651832
+CAF,Central African Republic,inflation,2028,1.0508176862292138
+CAF,Central African Republic,inflation,2029,0.9124815368065953
+CAF,Central African Republic,inflation,2030,0.7741453873839769
+CAF,Central African Republic,fdi_inflow,2026,-1.4031160215397078
+CAF,Central African Republic,fdi_inflow,2027,-1.5181881555953405
+CAF,Central African Republic,fdi_inflow,2028,-1.633260289650973
+CAF,Central African Republic,fdi_inflow,2029,-1.7483324237066054
+CAF,Central African Republic,fdi_inflow,2030,-1.863404557762238
+TCD,Chad,gdp_growth,2026,5.870817606922791
+TCD,Chad,gdp_growth,2027,5.942965172372505
+TCD,Chad,gdp_growth,2028,6.01511273782222
+TCD,Chad,gdp_growth,2029,6.0872603032719335
+TCD,Chad,gdp_growth,2030,6.159407868721647
+TCD,Chad,inflation,2026,-4.745183569230171
+TCD,Chad,inflation,2027,-5.263444448726508
+TCD,Chad,inflation,2028,-5.781705328222844
+TCD,Chad,inflation,2029,-6.29996620771918
+TCD,Chad,inflation,2030,-6.818227087215517
+TCD,Chad,fdi_inflow,2026,5.276497838049494
+TCD,Chad,fdi_inflow,2027,5.3299011286517155
+TCD,Chad,fdi_inflow,2028,5.383304419253938
+TCD,Chad,fdi_inflow,2029,5.43670770985616
+TCD,Chad,fdi_inflow,2030,5.490111000458382
+CHI,Channel Islands,gdp_growth,2026,1.957112587331191
+CHI,Channel Islands,gdp_growth,2027,1.9706055975879748
+CHI,Channel Islands,gdp_growth,2028,1.9840986078447584
+CHI,Channel Islands,gdp_growth,2029,1.9975916181015423
+CHI,Channel Islands,gdp_growth,2030,2.0110846283583257
+CHI,Channel Islands,inflation,2026,2.5029241775349163
+CHI,Channel Islands,inflation,2027,1.6838237012193573
+CHI,Channel Islands,inflation,2028,0.8647232249037984
+CHI,Channel Islands,inflation,2029,0.045622748588239226
+CHI,Channel Islands,inflation,2030,-0.7734777277273195
+CHI,Channel Islands,fdi_inflow,2026,5.011137533827518
+CHI,Channel Islands,fdi_inflow,2027,5.0396764646820085
+CHI,Channel Islands,fdi_inflow,2028,5.068215395536498
+CHI,Channel Islands,fdi_inflow,2029,5.096754326390989
+CHI,Channel Islands,fdi_inflow,2030,5.125293257245478
+CHL,Chile,gdp_growth,2026,3.582854581345194
+CHL,Chile,gdp_growth,2027,3.5728655833496674
+CHL,Chile,gdp_growth,2028,3.5628765853541404
+CHL,Chile,gdp_growth,2029,3.552887587358614
+CHL,Chile,gdp_growth,2030,3.5428985893630873
+CHL,Chile,inflation,2026,4.292075835830052
+CHL,Chile,inflation,2027,4.28651275601776
+CHL,Chile,inflation,2028,4.280949676205467
+CHL,Chile,inflation,2029,4.275386596393175
+CHL,Chile,inflation,2030,4.269823516580883
+CHL,Chile,fdi_inflow,2026,4.2627090099685425
+CHL,Chile,fdi_inflow,2027,4.3136612108237875
+CHL,Chile,fdi_inflow,2028,4.3646134116790325
+CHL,Chile,fdi_inflow,2029,4.4155656125342775
+CHL,Chile,fdi_inflow,2030,4.4665178133895225
+CHN,China,gdp_growth,2026,6.838027387753566
+CHN,China,gdp_growth,2027,6.902667447141233
+CHN,China,gdp_growth,2028,6.9673075065289
+CHN,China,gdp_growth,2029,7.031947565916567
+CHN,China,gdp_growth,2030,7.096587625304233
+CHN,China,inflation,2026,-17.80307868142087
+CHN,China,inflation,2027,-18.86516733162365
+CHN,China,inflation,2028,-19.92725598182643
+CHN,China,inflation,2029,-20.98934463202921
+CHN,China,inflation,2030,-22.05143328223199
+CHN,China,fdi_inflow,2026,-1.3044050007928871
+CHN,China,fdi_inflow,2027,-1.551035788038686
+CHN,China,fdi_inflow,2028,-1.797666575284485
+CHN,China,fdi_inflow,2029,-2.044297362530284
+CHN,China,fdi_inflow,2030,-2.2909281497760823
+COL,Colombia,gdp_growth,2026,2.6239682597385925
+COL,Colombia,gdp_growth,2027,2.584492676296111
+COL,Colombia,gdp_growth,2028,2.5450170928536293
+COL,Colombia,gdp_growth,2029,2.505541509411148
+COL,Colombia,gdp_growth,2030,2.4660659259686666
+COL,Colombia,inflation,2026,7.167101862101123
+COL,Colombia,inflation,2027,7.163724206551845
+COL,Colombia,inflation,2028,7.160346551002569
+COL,Colombia,inflation,2029,7.156968895453292
+COL,Colombia,inflation,2030,7.1535912399040145
+COL,Colombia,fdi_inflow,2026,-3.8430981664179575
+COL,Colombia,fdi_inflow,2027,-4.166245410760485
+COL,Colombia,fdi_inflow,2028,-4.489392655103013
+COL,Colombia,fdi_inflow,2029,-4.812539899445541
+COL,Colombia,fdi_inflow,2030,-5.1356871437880685
+COM,Comoros,gdp_growth,2026,2.4299001052665927
+COM,Comoros,gdp_growth,2027,2.4183585106034386
+COM,Comoros,gdp_growth,2028,2.406816915940284
+COM,Comoros,gdp_growth,2029,2.39527532127713
+COM,Comoros,gdp_growth,2030,2.3837337266139755
+COM,Comoros,inflation,2026,3.029632702204987
+COM,Comoros,inflation,2027,2.9598382667211123
+COM,Comoros,inflation,2028,2.8900438312372376
+COM,Comoros,inflation,2029,2.820249395753363
+COM,Comoros,inflation,2030,2.750454960269488
+COM,Comoros,fdi_inflow,2026,0.48226072122662195
+COM,Comoros,fdi_inflow,2027,0.49247391622974046
+COM,Comoros,fdi_inflow,2028,0.5026871112328589
+COM,Comoros,fdi_inflow,2029,0.5129003062359774
+COM,Comoros,fdi_inflow,2030,0.523113501239096
+COD,"Congo, Dem. Rep.",gdp_growth,2026,6.492854744141655
+COD,"Congo, Dem. Rep.",gdp_growth,2027,6.557102980939233
+COD,"Congo, Dem. Rep.",gdp_growth,2028,6.621351217736812
+COD,"Congo, Dem. Rep.",gdp_growth,2029,6.685599454534391
+COD,"Congo, Dem. Rep.",gdp_growth,2030,6.749847691331969
+COD,"Congo, Dem. Rep.",inflation,2026,836.3643571837983
+COD,"Congo, Dem. Rep.",inflation,2027,848.8060930908234
+COD,"Congo, Dem. Rep.",inflation,2028,861.2478289978486
+COD,"Congo, Dem. Rep.",inflation,2029,873.6895649048738
+COD,"Congo, Dem. Rep.",inflation,2030,886.131300811899
+COD,"Congo, Dem. Rep.",fdi_inflow,2026,2.800213431843181
+COD,"Congo, Dem. Rep.",fdi_inflow,2027,2.8033946882729572
+COD,"Congo, Dem. Rep.",fdi_inflow,2028,2.806575944702733
+COD,"Congo, Dem. Rep.",fdi_inflow,2029,2.8097572011325087
+COD,"Congo, Dem. Rep.",fdi_inflow,2030,2.8129384575622844
+COG,"Congo, Rep.",gdp_growth,2026,2.14982034676672
+COG,"Congo, Rep.",gdp_growth,2027,2.091281906025961
+COG,"Congo, Rep.",gdp_growth,2028,2.0327434652852014
+COG,"Congo, Rep.",gdp_growth,2029,1.9742050245444425
+COG,"Congo, Rep.",gdp_growth,2030,1.915666583803683
+COG,"Congo, Rep.",inflation,2026,3.935691666512605
+COG,"Congo, Rep.",inflation,2027,3.761312850358371
+COG,"Congo, Rep.",inflation,2028,3.5869340342041376
+COG,"Congo, Rep.",inflation,2029,3.4125552180499037
+COG,"Congo, Rep.",inflation,2030,3.2381764018956702
+COG,"Congo, Rep.",fdi_inflow,2026,3.201830695484817
+COG,"Congo, Rep.",fdi_inflow,2027,3.196489692799915
+COG,"Congo, Rep.",fdi_inflow,2028,3.1911486901150132
+COG,"Congo, Rep.",fdi_inflow,2029,3.185807687430111
+COG,"Congo, Rep.",fdi_inflow,2030,3.180466684745209
+CRI,Costa Rica,gdp_growth,2026,3.3818373851463175
+CRI,Costa Rica,gdp_growth,2027,3.3488314327303885
+CRI,Costa Rica,gdp_growth,2028,3.315825480314459
+CRI,Costa Rica,gdp_growth,2029,3.28281952789853
+CRI,Costa Rica,gdp_growth,2030,3.2498135754826007
+CRI,Costa Rica,inflation,2026,-0.29541149915982867
+CRI,Costa Rica,inflation,2027,-0.3183622435203482
+CRI,Costa Rica,inflation,2028,-0.34131298788086767
+CRI,Costa Rica,inflation,2029,-0.36426373224138714
+CRI,Costa Rica,inflation,2030,-0.38721447660190667
+CRI,Costa Rica,fdi_inflow,2026,4.568680155717716
+CRI,Costa Rica,fdi_inflow,2027,4.573742114626316
+CRI,Costa Rica,fdi_inflow,2028,4.578804073534915
+CRI,Costa Rica,fdi_inflow,2029,4.583866032443515
+CRI,Costa Rica,fdi_inflow,2030,4.588927991352114
+CIV,Cote d'Ivoire,gdp_growth,2026,5.827913037129599
+CIV,Cote d'Ivoire,gdp_growth,2027,5.803647778502
+CIV,Cote d'Ivoire,gdp_growth,2028,5.779382519874403
+CIV,Cote d'Ivoire,gdp_growth,2029,5.755117261246806
+CIV,Cote d'Ivoire,gdp_growth,2030,5.730852002619208
+CIV,Cote d'Ivoire,inflation,2026,3.525214544286216
+CIV,Cote d'Ivoire,inflation,2027,3.470670739073205
+CIV,Cote d'Ivoire,inflation,2028,3.4161269338601943
+CIV,Cote d'Ivoire,inflation,2029,3.361583128647183
+CIV,Cote d'Ivoire,inflation,2030,3.3070393234341724
+CIV,Cote d'Ivoire,fdi_inflow,2026,1.7938923070974324
+CIV,Cote d'Ivoire,fdi_inflow,2027,1.811396267286703
+CIV,Cote d'Ivoire,fdi_inflow,2028,1.8289002274759738
+CIV,Cote d'Ivoire,fdi_inflow,2029,1.8464041876652444
+CIV,Cote d'Ivoire,fdi_inflow,2030,1.8639081478545152
+HRV,Croatia,gdp_growth,2026,4.319870167673539
+HRV,Croatia,gdp_growth,2027,4.485782276249132
+HRV,Croatia,gdp_growth,2028,4.651694384824727
+HRV,Croatia,gdp_growth,2029,4.81760649340032
+HRV,Croatia,gdp_growth,2030,4.983518601975914
+HRV,Croatia,inflation,2026,-141.34696243235257
+HRV,Croatia,inflation,2027,-153.99334940506895
+HRV,Croatia,inflation,2028,-166.63973637778537
+HRV,Croatia,inflation,2029,-179.28612335050178
+HRV,Croatia,inflation,2030,-191.9325103232182
+HRV,Croatia,fdi_inflow,2026,5.043507394567544
+HRV,Croatia,fdi_inflow,2027,5.144202794543698
+HRV,Croatia,fdi_inflow,2028,5.244898194519854
+HRV,Croatia,fdi_inflow,2029,5.345593594496009
+HRV,Croatia,fdi_inflow,2030,5.446288994472163
+CUB,Cuba,gdp_growth,2026,-1.3300786044776858
+CUB,Cuba,gdp_growth,2027,-1.4565455016774926
+CUB,Cuba,gdp_growth,2028,-1.5830123988772997
+CUB,Cuba,gdp_growth,2029,-1.7094792960771064
+CUB,Cuba,gdp_growth,2030,-1.8359461932769134
+CUB,Cuba,inflation,2026,19.21378770032229
+CUB,Cuba,inflation,2027,20.261225396561283
+CUB,Cuba,inflation,2028,21.30866309280028
+CUB,Cuba,inflation,2029,22.356100789039274
+CUB,Cuba,inflation,2030,23.403538485278272
+CUB,Cuba,fdi_inflow,2026,23.0305675017977
+CUB,Cuba,fdi_inflow,2027,24.286329950114887
+CUB,Cuba,fdi_inflow,2028,25.542092398432068
+CUB,Cuba,fdi_inflow,2029,26.79785484674925
+CUB,Cuba,fdi_inflow,2030,28.05361729506643
+CUW,Curacao,gdp_growth,2026,-0.16140490842744934
+CUW,Curacao,gdp_growth,2027,-0.17528354888700243
+CUW,Curacao,gdp_growth,2028,-0.18916218934655551
+CUW,Curacao,gdp_growth,2029,-0.2030408298061086
+CUW,Curacao,gdp_growth,2030,-0.21691947026566166
+CUW,Curacao,inflation,2026,2.7072808243584037
+CUW,Curacao,inflation,2027,2.7571835013597763
+CUW,Curacao,inflation,2028,2.807086178361149
+CUW,Curacao,inflation,2029,2.856988855362522
+CUW,Curacao,inflation,2030,2.9068915323638946
+CUW,Curacao,fdi_inflow,2026,0.10097179973078485
+CUW,Curacao,fdi_inflow,2027,-0.6710153345866439
+CUW,Curacao,fdi_inflow,2028,-1.4430024689040728
+CUW,Curacao,fdi_inflow,2029,-2.2149896032215013
+CUW,Curacao,fdi_inflow,2030,-2.98697673753893
+CYP,Cyprus,gdp_growth,2026,4.550912332952544
+CYP,Cyprus,gdp_growth,2027,4.555252057096657
+CYP,Cyprus,gdp_growth,2028,4.559591781240768
+CYP,Cyprus,gdp_growth,2029,4.563931505384881
+CYP,Cyprus,gdp_growth,2030,4.5682712295289924
+CYP,Cyprus,inflation,2026,2.364946146381338
+CYP,Cyprus,inflation,2027,2.394849200931047
+CYP,Cyprus,inflation,2028,2.424752255480756
+CYP,Cyprus,inflation,2029,2.454655310030465
+CYP,Cyprus,inflation,2030,2.484558364580174
+CYP,Cyprus,fdi_inflow,2026,-74.15454869381246
+CYP,Cyprus,fdi_inflow,2027,-75.37797204588878
+CYP,Cyprus,fdi_inflow,2028,-76.60139539796509
+CYP,Cyprus,fdi_inflow,2029,-77.82481875004142
+CYP,Cyprus,fdi_inflow,2030,-79.04824210211774
+CZE,Czechia,gdp_growth,2026,2.5012972139276526
+CZE,Czechia,gdp_growth,2027,2.5374189049650058
+CZE,Czechia,gdp_growth,2028,2.5735405960023594
+CZE,Czechia,gdp_growth,2029,2.6096622870397126
+CZE,Czechia,gdp_growth,2030,2.645783978077066
+CZE,Czechia,inflation,2026,4.209273288592993
+CZE,Czechia,inflation,2027,4.1155107531308355
+CZE,Czechia,inflation,2028,4.021748217668678
+CZE,Czechia,inflation,2029,3.9279856822065207
+CZE,Czechia,inflation,2030,3.8342231467443635
+CZE,Czechia,fdi_inflow,2026,-3.06100690508319
+CZE,Czechia,fdi_inflow,2027,-3.695695218077298
+CZE,Czechia,fdi_inflow,2028,-4.330383531071406
+CZE,Czechia,fdi_inflow,2029,-4.9650718440655135
+CZE,Czechia,fdi_inflow,2030,-5.599760157059621
+DNK,Denmark,gdp_growth,2026,0.8888262304353819
+DNK,Denmark,gdp_growth,2027,0.8419180394007502
+DNK,Denmark,gdp_growth,2028,0.7950098483661184
+DNK,Denmark,gdp_growth,2029,0.7481016573314867
+DNK,Denmark,gdp_growth,2030,0.701193466296855
+DNK,Denmark,inflation,2026,1.5942223138022174
+DNK,Denmark,inflation,2027,1.5850002653538795
+DNK,Denmark,inflation,2028,1.5757782169055419
+DNK,Denmark,inflation,2029,1.566556168457204
+DNK,Denmark,inflation,2030,1.5573341200088664
+DNK,Denmark,fdi_inflow,2026,2.912339120575558
+DNK,Denmark,fdi_inflow,2027,1.7538821682285688
+DNK,Denmark,fdi_inflow,2028,0.5954252158815794
+DNK,Denmark,fdi_inflow,2029,-0.56303173646541
+DNK,Denmark,fdi_inflow,2030,-1.7214886888124
+DJI,Djibouti,gdp_growth,2026,6.892256158745707
+DJI,Djibouti,gdp_growth,2027,6.9409887644410455
+DJI,Djibouti,gdp_growth,2028,6.989721370136385
+DJI,Djibouti,gdp_growth,2029,7.0384539758317235
+DJI,Djibouti,gdp_growth,2030,7.087186581527063
+DJI,Djibouti,inflation,2026,1.0256055676272102
+DJI,Djibouti,inflation,2027,0.9308576822361689
+DJI,Djibouti,inflation,2028,0.8361097968451275
+DJI,Djibouti,inflation,2029,0.7413619114540861
+DJI,Djibouti,inflation,2030,0.6466140260630447
+DJI,Djibouti,fdi_inflow,2026,1.6229334661155774
+DJI,Djibouti,fdi_inflow,2027,1.6124959182699263
+DJI,Djibouti,fdi_inflow,2028,1.602058370424275
+DJI,Djibouti,fdi_inflow,2029,1.5916208225786237
+DJI,Djibouti,fdi_inflow,2030,1.5811832747329724
+DMA,Dominica,gdp_growth,2026,0.07612363975563034
+DMA,Dominica,gdp_growth,2027,-0.012304596182806438
+DMA,Dominica,gdp_growth,2028,-0.1007328321212432
+DMA,Dominica,gdp_growth,2029,-0.18916106805968
+DMA,Dominica,gdp_growth,2030,-0.27758930399811677
+DMA,Dominica,inflation,2026,3.147658783061855
+DMA,Dominica,inflation,2027,3.145751655172822
+DMA,Dominica,inflation,2028,3.1438445272837887
+DMA,Dominica,inflation,2029,3.1419373993947555
+DMA,Dominica,inflation,2030,3.1400302715057222
+DMA,Dominica,fdi_inflow,2026,8.489936146912157
+DMA,Dominica,fdi_inflow,2027,8.585264857792549
+DMA,Dominica,fdi_inflow,2028,8.68059356867294
+DMA,Dominica,fdi_inflow,2029,8.775922279553331
+DMA,Dominica,fdi_inflow,2030,8.87125099043372
+DOM,Dominican Republic,gdp_growth,2026,4.430018604997327
+DOM,Dominican Republic,gdp_growth,2027,4.409730696261792
+DOM,Dominican Republic,gdp_growth,2028,4.389442787526256
+DOM,Dominican Republic,gdp_growth,2029,4.369154878790719
+DOM,Dominican Republic,gdp_growth,2030,4.348866970055184
+DOM,Dominican Republic,inflation,2026,4.243274532027034
+DOM,Dominican Republic,inflation,2027,4.319652310372784
+DOM,Dominican Republic,inflation,2028,4.3960300887185335
+DOM,Dominican Republic,inflation,2029,4.472407867064284
+DOM,Dominican Republic,inflation,2030,4.5487856454100335
+DOM,Dominican Republic,fdi_inflow,2026,0.7537568223742662
+DOM,Dominican Republic,fdi_inflow,2027,0.6303939326377062
+DOM,Dominican Republic,fdi_inflow,2028,0.507031042901146
+DOM,Dominican Republic,fdi_inflow,2029,0.38366815316458597
+DOM,Dominican Republic,fdi_inflow,2030,0.26030526342802585
+ECU,Ecuador,gdp_growth,2026,1.8451981175729182
+ECU,Ecuador,gdp_growth,2027,1.7922090194518108
+ECU,Ecuador,gdp_growth,2028,1.7392199213307036
+ECU,Ecuador,gdp_growth,2029,1.6862308232095962
+ECU,Ecuador,gdp_growth,2030,1.633241725088489
+ECU,Ecuador,inflation,2026,1.5451235873173572
+ECU,Ecuador,inflation,2027,1.541636780408367
+ECU,Ecuador,inflation,2028,1.538149973499377
+ECU,Ecuador,inflation,2029,1.534663166590387
+ECU,Ecuador,inflation,2030,1.531176359681397
+ECU,Ecuador,fdi_inflow,2026,-8.246697657460954
+ECU,Ecuador,fdi_inflow,2027,-8.710438008487277
+ECU,Ecuador,fdi_inflow,2028,-9.174178359513599
+ECU,Ecuador,fdi_inflow,2029,-9.637918710539921
+ECU,Ecuador,fdi_inflow,2030,-10.101659061566245
+EGY,"Egypt, Arab Rep.",gdp_growth,2026,2.9442016863954477
+EGY,"Egypt, Arab Rep.",gdp_growth,2027,2.8659229825405625
+EGY,"Egypt, Arab Rep.",gdp_growth,2028,2.7876442786856774
+EGY,"Egypt, Arab Rep.",gdp_growth,2029,2.7093655748307923
+EGY,"Egypt, Arab Rep.",gdp_growth,2030,2.631086870975907
+EGY,"Egypt, Arab Rep.",inflation,2026,28.732093358758867
+EGY,"Egypt, Arab Rep.",inflation,2027,29.166845343025322
+EGY,"Egypt, Arab Rep.",inflation,2028,29.60159732729178
+EGY,"Egypt, Arab Rep.",inflation,2029,30.036349311558237
+EGY,"Egypt, Arab Rep.",inflation,2030,30.471101295824692
+EGY,"Egypt, Arab Rep.",fdi_inflow,2026,14.936531580353755
+EGY,"Egypt, Arab Rep.",fdi_inflow,2027,18.444681239101058
+EGY,"Egypt, Arab Rep.",fdi_inflow,2028,21.952830897848365
+EGY,"Egypt, Arab Rep.",fdi_inflow,2029,25.460980556595665
+EGY,"Egypt, Arab Rep.",fdi_inflow,2030,28.96913021534297
+SLV,El Salvador,gdp_growth,2026,2.8855533210958946
+SLV,El Salvador,gdp_growth,2027,2.877279114416108
+SLV,El Salvador,gdp_growth,2028,2.8690049077363207
+SLV,El Salvador,gdp_growth,2029,2.860730701056534
+SLV,El Salvador,gdp_growth,2030,2.8524564943767468
+SLV,El Salvador,inflation,2026,1.0471415670106545
+SLV,El Salvador,inflation,2027,1.07008215219828
+SLV,El Salvador,inflation,2028,1.0930227373859052
+SLV,El Salvador,inflation,2029,1.1159633225735306
+SLV,El Salvador,inflation,2030,1.138903907761156
+SLV,El Salvador,fdi_inflow,2026,-6.194970536466114
+SLV,El Salvador,fdi_inflow,2027,-6.625490095138454
+SLV,El Salvador,fdi_inflow,2028,-7.0560096538107935
+SLV,El Salvador,fdi_inflow,2029,-7.486529212483134
+SLV,El Salvador,fdi_inflow,2030,-7.917048771155475
+GNQ,Equatorial Guinea,gdp_growth,2026,-0.9065156550813025
+GNQ,Equatorial Guinea,gdp_growth,2027,-1.0322417080034505
+GNQ,Equatorial Guinea,gdp_growth,2028,-1.1579677609255987
+GNQ,Equatorial Guinea,gdp_growth,2029,-1.2836938138477467
+GNQ,Equatorial Guinea,gdp_growth,2030,-1.4094198667698947
+GNQ,Equatorial Guinea,inflation,2026,1.425908834233437
+GNQ,Equatorial Guinea,inflation,2027,1.2475688175504442
+GNQ,Equatorial Guinea,inflation,2028,1.0692288008674518
+GNQ,Equatorial Guinea,inflation,2029,0.8908887841844592
+GNQ,Equatorial Guinea,inflation,2030,0.7125487675014666
+GNQ,Equatorial Guinea,fdi_inflow,2026,2.8172297976072085
+GNQ,Equatorial Guinea,fdi_inflow,2027,2.8367872608944222
+GNQ,Equatorial Guinea,fdi_inflow,2028,2.856344724181636
+GNQ,Equatorial Guinea,fdi_inflow,2029,2.8759021874688497
+GNQ,Equatorial Guinea,fdi_inflow,2030,2.8954596507560635
+ERI,Eritrea,gdp_growth,2026,8.735575321562214
+ERI,Eritrea,gdp_growth,2027,8.759207450454936
+ERI,Eritrea,gdp_growth,2028,8.782839579347655
+ERI,Eritrea,gdp_growth,2029,8.806471708240375
+ERI,Eritrea,gdp_growth,2030,8.830103837133096
+ERI,Eritrea,inflation,2026,4.392517831999523
+ERI,Eritrea,inflation,2027,4.340454852755275
+ERI,Eritrea,inflation,2028,4.288391873511025
+ERI,Eritrea,inflation,2029,4.236328894266776
+ERI,Eritrea,inflation,2030,4.184265915022526
+ERI,Eritrea,fdi_inflow,2026,1.7420836707997878
+ERI,Eritrea,fdi_inflow,2027,1.6985998420552608
+ERI,Eritrea,fdi_inflow,2028,1.6551160133107337
+ERI,Eritrea,fdi_inflow,2029,1.6116321845662065
+ERI,Eritrea,fdi_inflow,2030,1.5681483558216796
+EST,Estonia,gdp_growth,2026,0.3225512009135171
+EST,Estonia,gdp_growth,2027,0.6264479499302769
+EST,Estonia,gdp_growth,2028,0.9303446989470366
+EST,Estonia,gdp_growth,2029,1.2342414479637964
+EST,Estonia,gdp_growth,2030,1.538138196980556
+EST,Estonia,inflation,2026,8.905981709059034
+EST,Estonia,inflation,2027,9.400617459334116
+EST,Estonia,inflation,2028,9.895253209609198
+EST,Estonia,inflation,2029,10.38988895988428
+EST,Estonia,inflation,2030,10.884524710159361
+EST,Estonia,fdi_inflow,2026,-4.035786364966102
+EST,Estonia,fdi_inflow,2027,-4.256803689626925
+EST,Estonia,fdi_inflow,2028,-4.477821014287749
+EST,Estonia,fdi_inflow,2029,-4.698838338948573
+EST,Estonia,fdi_inflow,2030,-4.919855663609397
+SWZ,Eswatini,gdp_growth,2026,2.1027591500694816
+SWZ,Eswatini,gdp_growth,2027,2.015950985063533
+SWZ,Eswatini,gdp_growth,2028,1.9291428200575849
+SWZ,Eswatini,gdp_growth,2029,1.8423346550516366
+SWZ,Eswatini,gdp_growth,2030,1.7555264900456882
+SWZ,Eswatini,inflation,2026,1.3760421382450447
+SWZ,Eswatini,inflation,2027,0.9606659513200265
+SWZ,Eswatini,inflation,2028,0.5452897643950083
+SWZ,Eswatini,inflation,2029,0.12991357746999
+SWZ,Eswatini,inflation,2030,-0.2854626094550281
+SWZ,Eswatini,fdi_inflow,2026,0.9790890058694381
+SWZ,Eswatini,fdi_inflow,2027,0.9277476590950898
+SWZ,Eswatini,fdi_inflow,2028,0.8764063123207415
+SWZ,Eswatini,fdi_inflow,2029,0.8250649655463933
+SWZ,Eswatini,fdi_inflow,2030,0.7737236187720451
+ETH,Ethiopia,gdp_growth,2026,8.1499859747829
+ETH,Ethiopia,gdp_growth,2027,8.219211295553762
+ETH,Ethiopia,gdp_growth,2028,8.288436616324624
+ETH,Ethiopia,gdp_growth,2029,8.357661937095486
+ETH,Ethiopia,gdp_growth,2030,8.426887257866348
+ETH,Ethiopia,inflation,2026,22.847914099028227
+ETH,Ethiopia,inflation,2027,23.070940465781877
+ETH,Ethiopia,inflation,2028,23.29396683253553
+ETH,Ethiopia,inflation,2029,23.516993199289185
+ETH,Ethiopia,inflation,2030,23.74001956604284
+ETH,Ethiopia,fdi_inflow,2026,2.7805872253438735
+ETH,Ethiopia,fdi_inflow,2027,2.7877636369512775
+ETH,Ethiopia,fdi_inflow,2028,2.7949400485586815
+ETH,Ethiopia,fdi_inflow,2029,2.8021164601660855
+ETH,Ethiopia,fdi_inflow,2030,2.8092928717734895
+FRO,Faroe Islands,gdp_growth,2026,2.8120628065874915
+FRO,Faroe Islands,gdp_growth,2027,2.8123910490241313
+FRO,Faroe Islands,gdp_growth,2028,2.812719291460771
+FRO,Faroe Islands,gdp_growth,2029,2.813047533897411
+FRO,Faroe Islands,gdp_growth,2030,2.8133757763340506
+FRO,Faroe Islands,inflation,2026,9.813635617419354
+FRO,Faroe Islands,inflation,2027,9.709510629956245
+FRO,Faroe Islands,inflation,2028,9.605385642493134
+FRO,Faroe Islands,inflation,2029,9.501260655030025
+FRO,Faroe Islands,inflation,2030,9.397135667566914
+FRO,Faroe Islands,fdi_inflow,2026,22.223096115345896
+FRO,Faroe Islands,fdi_inflow,2027,22.667404411406913
+FRO,Faroe Islands,fdi_inflow,2028,23.111712707467934
+FRO,Faroe Islands,fdi_inflow,2029,23.55602100352895
+FRO,Faroe Islands,fdi_inflow,2030,24.00032929958997
+FJI,Fiji,gdp_growth,2026,1.5728713423147032
+FJI,Fiji,gdp_growth,2027,1.5270104801969717
+FJI,Fiji,gdp_growth,2028,1.4811496180792403
+FJI,Fiji,gdp_growth,2029,1.4352887559615088
+FJI,Fiji,gdp_growth,2030,1.3894278938437774
+FJI,Fiji,inflation,2026,3.0480143336757446
+FJI,Fiji,inflation,2027,3.1100745138845034
+FJI,Fiji,inflation,2028,3.1721346940932627
+FJI,Fiji,inflation,2029,3.2341948743020215
+FJI,Fiji,inflation,2030,3.2962550545107807
+FJI,Fiji,fdi_inflow,2026,3.439170173951062
+FJI,Fiji,fdi_inflow,2027,3.4825266582197307
+FJI,Fiji,fdi_inflow,2028,3.5258831424883996
+FJI,Fiji,fdi_inflow,2029,3.5692396267570685
+FJI,Fiji,fdi_inflow,2030,3.6125961110257374
+FIN,Finland,gdp_growth,2026,0.28945558353033557
+FIN,Finland,gdp_growth,2027,0.21981433361601824
+FIN,Finland,gdp_growth,2028,0.1501730837017009
+FIN,Finland,gdp_growth,2029,0.0805318337873836
+FIN,Finland,gdp_growth,2030,0.010890583873066295
+FIN,Finland,inflation,2026,1.5371905069577652
+FIN,Finland,inflation,2027,1.508691952024041
+FIN,Finland,inflation,2028,1.4801933970903167
+FIN,Finland,inflation,2029,1.4516948421565925
+FIN,Finland,inflation,2030,1.4231962872228683
+FIN,Finland,fdi_inflow,2026,3.010103173025045
+FIN,Finland,fdi_inflow,2027,3.0193604042908424
+FIN,Finland,fdi_inflow,2028,3.0286176355566403
+FIN,Finland,fdi_inflow,2029,3.037874866822438
+FIN,Finland,fdi_inflow,2030,3.0471320980882353
+FRA,France,gdp_growth,2026,0.147168863506894
+FRA,France,gdp_growth,2027,0.07049846248987987
+FRA,France,gdp_growth,2028,-0.006171938527134269
+FRA,France,gdp_growth,2029,-0.08284233954414844
+FRA,France,gdp_growth,2030,-0.1595127405611626
+FRA,France,inflation,2026,1.9661127062610868
+FRA,France,inflation,2027,1.9331759900983483
+FRA,France,inflation,2028,1.90023927393561
+FRA,France,inflation,2029,1.8673025577728715
+FRA,France,inflation,2030,1.834365841610133
+FRA,France,fdi_inflow,2026,1.7046047184245743
+FRA,France,fdi_inflow,2027,1.6928245551604757
+FRA,France,fdi_inflow,2028,1.681044391896377
+FRA,France,fdi_inflow,2029,1.6692642286322785
+FRA,France,fdi_inflow,2030,1.65748406536818
+PYF,French Polynesia,gdp_growth,2026,-0.8765242717547878
+PYF,French Polynesia,gdp_growth,2027,-0.964528319744382
+PYF,French Polynesia,gdp_growth,2028,-1.0525323677339764
+PYF,French Polynesia,gdp_growth,2029,-1.1405364157235707
+PYF,French Polynesia,gdp_growth,2030,-1.228540463713165
+PYF,French Polynesia,inflation,2026,-8.283164640902804
+PYF,French Polynesia,inflation,2027,-9.205207806939638
+PYF,French Polynesia,inflation,2028,-10.127250972976475
+PYF,French Polynesia,inflation,2029,-11.049294139013309
+PYF,French Polynesia,inflation,2030,-11.971337305050145
+PYF,French Polynesia,fdi_inflow,2026,-0.27314261535028295
+PYF,French Polynesia,fdi_inflow,2027,-0.31500474620702756
+PYF,French Polynesia,fdi_inflow,2028,-0.3568668770637722
+PYF,French Polynesia,fdi_inflow,2029,-0.3987290079205168
+PYF,French Polynesia,fdi_inflow,2030,-0.4405911387772614
+GAB,Gabon,gdp_growth,2026,0.25555961698482565
+GAB,Gabon,gdp_growth,2027,0.1431536734745722
+GAB,Gabon,gdp_growth,2028,0.030747729964318793
+GAB,Gabon,gdp_growth,2029,-0.08165821354593467
+GAB,Gabon,gdp_growth,2030,-0.19406415705618812
+GAB,Gabon,inflation,2026,-14.607810361265205
+GAB,Gabon,inflation,2027,-15.430339181914277
+GAB,Gabon,inflation,2028,-16.25286800256335
+GAB,Gabon,inflation,2029,-17.075396823212422
+GAB,Gabon,inflation,2030,-17.89792564386149
+GAB,Gabon,fdi_inflow,2026,6.546296214057646
+GAB,Gabon,fdi_inflow,2027,6.578277285171094
+GAB,Gabon,fdi_inflow,2028,6.6102583562845405
+GAB,Gabon,fdi_inflow,2029,6.642239427397987
+GAB,Gabon,fdi_inflow,2030,6.674220498511435
+GMB,"Gambia, The",gdp_growth,2026,3.31504047732926
+GMB,"Gambia, The",gdp_growth,2027,3.2976191793644047
+GMB,"Gambia, The",gdp_growth,2028,3.28019788139955
+GMB,"Gambia, The",gdp_growth,2029,3.262776583434695
+GMB,"Gambia, The",gdp_growth,2030,3.2453552854698398
+GMB,"Gambia, The",inflation,2026,12.255300127151878
+GMB,"Gambia, The",inflation,2027,12.420770249637956
+GMB,"Gambia, The",inflation,2028,12.586240372124033
+GMB,"Gambia, The",inflation,2029,12.75171049461011
+GMB,"Gambia, The",inflation,2030,12.917180617096188
+GMB,"Gambia, The",fdi_inflow,2026,9.698707305459585
+GMB,"Gambia, The",fdi_inflow,2027,9.745624795001858
+GMB,"Gambia, The",fdi_inflow,2028,9.792542284544131
+GMB,"Gambia, The",fdi_inflow,2029,9.839459774086404
+GMB,"Gambia, The",fdi_inflow,2030,9.886377263628678
+GEO,Georgia,gdp_growth,2026,9.755010563127199
+GEO,Georgia,gdp_growth,2027,9.830227250126672
+GEO,Georgia,gdp_growth,2028,9.905443937126146
+GEO,Georgia,gdp_growth,2029,9.980660624125617
+GEO,Georgia,gdp_growth,2030,10.05587731112509
+GEO,Georgia,inflation,2026,3.2794440997654615
+GEO,Georgia,inflation,2027,3.2037861494753974
+GEO,Georgia,inflation,2028,3.128128199185334
+GEO,Georgia,inflation,2029,3.05247024889527
+GEO,Georgia,inflation,2030,2.976812298605206
+GEO,Georgia,fdi_inflow,2026,9.44648190391655
+GEO,Georgia,fdi_inflow,2027,9.537304127690305
+GEO,Georgia,fdi_inflow,2028,9.628126351464061
+GEO,Georgia,fdi_inflow,2029,9.718948575237818
+GEO,Georgia,fdi_inflow,2030,9.809770799011574
+DEU,Germany,gdp_growth,2026,0.14561479010154435
+DEU,Germany,gdp_growth,2027,0.08317864199248552
+DEU,Germany,gdp_growth,2028,0.020742493883426694
+DEU,Germany,gdp_growth,2029,-0.04169365422563215
+DEU,Germany,gdp_growth,2030,-0.10412980233469096
+DEU,Germany,inflation,2026,2.267573305845715
+DEU,Germany,inflation,2027,2.2786484681387966
+DEU,Germany,inflation,2028,2.2897236304318787
+DEU,Germany,inflation,2029,2.3007987927249602
+DEU,Germany,inflation,2030,2.311873955018042
+DEU,Germany,fdi_inflow,2026,0.392371580442265
+DEU,Germany,fdi_inflow,2027,0.3207282987154222
+DEU,Germany,fdi_inflow,2028,0.24908501698857943
+DEU,Germany,fdi_inflow,2029,0.17744173526173662
+DEU,Germany,fdi_inflow,2030,0.10579845353489381
+GHA,Ghana,gdp_growth,2026,6.295734984399975
+GHA,Ghana,gdp_growth,2027,6.371674083804498
+GHA,Ghana,gdp_growth,2028,6.447613183209021
+GHA,Ghana,gdp_growth,2029,6.523552282613544
+GHA,Ghana,gdp_growth,2030,6.5994913820180665
+GHA,Ghana,inflation,2026,23.975744465918385
+GHA,Ghana,inflation,2027,24.036144556726878
+GHA,Ghana,inflation,2028,24.096544647535367
+GHA,Ghana,inflation,2029,24.15694473834386
+GHA,Ghana,inflation,2030,24.21734482915235
+GHA,Ghana,fdi_inflow,2026,2.481615774780476
+GHA,Ghana,fdi_inflow,2027,2.4764759308803375
+GHA,Ghana,fdi_inflow,2028,2.4713360869801986
+GHA,Ghana,fdi_inflow,2029,2.46619624308006
+GHA,Ghana,fdi_inflow,2030,2.4610563991799213
+GRC,Greece,gdp_growth,2026,1.9040996647138684
+GRC,Greece,gdp_growth,2027,1.8060199104553414
+GRC,Greece,gdp_growth,2028,1.7079401561968144
+GRC,Greece,gdp_growth,2029,1.6098604019382874
+GRC,Greece,gdp_growth,2030,1.5117806476797604
+GRC,Greece,inflation,2026,2.761103535229372
+GRC,Greece,inflation,2027,2.780364284186394
+GRC,Greece,inflation,2028,2.799625033143416
+GRC,Greece,inflation,2029,2.8188857821004376
+GRC,Greece,inflation,2030,2.83814653105746
+GRC,Greece,fdi_inflow,2026,3.119980070683977
+GRC,Greece,fdi_inflow,2027,3.2872811188100552
+GRC,Greece,fdi_inflow,2028,3.454582166936133
+GRC,Greece,fdi_inflow,2029,3.6218832150622116
+GRC,Greece,fdi_inflow,2030,3.78918426318829
+GRL,Greenland,gdp_growth,2026,0.7156708587288463
+GRL,Greenland,gdp_growth,2027,0.6410176656728785
+GRL,Greenland,gdp_growth,2028,0.5663644726169108
+GRL,Greenland,gdp_growth,2029,0.491711279560943
+GRL,Greenland,gdp_growth,2030,0.4170580865049753
+GRL,Greenland,inflation,2026,16.75647882965503
+GRL,Greenland,inflation,2027,16.458231957820878
+GRL,Greenland,inflation,2028,16.159985085986726
+GRL,Greenland,inflation,2029,15.861738214152576
+GRL,Greenland,inflation,2030,15.563491342318423
+GRL,Greenland,fdi_inflow,2026,3.083006453574608
+GRL,Greenland,fdi_inflow,2027,3.077044721748555
+GRL,Greenland,fdi_inflow,2028,3.0710829899225027
+GRL,Greenland,fdi_inflow,2029,3.06512125809645
+GRL,Greenland,fdi_inflow,2030,3.0591595262703977
+GRD,Grenada,gdp_growth,2026,1.9447253334179035
+GRD,Grenada,gdp_growth,2027,1.8943076321404408
+GRD,Grenada,gdp_growth,2028,1.8438899308629784
+GRD,Grenada,gdp_growth,2029,1.7934722295855159
+GRD,Grenada,gdp_growth,2030,1.7430545283080532
+GRD,Grenada,inflation,2026,0.8031706337959423
+GRD,Grenada,inflation,2027,0.4349770285362726
+GRD,Grenada,inflation,2028,0.06678342327660292
+GRD,Grenada,inflation,2029,-0.3014101819830668
+GRD,Grenada,inflation,2030,-0.6696037872427365
+GRD,Grenada,fdi_inflow,2026,14.323434138131852
+GRD,Grenada,fdi_inflow,2027,14.620561955142716
+GRD,Grenada,fdi_inflow,2028,14.917689772153581
+GRD,Grenada,fdi_inflow,2029,15.214817589164445
+GRD,Grenada,fdi_inflow,2030,15.511945406175311
+GUM,Guam,gdp_growth,2026,1.0346355525819222
+GUM,Guam,gdp_growth,2027,0.9621669093457229
+GUM,Guam,gdp_growth,2028,0.8896982661095236
+GUM,Guam,gdp_growth,2029,0.8172296228733245
+GUM,Guam,gdp_growth,2030,0.7447609796371253
+GUM,Guam,inflation,2026,7.895495055887368
+GUM,Guam,inflation,2027,7.625941748585314
+GUM,Guam,inflation,2028,7.35638844128326
+GUM,Guam,inflation,2029,7.0868351339812055
+GUM,Guam,inflation,2030,6.817281826679151
+GUM,Guam,fdi_inflow,2026,5.414582469278889
+GUM,Guam,fdi_inflow,2027,5.476219252735304
+GUM,Guam,fdi_inflow,2028,5.5378560361917195
+GUM,Guam,fdi_inflow,2029,5.599492819648135
+GUM,Guam,fdi_inflow,2030,5.66112960310455
+GTM,Guatemala,gdp_growth,2026,3.6812622318082564
+GTM,Guatemala,gdp_growth,2027,3.6597394253322397
+GTM,Guatemala,gdp_growth,2028,3.638216618856223
+GTM,Guatemala,gdp_growth,2029,3.6166938123802064
+GTM,Guatemala,gdp_growth,2030,3.5951710059041897
+GTM,Guatemala,inflation,2026,4.050645690200235
+GTM,Guatemala,inflation,2027,4.11696563375826
+GTM,Guatemala,inflation,2028,4.183285577316283
+GTM,Guatemala,inflation,2029,4.249605520874308
+GTM,Guatemala,inflation,2030,4.315925464432332
+GTM,Guatemala,fdi_inflow,2026,1.6340095962325427
+GTM,Guatemala,fdi_inflow,2027,1.6355006786002166
+GTM,Guatemala,fdi_inflow,2028,1.6369917609678903
+GTM,Guatemala,fdi_inflow,2029,1.6384828433355643
+GTM,Guatemala,fdi_inflow,2030,1.6399739257032382
+GIN,Guinea,gdp_growth,2026,5.5397448664577915
+GIN,Guinea,gdp_growth,2027,5.594936821834253
+GIN,Guinea,gdp_growth,2028,5.650128777210715
+GIN,Guinea,gdp_growth,2029,5.705320732587176
+GIN,Guinea,gdp_growth,2030,5.760512687963638
+GIN,Guinea,inflation,2026,8.530309908786295
+GIN,Guinea,inflation,2027,8.622854680186977
+GIN,Guinea,inflation,2028,8.715399451587658
+GIN,Guinea,inflation,2029,8.807944222988338
+GIN,Guinea,inflation,2030,8.900488994389018
+GIN,Guinea,fdi_inflow,2026,4.660096070874405
+GIN,Guinea,fdi_inflow,2027,4.753932968303558
+GIN,Guinea,fdi_inflow,2028,4.84776986573271
+GIN,Guinea,fdi_inflow,2029,4.941606763161862
+GIN,Guinea,fdi_inflow,2030,5.035443660591015
+GNB,Guinea-Bissau,gdp_growth,2026,4.388842564400407
+GNB,Guinea-Bissau,gdp_growth,2027,4.422006683355548
+GNB,Guinea-Bissau,gdp_growth,2028,4.45517080231069
+GNB,Guinea-Bissau,gdp_growth,2029,4.488334921265831
+GNB,Guinea-Bissau,gdp_growth,2030,4.521499040220972
+GNB,Guinea-Bissau,inflation,2026,3.9591489583113986
+GNB,Guinea-Bissau,inflation,2027,3.8457355413859107
+GNB,Guinea-Bissau,inflation,2028,3.7323221244604228
+GNB,Guinea-Bissau,inflation,2029,3.618908707534935
+GNB,Guinea-Bissau,inflation,2030,3.5054952906094474
+GNB,Guinea-Bissau,fdi_inflow,2026,1.1797665151272174
+GNB,Guinea-Bissau,fdi_inflow,2027,1.1491379870241691
+GNB,Guinea-Bissau,fdi_inflow,2028,1.118509458921121
+GNB,Guinea-Bissau,fdi_inflow,2029,1.087880930818073
+GNB,Guinea-Bissau,fdi_inflow,2030,1.057252402715025
+GUY,Guyana,gdp_growth,2026,43.53721839000845
+GUY,Guyana,gdp_growth,2027,44.129622989797156
+GUY,Guyana,gdp_growth,2028,44.72202758958587
+GUY,Guyana,gdp_growth,2029,45.31443218937458
+GUY,Guyana,gdp_growth,2030,45.90683678916329
+GUY,Guyana,inflation,2026,-0.7826879016388242
+GUY,Guyana,inflation,2027,-1.1648879499808944
+GUY,Guyana,inflation,2028,-1.5470879983229646
+GUY,Guyana,inflation,2029,-1.9292880466650348
+GUY,Guyana,inflation,2030,-2.311488095007105
+GUY,Guyana,fdi_inflow,2026,13.972074292417757
+GUY,Guyana,fdi_inflow,2027,14.186119481769307
+GUY,Guyana,fdi_inflow,2028,14.400164671120859
+GUY,Guyana,fdi_inflow,2029,14.614209860472409
+GUY,Guyana,fdi_inflow,2030,14.82825504982396
+HTI,Haiti,gdp_growth,2026,-0.41748203819514884
+HTI,Haiti,gdp_growth,2027,-0.4667427470210811
+HTI,Haiti,gdp_growth,2028,-0.5160034558470132
+HTI,Haiti,gdp_growth,2029,-0.5652641646729455
+HTI,Haiti,gdp_growth,2030,-0.6145248734988777
+HTI,Haiti,inflation,2026,28.40632877243653
+HTI,Haiti,inflation,2027,28.87709344652686
+HTI,Haiti,inflation,2028,29.34785812061719
+HTI,Haiti,inflation,2029,29.81862279470752
+HTI,Haiti,inflation,2030,30.289387468797848
+HTI,Haiti,fdi_inflow,2026,-5.713297787028954
+HTI,Haiti,fdi_inflow,2027,-6.043572732535064
+HTI,Haiti,fdi_inflow,2028,-6.373847678041174
+HTI,Haiti,fdi_inflow,2029,-6.704122623547285
+HTI,Haiti,fdi_inflow,2030,-7.034397569053395
+HND,Honduras,gdp_growth,2026,3.7606771760359834
+HND,Honduras,gdp_growth,2027,3.8103426360105224
+HND,Honduras,gdp_growth,2028,3.860008095985061
+HND,Honduras,gdp_growth,2029,3.9096735559595994
+HND,Honduras,gdp_growth,2030,3.9593390159341384
+HND,Honduras,inflation,2026,4.825757882887325
+HND,Honduras,inflation,2027,4.915055576476742
+HND,Honduras,inflation,2028,5.004353270066158
+HND,Honduras,inflation,2029,5.093650963655573
+HND,Honduras,inflation,2030,5.182948657244989
+HND,Honduras,fdi_inflow,2026,-5.102450542779837
+HND,Honduras,fdi_inflow,2027,-5.559745121428907
+HND,Honduras,fdi_inflow,2028,-6.017039700077978
+HND,Honduras,fdi_inflow,2029,-6.4743342787270475
+HND,Honduras,fdi_inflow,2030,-6.9316288573761184
+HKG,"Hong Kong SAR, China",gdp_growth,2026,0.8945435139912888
+HKG,"Hong Kong SAR, China",gdp_growth,2027,0.7603613138849379
+HKG,"Hong Kong SAR, China",gdp_growth,2028,0.6261791137785869
+HKG,"Hong Kong SAR, China",gdp_growth,2029,0.49199691367223597
+HKG,"Hong Kong SAR, China",gdp_growth,2030,0.357814713565885
+HKG,"Hong Kong SAR, China",inflation,2026,-15.395299922910993
+HKG,"Hong Kong SAR, China",inflation,2027,-16.289113501745053
+HKG,"Hong Kong SAR, China",inflation,2028,-17.182927080579113
+HKG,"Hong Kong SAR, China",inflation,2029,-18.076740659413172
+HKG,"Hong Kong SAR, China",inflation,2030,-18.97055423824723
+HKG,"Hong Kong SAR, China",fdi_inflow,2026,40.56587485085468
+HKG,"Hong Kong SAR, China",fdi_inflow,2027,40.94901533362737
+HKG,"Hong Kong SAR, China",fdi_inflow,2028,41.33215581640006
+HKG,"Hong Kong SAR, China",fdi_inflow,2029,41.715296299172756
+HKG,"Hong Kong SAR, China",fdi_inflow,2030,42.09843678194545
+HUN,Hungary,gdp_growth,2026,1.0410743009039598
+HUN,Hungary,gdp_growth,2027,0.9186729695409515
+HUN,Hungary,gdp_growth,2028,0.7962716381779431
+HUN,Hungary,gdp_growth,2029,0.6738703068149348
+HUN,Hungary,gdp_growth,2030,0.5514689754519263
+HUN,Hungary,inflation,2026,6.125384839665281
+HUN,Hungary,inflation,2027,6.000460235214029
+HUN,Hungary,inflation,2028,5.875535630762778
+HUN,Hungary,inflation,2029,5.750611026311526
+HUN,Hungary,inflation,2030,5.625686421860276
+HUN,Hungary,fdi_inflow,2026,10.532020315542411
+HUN,Hungary,fdi_inflow,2027,10.678119953840717
+HUN,Hungary,fdi_inflow,2028,10.824219592139025
+HUN,Hungary,fdi_inflow,2029,10.970319230437331
+HUN,Hungary,fdi_inflow,2030,11.116418868735638
+ISL,Iceland,gdp_growth,2026,1.5611065485359905
+ISL,Iceland,gdp_growth,2027,1.5013606520175165
+ISL,Iceland,gdp_growth,2028,1.4416147554990424
+ISL,Iceland,gdp_growth,2029,1.3818688589805683
+ISL,Iceland,gdp_growth,2030,1.3221229624620943
+ISL,Iceland,inflation,2026,6.145779508487216
+ISL,Iceland,inflation,2027,6.185035609225629
+ISL,Iceland,inflation,2028,6.224291709964042
+ISL,Iceland,inflation,2029,6.263547810702455
+ISL,Iceland,inflation,2030,6.3028039114408685
+ISL,Iceland,fdi_inflow,2026,8.4041863775649
+ISL,Iceland,fdi_inflow,2027,8.492378193928605
+ISL,Iceland,fdi_inflow,2028,8.580570010292313
+ISL,Iceland,fdi_inflow,2029,8.66876182665602
+ISL,Iceland,fdi_inflow,2030,8.756953643019727
+IND,India,gdp_growth,2026,7.097137600447761
+IND,India,gdp_growth,2027,7.152288761968962
+IND,India,gdp_growth,2028,7.207439923490164
+IND,India,gdp_growth,2029,7.262591085011366
+IND,India,gdp_growth,2030,7.3177422465325686
+IND,India,inflation,2026,6.5765345684816525
+IND,India,inflation,2027,6.555952326591223
+IND,India,inflation,2028,6.535370084700793
+IND,India,inflation,2029,6.514787842810364
+IND,India,inflation,2030,6.494205600919935
+IND,India,fdi_inflow,2026,0.6139193639743262
+IND,India,fdi_inflow,2027,0.5417700910600166
+IND,India,fdi_inflow,2028,0.46962081814570705
+IND,India,fdi_inflow,2029,0.39747154523139744
+IND,India,fdi_inflow,2030,0.3253222723170878
+IDN,Indonesia,gdp_growth,2026,4.667930250732618
+IDN,Indonesia,gdp_growth,2027,4.695987997136543
+IDN,Indonesia,gdp_growth,2028,4.724045743540467
+IDN,Indonesia,gdp_growth,2029,4.752103489944391
+IDN,Indonesia,gdp_growth,2030,4.780161236348316
+IDN,Indonesia,inflation,2026,-41.40720814361547
+IDN,Indonesia,inflation,2027,-43.8605733516982
+IDN,Indonesia,inflation,2028,-46.31393855978093
+IDN,Indonesia,inflation,2029,-48.76730376786366
+IDN,Indonesia,inflation,2030,-51.22066897594639
+IDN,Indonesia,fdi_inflow,2026,2.3978571322824953
+IDN,Indonesia,fdi_inflow,2027,2.510932534507438
+IDN,Indonesia,fdi_inflow,2028,2.6240079367323803
+IDN,Indonesia,fdi_inflow,2029,2.7370833389573233
+IDN,Indonesia,fdi_inflow,2030,2.8501587411822658
+IRN,"Iran, Islamic Rep.",gdp_growth,2026,3.1756305808176135
+IRN,"Iran, Islamic Rep.",gdp_growth,2027,3.0888512304133253
+IRN,"Iran, Islamic Rep.",gdp_growth,2028,3.0020718800090367
+IRN,"Iran, Islamic Rep.",gdp_growth,2029,2.915292529604748
+IRN,"Iran, Islamic Rep.",gdp_growth,2030,2.8285131792004594
+IRN,"Iran, Islamic Rep.",inflation,2026,33.46247143364364
+IRN,"Iran, Islamic Rep.",inflation,2027,33.84504631057218
+IRN,"Iran, Islamic Rep.",inflation,2028,34.22762118750072
+IRN,"Iran, Islamic Rep.",inflation,2029,34.61019606442926
+IRN,"Iran, Islamic Rep.",inflation,2030,34.992770941357804
+IRN,"Iran, Islamic Rep.",fdi_inflow,2026,-5.244956617373914
+IRN,"Iran, Islamic Rep.",fdi_inflow,2027,-5.522370854151982
+IRN,"Iran, Islamic Rep.",fdi_inflow,2028,-5.799785090930048
+IRN,"Iran, Islamic Rep.",fdi_inflow,2029,-6.077199327708116
+IRN,"Iran, Islamic Rep.",fdi_inflow,2030,-6.354613564486184
+IRQ,Iraq,gdp_growth,2026,4.349914828540263
+IRQ,Iraq,gdp_growth,2027,4.278520815389206
+IRQ,Iraq,gdp_growth,2028,4.20712680223815
+IRQ,Iraq,gdp_growth,2029,4.135732789087094
+IRQ,Iraq,gdp_growth,2030,4.064338775936037
+IRQ,Iraq,inflation,2026,-12.356330155881894
+IRQ,Iraq,inflation,2027,-12.562752404548469
+IRQ,Iraq,inflation,2028,-12.769174653215043
+IRQ,Iraq,inflation,2029,-12.975596901881618
+IRQ,Iraq,inflation,2030,-13.182019150548191
+IRQ,Iraq,fdi_inflow,2026,-4.451877402012749
+IRQ,Iraq,fdi_inflow,2027,-4.661319882745949
+IRQ,Iraq,fdi_inflow,2028,-4.87076236347915
+IRQ,Iraq,fdi_inflow,2029,-5.08020484421235
+IRQ,Iraq,fdi_inflow,2030,-5.289647324945551
+IRL,Ireland,gdp_growth,2026,5.891909378514892
+IRL,Ireland,gdp_growth,2027,5.920447085373967
+IRL,Ireland,gdp_growth,2028,5.948984792233042
+IRL,Ireland,gdp_growth,2029,5.9775224990921165
+IRL,Ireland,gdp_growth,2030,6.006060205951192
+IRL,Ireland,inflation,2026,2.139028390189509
+IRL,Ireland,inflation,2027,2.164606784224699
+IRL,Ireland,inflation,2028,2.190185178259889
+IRL,Ireland,inflation,2029,2.2157635722950793
+IRL,Ireland,inflation,2030,2.2413419663302694
+IRL,Ireland,fdi_inflow,2026,5.79586678259937
+IRL,Ireland,fdi_inflow,2027,5.565160811182888
+IRL,Ireland,fdi_inflow,2028,5.334454839766406
+IRL,Ireland,fdi_inflow,2029,5.103748868349923
+IRL,Ireland,fdi_inflow,2030,4.873042896933441
+IMN,Isle of Man,gdp_growth,2026,0.7955973709724025
+IMN,Isle of Man,gdp_growth,2027,0.5799919897057114
+IMN,Isle of Man,gdp_growth,2028,0.3643866084390204
+IMN,Isle of Man,gdp_growth,2029,0.14878122717232944
+IMN,Isle of Man,gdp_growth,2030,-0.06682415409436149
+IMN,Isle of Man,inflation,2026,39.563231628707626
+IMN,Isle of Man,inflation,2027,39.77983887589912
+IMN,Isle of Man,inflation,2028,39.99644612309061
+IMN,Isle of Man,inflation,2029,40.2130533702821
+IMN,Isle of Man,inflation,2030,40.42966061747359
+IMN,Isle of Man,fdi_inflow,2026,0.8180362491224032
+IMN,Isle of Man,fdi_inflow,2027,0.7486828044423416
+IMN,Isle of Man,fdi_inflow,2028,0.6793293597622799
+IMN,Isle of Man,fdi_inflow,2029,0.6099759150822183
+IMN,Isle of Man,fdi_inflow,2030,0.5406224704021566
+ISR,Israel,gdp_growth,2026,2.3856967717408843
+ISR,Israel,gdp_growth,2027,2.309229993635643
+ISR,Israel,gdp_growth,2028,2.232763215530402
+ISR,Israel,gdp_growth,2029,2.1562964374251603
+ISR,Israel,gdp_growth,2030,2.0798296593199193
+ISR,Israel,inflation,2026,3.0878460943711605
+ISR,Israel,inflation,2027,3.1008832904978014
+ISR,Israel,inflation,2028,3.1139204866244423
+ISR,Israel,inflation,2029,3.1269576827510828
+ISR,Israel,inflation,2030,3.1399948788777237
+ISR,Israel,fdi_inflow,2026,3.5832938728664314
+ISR,Israel,fdi_inflow,2027,3.6063623519019523
+ISR,Israel,fdi_inflow,2028,3.6294308309374737
+ISR,Israel,fdi_inflow,2029,3.6524993099729945
+ISR,Israel,fdi_inflow,2030,3.675567789008516
+ITA,Italy,gdp_growth,2026,-0.6746054876543066
+ITA,Italy,gdp_growth,2027,-0.7635562151541433
+ITA,Italy,gdp_growth,2028,-0.8525069426539799
+ITA,Italy,gdp_growth,2029,-0.9414576701538164
+ITA,Italy,gdp_growth,2030,-1.030408397653653
+ITA,Italy,inflation,2026,0.9613301126231971
+ITA,Italy,inflation,2027,0.9402872024985398
+ITA,Italy,inflation,2028,0.9192442923738826
+ITA,Italy,inflation,2029,0.8982013822492253
+ITA,Italy,inflation,2030,0.8771584721245681
+ITA,Italy,fdi_inflow,2026,1.2572839745442081
+ITA,Italy,fdi_inflow,2027,1.2367145576271248
+ITA,Italy,fdi_inflow,2028,1.2161451407100414
+ITA,Italy,fdi_inflow,2029,1.195575723792958
+ITA,Italy,fdi_inflow,2030,1.1750063068758747
+JAM,Jamaica,gdp_growth,2026,0.3868814109217015
+JAM,Jamaica,gdp_growth,2027,0.3458773894877506
+JAM,Jamaica,gdp_growth,2028,0.3048733680537998
+JAM,Jamaica,gdp_growth,2029,0.26386934661984895
+JAM,Jamaica,gdp_growth,2030,0.22286532518589808
+JAM,Jamaica,inflation,2026,5.694660036755989
+JAM,Jamaica,inflation,2027,5.722913976457339
+JAM,Jamaica,inflation,2028,5.75116791615869
+JAM,Jamaica,inflation,2029,5.77942185586004
+JAM,Jamaica,inflation,2030,5.807675795561391
+JAM,Jamaica,fdi_inflow,2026,2.556685881724201
+JAM,Jamaica,fdi_inflow,2027,2.5145371240979193
+JAM,Jamaica,fdi_inflow,2028,2.472388366471637
+JAM,Jamaica,fdi_inflow,2029,2.430239608845355
+JAM,Jamaica,fdi_inflow,2030,2.3880908512190726
+JPN,Japan,gdp_growth,2026,-1.5115870705260375
+JPN,Japan,gdp_growth,2027,-1.6535846925203206
+JPN,Japan,gdp_growth,2028,-1.795582314514604
+JPN,Japan,gdp_growth,2029,-1.9375799365088873
+JPN,Japan,gdp_growth,2030,-2.0795775585031704
+JPN,Japan,inflation,2026,2.7157540512023646
+JPN,Japan,inflation,2027,2.6934485494806797
+JPN,Japan,inflation,2028,2.6711430477589944
+JPN,Japan,inflation,2029,2.648837546037309
+JPN,Japan,inflation,2030,2.626532044315624
+JPN,Japan,fdi_inflow,2026,0.3457639109897366
+JPN,Japan,fdi_inflow,2027,0.346997145332914
+JPN,Japan,fdi_inflow,2028,0.3482303796760914
+JPN,Japan,fdi_inflow,2029,0.34946361401926873
+JPN,Japan,fdi_inflow,2030,0.35069684836244613
+JOR,Jordan,gdp_growth,2026,2.476660316219484
+JOR,Jordan,gdp_growth,2027,2.4606625713104653
+JOR,Jordan,gdp_growth,2028,2.444664826401447
+JOR,Jordan,gdp_growth,2029,2.4286670814924287
+JOR,Jordan,gdp_growth,2030,2.4126693365834107
+JOR,Jordan,inflation,2026,1.5816541510038418
+JOR,Jordan,inflation,2027,1.4858320665544476
+JOR,Jordan,inflation,2028,1.3900099821050533
+JOR,Jordan,inflation,2029,1.2941878976556591
+JOR,Jordan,inflation,2030,1.198365813206265
+JOR,Jordan,fdi_inflow,2026,3.116045183242966
+JOR,Jordan,fdi_inflow,2027,3.157272075432034
+JOR,Jordan,fdi_inflow,2028,3.1984989676211018
+JOR,Jordan,fdi_inflow,2029,3.2397258598101697
+JOR,Jordan,fdi_inflow,2030,3.280952751999237
+KAZ,Kazakhstan,gdp_growth,2026,5.493776878531941
+KAZ,Kazakhstan,gdp_growth,2027,5.955973146785158
+KAZ,Kazakhstan,gdp_growth,2028,6.418169415038376
+KAZ,Kazakhstan,gdp_growth,2029,6.880365683291593
+KAZ,Kazakhstan,gdp_growth,2030,7.342561951544811
+KAZ,Kazakhstan,inflation,2026,-77.65579280927271
+KAZ,Kazakhstan,inflation,2027,-85.77053255886237
+KAZ,Kazakhstan,inflation,2028,-93.88527230845202
+KAZ,Kazakhstan,inflation,2029,-102.00001205804168
+KAZ,Kazakhstan,inflation,2030,-110.11475180763132
+KAZ,Kazakhstan,fdi_inflow,2026,0.17357754105178536
+KAZ,Kazakhstan,fdi_inflow,2027,-0.20710291339248865
+KAZ,Kazakhstan,fdi_inflow,2028,-0.5877833678367625
+KAZ,Kazakhstan,fdi_inflow,2029,-0.9684638222810367
+KAZ,Kazakhstan,fdi_inflow,2030,-1.3491442767253108
+KEN,Kenya,gdp_growth,2026,3.6471310465977744
+KEN,Kenya,gdp_growth,2027,3.617736901703717
+KEN,Kenya,gdp_growth,2028,3.5883427568096598
+KEN,Kenya,gdp_growth,2029,3.558948611915602
+KEN,Kenya,gdp_growth,2030,3.529554467021545
+KEN,Kenya,inflation,2026,4.994730695197529
+KEN,Kenya,inflation,2027,5.045410367888031
+KEN,Kenya,inflation,2028,5.096090040578533
+KEN,Kenya,inflation,2029,5.146769713269035
+KEN,Kenya,inflation,2030,5.197449385959536
+KEN,Kenya,fdi_inflow,2026,-5.561282085100429
+KEN,Kenya,fdi_inflow,2027,-5.859054240680331
+KEN,Kenya,fdi_inflow,2028,-6.156826396260234
+KEN,Kenya,fdi_inflow,2029,-6.454598551840137
+KEN,Kenya,fdi_inflow,2030,-6.752370707420039
+KIR,Kiribati,gdp_growth,2026,2.988309007271402
+KIR,Kiribati,gdp_growth,2027,2.999793875916515
+KIR,Kiribati,gdp_growth,2028,3.011278744561628
+KIR,Kiribati,gdp_growth,2029,3.022763613206741
+KIR,Kiribati,gdp_growth,2030,3.0342484818518543
+KIR,Kiribati,inflation,2026,-14.319278825541842
+KIR,Kiribati,inflation,2027,-16.381282564535933
+KIR,Kiribati,inflation,2028,-18.443286303530023
+KIR,Kiribati,inflation,2029,-20.505290042524116
+KIR,Kiribati,inflation,2030,-22.56729378151821
+KIR,Kiribati,fdi_inflow,2026,0.36301738566830133
+KIR,Kiribati,fdi_inflow,2027,0.349134739189676
+KIR,Kiribati,fdi_inflow,2028,0.3352520927110507
+KIR,Kiribati,fdi_inflow,2029,0.3213694462324254
+KIR,Kiribati,fdi_inflow,2030,0.3074867997538001
+PRK,"Korea, Dem. People's Rep.",gdp_growth,2026,4.533858704388296
+PRK,"Korea, Dem. People's Rep.",gdp_growth,2027,4.551408981574133
+PRK,"Korea, Dem. People's Rep.",gdp_growth,2028,4.56895925875997
+PRK,"Korea, Dem. People's Rep.",gdp_growth,2029,4.586509535945808
+PRK,"Korea, Dem. People's Rep.",gdp_growth,2030,4.604059813131645
+PRK,"Korea, Dem. People's Rep.",inflation,2026,441.2917495232687
+PRK,"Korea, Dem. People's Rep.",inflation,2027,455.9577389968472
+PRK,"Korea, Dem. People's Rep.",inflation,2028,470.62372847042565
+PRK,"Korea, Dem. People's Rep.",inflation,2029,485.2897179440041
+PRK,"Korea, Dem. People's Rep.",inflation,2030,499.9557074175826
+PRK,"Korea, Dem. People's Rep.",fdi_inflow,2026,3.370580343733537
+PRK,"Korea, Dem. People's Rep.",fdi_inflow,2027,3.381043408634703
+PRK,"Korea, Dem. People's Rep.",fdi_inflow,2028,3.391506473535869
+PRK,"Korea, Dem. People's Rep.",fdi_inflow,2029,3.4019695384370348
+PRK,"Korea, Dem. People's Rep.",fdi_inflow,2030,3.4124326033382006
+KOR,"Korea, Rep.",gdp_growth,2026,1.883780559975432
+KOR,"Korea, Rep.",gdp_growth,2027,1.7580150001499102
+KOR,"Korea, Rep.",gdp_growth,2028,1.6322494403243881
+KOR,"Korea, Rep.",gdp_growth,2029,1.5064838804988663
+KOR,"Korea, Rep.",gdp_growth,2030,1.3807183206733444
+KOR,"Korea, Rep.",inflation,2026,2.234847914390855
+KOR,"Korea, Rep.",inflation,2027,2.1477118670225823
+KOR,"Korea, Rep.",inflation,2028,2.06057581965431
+KOR,"Korea, Rep.",inflation,2029,1.9734397722860373
+KOR,"Korea, Rep.",inflation,2030,1.8863037249177648
+KOR,"Korea, Rep.",fdi_inflow,2026,0.5246133841199471
+KOR,"Korea, Rep.",fdi_inflow,2027,0.5139245842727775
+KOR,"Korea, Rep.",fdi_inflow,2028,0.503235784425608
+KOR,"Korea, Rep.",fdi_inflow,2029,0.49254698457843843
+KOR,"Korea, Rep.",fdi_inflow,2030,0.4818581847312689
+XKX,Kosovo,gdp_growth,2026,3.5953024293732505
+XKX,Kosovo,gdp_growth,2027,3.492650191717711
+XKX,Kosovo,gdp_growth,2028,3.3899979540621716
+XKX,Kosovo,gdp_growth,2029,3.2873457164066324
+XKX,Kosovo,gdp_growth,2030,3.1846934787510928
+XKX,Kosovo,inflation,2026,4.091387673440445
+XKX,Kosovo,inflation,2027,4.247453064899394
+XKX,Kosovo,inflation,2028,4.403518456358342
+XKX,Kosovo,inflation,2029,4.559583847817291
+XKX,Kosovo,inflation,2030,4.71564923927624
+XKX,Kosovo,fdi_inflow,2026,8.103532787647845
+XKX,Kosovo,fdi_inflow,2027,8.285107400716578
+XKX,Kosovo,fdi_inflow,2028,8.466682013785311
+XKX,Kosovo,fdi_inflow,2029,8.648256626854044
+XKX,Kosovo,fdi_inflow,2030,8.829831239922779
+KWT,Kuwait,gdp_growth,2026,3.0950433462820204
+KWT,Kuwait,gdp_growth,2027,3.108204679348947
+KWT,Kuwait,gdp_growth,2028,3.121366012415874
+KWT,Kuwait,gdp_growth,2029,3.134527345482801
+KWT,Kuwait,gdp_growth,2030,3.1476886785497276
+KWT,Kuwait,inflation,2026,2.0402069865741588
+KWT,Kuwait,inflation,2027,1.9324896788954267
+KWT,Kuwait,inflation,2028,1.8247723712166943
+KWT,Kuwait,inflation,2029,1.7170550635379622
+KWT,Kuwait,inflation,2030,1.60933775585923
+KWT,Kuwait,fdi_inflow,2026,0.3679722009272677
+KWT,Kuwait,fdi_inflow,2027,0.3660776389703788
+KWT,Kuwait,fdi_inflow,2028,0.36418307701348995
+KWT,Kuwait,fdi_inflow,2029,0.36228851505660115
+KWT,Kuwait,fdi_inflow,2030,0.3603939530997123
+KGZ,Kyrgyz Republic,gdp_growth,2026,9.16466730548713
+KGZ,Kyrgyz Republic,gdp_growth,2027,9.273366775206174
+KGZ,Kyrgyz Republic,gdp_growth,2028,9.382066244925218
+KGZ,Kyrgyz Republic,gdp_growth,2029,9.490765714644262
+KGZ,Kyrgyz Republic,gdp_growth,2030,9.599465184363304
+KGZ,Kyrgyz Republic,inflation,2026,-20.074347533744092
+KGZ,Kyrgyz Republic,inflation,2027,-22.589474628343385
+KGZ,Kyrgyz Republic,inflation,2028,-25.104601722942682
+KGZ,Kyrgyz Republic,inflation,2029,-27.619728817541976
+KGZ,Kyrgyz Republic,inflation,2030,-30.134855912141273
+KGZ,Kyrgyz Republic,fdi_inflow,2026,1.2153524241117573
+KGZ,Kyrgyz Republic,fdi_inflow,2027,0.9577256581144599
+KGZ,Kyrgyz Republic,fdi_inflow,2028,0.7000988921171625
+KGZ,Kyrgyz Republic,fdi_inflow,2029,0.442472126119865
+KGZ,Kyrgyz Republic,fdi_inflow,2030,0.18484536012256747
+LAO,Lao PDR,gdp_growth,2026,3.2081010231108724
+LAO,Lao PDR,gdp_growth,2027,2.9026329333089786
+LAO,Lao PDR,gdp_growth,2028,2.5971648435070853
+LAO,Lao PDR,gdp_growth,2029,2.2916967537051915
+LAO,Lao PDR,gdp_growth,2030,1.9862286639032982
+LAO,Lao PDR,inflation,2026,-30.20779751370774
+LAO,Lao PDR,inflation,2027,-33.282264034618805
+LAO,Lao PDR,inflation,2028,-36.35673055552987
+LAO,Lao PDR,inflation,2029,-39.43119707644094
+LAO,Lao PDR,inflation,2030,-42.505663597352
+LAO,Lao PDR,fdi_inflow,2026,6.720273421555939
+LAO,Lao PDR,fdi_inflow,2027,6.883042668258321
+LAO,Lao PDR,fdi_inflow,2028,7.045811914960702
+LAO,Lao PDR,fdi_inflow,2029,7.208581161663084
+LAO,Lao PDR,fdi_inflow,2030,7.371350408365466
+LVA,Latvia,gdp_growth,2026,0.7732536629878732
+LVA,Latvia,gdp_growth,2027,1.2538043768082838
+LVA,Latvia,gdp_growth,2028,1.7343550906286946
+LVA,Latvia,gdp_growth,2029,2.214905804449105
+LVA,Latvia,gdp_growth,2030,2.695456518269516
+LVA,Latvia,inflation,2026,-26.144126205747405
+LVA,Latvia,inflation,2027,-47.15074388056457
+LVA,Latvia,inflation,2028,-68.15736155538173
+LVA,Latvia,inflation,2029,-89.16397923019889
+LVA,Latvia,inflation,2030,-110.17059690501605
+LVA,Latvia,fdi_inflow,2026,4.1164531452820965
+LVA,Latvia,fdi_inflow,2027,4.255710512712931
+LVA,Latvia,fdi_inflow,2028,4.394967880143765
+LVA,Latvia,fdi_inflow,2029,4.5342252475746
+LVA,Latvia,fdi_inflow,2030,4.673482615005434
+LBN,Lebanon,gdp_growth,2026,-3.8904881481244957
+LBN,Lebanon,gdp_growth,2027,-4.2754479823839695
+LBN,Lebanon,gdp_growth,2028,-4.660407816643444
+LBN,Lebanon,gdp_growth,2029,-5.045367650902918
+LBN,Lebanon,gdp_growth,2030,-5.430327485162392
+LBN,Lebanon,inflation,2026,137.05908934704675
+LBN,Lebanon,inflation,2027,151.17213989205393
+LBN,Lebanon,inflation,2028,165.2851904370611
+LBN,Lebanon,inflation,2029,179.39824098206827
+LBN,Lebanon,inflation,2030,193.51129152707546
+LBN,Lebanon,fdi_inflow,2026,3.34618103488833
+LBN,Lebanon,fdi_inflow,2027,3.4370588940205957
+LBN,Lebanon,fdi_inflow,2028,3.5279367531528614
+LBN,Lebanon,fdi_inflow,2029,3.618814612285127
+LBN,Lebanon,fdi_inflow,2030,3.7096924714173922
+LSO,Lesotho,gdp_growth,2026,1.0841301953685496
+LSO,Lesotho,gdp_growth,2027,0.9971673277352489
+LSO,Lesotho,gdp_growth,2028,0.9102044601019483
+LSO,Lesotho,gdp_growth,2029,0.8232415924686476
+LSO,Lesotho,gdp_growth,2030,0.7362787248353471
+LSO,Lesotho,inflation,2026,-10.125108353880833
+LSO,Lesotho,inflation,2027,-10.953794855625821
+LSO,Lesotho,inflation,2028,-11.78248135737081
+LSO,Lesotho,inflation,2029,-12.611167859115795
+LSO,Lesotho,inflation,2030,-13.439854360860782
+LSO,Lesotho,fdi_inflow,2026,0.126849799026659
+LSO,Lesotho,fdi_inflow,2027,0.029079966254060896
+LSO,Lesotho,fdi_inflow,2028,-0.06868986651853717
+LSO,Lesotho,fdi_inflow,2029,-0.16645969929113527
+LSO,Lesotho,fdi_inflow,2030,-0.26422953206373334
+LBR,Liberia,gdp_growth,2026,4.115724198580052
+LBR,Liberia,gdp_growth,2027,4.143563956235224
+LBR,Liberia,gdp_growth,2028,4.171403713890395
+LBR,Liberia,gdp_growth,2029,4.199243471545567
+LBR,Liberia,gdp_growth,2030,4.227083229200739
+LBR,Liberia,inflation,2026,8.459750977906527
+LBR,Liberia,inflation,2027,8.344500894181257
+LBR,Liberia,inflation,2028,8.229250810455985
+LBR,Liberia,inflation,2029,8.114000726730715
+LBR,Liberia,inflation,2030,7.998750643005445
+LBR,Liberia,fdi_inflow,2026,23.408360426682897
+LBR,Liberia,fdi_inflow,2027,23.664799174008742
+LBR,Liberia,fdi_inflow,2028,23.921237921334583
+LBR,Liberia,fdi_inflow,2029,24.177676668660425
+LBR,Liberia,fdi_inflow,2030,24.43411541598627
+LBY,Libya,gdp_growth,2026,3.5117776640277123
+LBY,Libya,gdp_growth,2027,3.67004546409055
+LBY,Libya,gdp_growth,2028,3.8283132641533872
+LBY,Libya,gdp_growth,2029,3.9865810642162245
+LBY,Libya,gdp_growth,2030,4.144848864279062
+LBY,Libya,inflation,2026,2.504079364531707
+LBY,Libya,inflation,2027,2.3750048005350495
+LBY,Libya,inflation,2028,2.2459302365383915
+LBY,Libya,inflation,2029,2.116855672541734
+LBY,Libya,inflation,2030,1.9877811085450765
+LBY,Libya,fdi_inflow,2026,1.6605886753801669
+LBY,Libya,fdi_inflow,2027,1.5955787526773972
+LBY,Libya,fdi_inflow,2028,1.5305688299746276
+LBY,Libya,fdi_inflow,2029,1.465558907271858
+LBY,Libya,fdi_inflow,2030,1.4005489845690884
+LIE,Liechtenstein,gdp_growth,2026,-1.2212091572396946
+LIE,Liechtenstein,gdp_growth,2027,-1.2815073088659819
+LIE,Liechtenstein,gdp_growth,2028,-1.3418054604922693
+LIE,Liechtenstein,gdp_growth,2029,-1.4021036121185568
+LIE,Liechtenstein,gdp_growth,2030,-1.462401763744844
+LIE,Liechtenstein,inflation,2026,1.3472274727626585
+LIE,Liechtenstein,inflation,2027,0.4947491374585804
+LIE,Liechtenstein,inflation,2028,-0.3577291978454977
+LIE,Liechtenstein,inflation,2029,-1.210207533149576
+LIE,Liechtenstein,inflation,2030,-2.062685868453654
+LIE,Liechtenstein,fdi_inflow,2026,461.52533764543654
+LIE,Liechtenstein,fdi_inflow,2027,473.2987697000736
+LIE,Liechtenstein,fdi_inflow,2028,485.0722017547106
+LIE,Liechtenstein,fdi_inflow,2029,496.84563380934765
+LIE,Liechtenstein,fdi_inflow,2030,508.6190658639847
+LTU,Lithuania,gdp_growth,2026,3.163990480065111
+LTU,Lithuania,gdp_growth,2027,3.5355562873243414
+LTU,Lithuania,gdp_growth,2028,3.907122094583572
+LTU,Lithuania,gdp_growth,2029,4.278687901842803
+LTU,Lithuania,gdp_growth,2030,4.650253709102033
+LTU,Lithuania,inflation,2026,13.216266885995147
+LTU,Lithuania,inflation,2027,15.512596121941744
+LTU,Lithuania,inflation,2028,17.80892535788834
+LTU,Lithuania,inflation,2029,20.105254593834943
+LTU,Lithuania,inflation,2030,22.401583829781543
+LTU,Lithuania,fdi_inflow,2026,5.314965873274163
+LTU,Lithuania,fdi_inflow,2027,5.409219087369715
+LTU,Lithuania,fdi_inflow,2028,5.503472301465267
+LTU,Lithuania,fdi_inflow,2029,5.597725515560819
+LTU,Lithuania,fdi_inflow,2030,5.6919787296563715
+LUX,Luxembourg,gdp_growth,2026,2.5030809094136197
+LUX,Luxembourg,gdp_growth,2027,2.478017452650693
+LUX,Luxembourg,gdp_growth,2028,2.4529539958877664
+LUX,Luxembourg,gdp_growth,2029,2.4278905391248395
+LUX,Luxembourg,gdp_growth,2030,2.402827082361913
+LUX,Luxembourg,inflation,2026,2.0757713145613033
+LUX,Luxembourg,inflation,2027,2.1004099292068723
+LUX,Luxembourg,inflation,2028,2.1250485438524414
+LUX,Luxembourg,inflation,2029,2.1496871584980104
+LUX,Luxembourg,inflation,2030,2.1743257731435794
+LUX,Luxembourg,fdi_inflow,2026,23.366712893637768
+LUX,Luxembourg,fdi_inflow,2027,23.3691960479608
+LUX,Luxembourg,fdi_inflow,2028,23.37167920228383
+LUX,Luxembourg,fdi_inflow,2029,23.37416235660686
+LUX,Luxembourg,fdi_inflow,2030,23.37664551092989
+MAC,"Macao SAR, China",gdp_growth,2026,6.66241902744315
+MAC,"Macao SAR, China",gdp_growth,2027,6.680198718099527
+MAC,"Macao SAR, China",gdp_growth,2028,6.697978408755905
+MAC,"Macao SAR, China",gdp_growth,2029,6.715758099412282
+MAC,"Macao SAR, China",gdp_growth,2030,6.7335377900686595
+MAC,"Macao SAR, China",inflation,2026,0.4416119255108265
+MAC,"Macao SAR, China",inflation,2027,0.2456241527333623
+MAC,"Macao SAR, China",inflation,2028,0.04963637995589809
+MAC,"Macao SAR, China",inflation,2029,-0.14635139282156617
+MAC,"Macao SAR, China",inflation,2030,-0.34233916559903044
+MAC,"Macao SAR, China",fdi_inflow,2026,5.1833857718632945
+MAC,"Macao SAR, China",fdi_inflow,2027,5.304360405516462
+MAC,"Macao SAR, China",fdi_inflow,2028,5.425335039169629
+MAC,"Macao SAR, China",fdi_inflow,2029,5.546309672822796
+MAC,"Macao SAR, China",fdi_inflow,2030,5.667284306475962
+MDG,Madagascar,gdp_growth,2026,2.9411248956704723
+MDG,Madagascar,gdp_growth,2027,2.965995161863711
+MDG,Madagascar,gdp_growth,2028,2.9908654280569498
+MDG,Madagascar,gdp_growth,2029,3.0157356942501883
+MDG,Madagascar,gdp_growth,2030,3.040605960443427
+MDG,Madagascar,inflation,2026,6.381675552757885
+MDG,Madagascar,inflation,2027,5.948148429729579
+MDG,Madagascar,inflation,2028,5.514621306701272
+MDG,Madagascar,inflation,2029,5.081094183672967
+MDG,Madagascar,inflation,2030,4.647567060644661
+MDG,Madagascar,fdi_inflow,2026,2.3420959008294147
+MDG,Madagascar,fdi_inflow,2027,2.307688160525295
+MDG,Madagascar,fdi_inflow,2028,2.273280420221176
+MDG,Madagascar,fdi_inflow,2029,2.2388726799170566
+MDG,Madagascar,fdi_inflow,2030,2.204464939612937
+MWI,Malawi,gdp_growth,2026,3.1503283133938536
+MWI,Malawi,gdp_growth,2027,3.121132980223308
+MWI,Malawi,gdp_growth,2028,3.091937647052763
+MWI,Malawi,gdp_growth,2029,3.062742313882218
+MWI,Malawi,gdp_growth,2030,3.0335469807116726
+MWI,Malawi,inflation,2026,26.095655545165798
+MWI,Malawi,inflation,2027,26.297003101943133
+MWI,Malawi,inflation,2028,26.498350658720472
+MWI,Malawi,inflation,2029,26.699698215497808
+MWI,Malawi,inflation,2030,26.901045772275143
+MWI,Malawi,fdi_inflow,2026,-0.8585755312212183
+MWI,Malawi,fdi_inflow,2027,-0.9909902253241449
+MWI,Malawi,fdi_inflow,2028,-1.1234049194270714
+MWI,Malawi,fdi_inflow,2029,-1.2558196135299982
+MWI,Malawi,fdi_inflow,2030,-1.3882343076329247
+MYS,Malaysia,gdp_growth,2026,4.352278278550588
+MYS,Malaysia,gdp_growth,2027,4.3040279971400475
+MYS,Malaysia,gdp_growth,2028,4.255777715729508
+MYS,Malaysia,gdp_growth,2029,4.207527434318967
+MYS,Malaysia,gdp_growth,2030,4.159277152908428
+MYS,Malaysia,inflation,2026,2.0494122635652463
+MYS,Malaysia,inflation,2027,2.0768530497716675
+MYS,Malaysia,inflation,2028,2.1042938359780887
+MYS,Malaysia,inflation,2029,2.13173462218451
+MYS,Malaysia,inflation,2030,2.159175408390931
+MYS,Malaysia,fdi_inflow,2026,3.3944775853533264
+MYS,Malaysia,fdi_inflow,2027,3.3860086746139255
+MYS,Malaysia,fdi_inflow,2028,3.3775397638745246
+MYS,Malaysia,fdi_inflow,2029,3.3690708531351237
+MYS,Malaysia,fdi_inflow,2030,3.3606019423957227
+MDV,Maldives,gdp_growth,2026,5.570730041389278
+MDV,Maldives,gdp_growth,2027,5.515969361547133
+MDV,Maldives,gdp_growth,2028,5.4612086817049885
+MDV,Maldives,gdp_growth,2029,5.406448001862844
+MDV,Maldives,gdp_growth,2030,5.3516873220207
+MDV,Maldives,inflation,2026,0.9045531986562647
+MDV,Maldives,inflation,2027,0.73254210460197
+MDV,Maldives,inflation,2028,0.5605310105476754
+MDV,Maldives,inflation,2029,0.3885199164933807
+MDV,Maldives,inflation,2030,0.21650882243908598
+MDV,Maldives,fdi_inflow,2026,12.12517535283835
+MDV,Maldives,fdi_inflow,2027,12.311464017151817
+MDV,Maldives,fdi_inflow,2028,12.497752681465286
+MDV,Maldives,fdi_inflow,2029,12.684041345778754
+MDV,Maldives,fdi_inflow,2030,12.870330010092223
+MLI,Mali,gdp_growth,2026,4.349481419811088
+MLI,Mali,gdp_growth,2027,4.37041031330647
+MLI,Mali,gdp_growth,2028,4.391339206801853
+MLI,Mali,gdp_growth,2029,4.412268100297236
+MLI,Mali,gdp_growth,2030,4.433196993792619
+MLI,Mali,inflation,2026,-4.87767561785047
+MLI,Mali,inflation,2027,-5.489053263512623
+MLI,Mali,inflation,2028,-6.100430909174775
+MLI,Mali,inflation,2029,-6.711808554836927
+MLI,Mali,inflation,2030,-7.323186200499079
+MLI,Mali,fdi_inflow,2026,3.1969301448312946
+MLI,Mali,fdi_inflow,2027,3.2453526446955325
+MLI,Mali,fdi_inflow,2028,3.29377514455977
+MLI,Mali,fdi_inflow,2029,3.342197644424008
+MLI,Mali,fdi_inflow,2030,3.3906201442882455
+MLT,Malta,gdp_growth,2026,7.010845233351896
+MLT,Malta,gdp_growth,2027,7.049922396627698
+MLT,Malta,gdp_growth,2028,7.0889995599035
+MLT,Malta,gdp_growth,2029,7.128076723179302
+MLT,Malta,gdp_growth,2030,7.167153886455104
+MLT,Malta,inflation,2026,2.1902045052003363
+MLT,Malta,inflation,2027,2.182238611371991
+MLT,Malta,inflation,2028,2.174272717543646
+MLT,Malta,inflation,2029,2.166306823715301
+MLT,Malta,inflation,2030,2.158340929886956
+MLT,Malta,fdi_inflow,2026,172.23900872391891
+MLT,Malta,fdi_inflow,2027,174.8180550998358
+MLT,Malta,fdi_inflow,2028,177.3971014757527
+MLT,Malta,fdi_inflow,2029,179.97614785166957
+MLT,Malta,fdi_inflow,2030,182.55519422758647
+MHL,Marshall Islands,gdp_growth,2026,-0.5428092993822303
+MHL,Marshall Islands,gdp_growth,2027,-0.6776007730457942
+MHL,Marshall Islands,gdp_growth,2028,-0.8123922467093583
+MHL,Marshall Islands,gdp_growth,2029,-0.9471837203729221
+MHL,Marshall Islands,gdp_growth,2030,-1.0819751940364861
+MHL,Marshall Islands,inflation,2026,18.31834005397136
+MHL,Marshall Islands,inflation,2027,17.98322476876838
+MHL,Marshall Islands,inflation,2028,17.648109483565403
+MHL,Marshall Islands,inflation,2029,17.312994198362425
+MHL,Marshall Islands,inflation,2030,16.977878913159444
+MHL,Marshall Islands,fdi_inflow,2026,1.0668202957141988
+MHL,Marshall Islands,fdi_inflow,2027,0.9568617088216725
+MHL,Marshall Islands,fdi_inflow,2028,0.8469031219291463
+MHL,Marshall Islands,fdi_inflow,2029,0.7369445350366199
+MHL,Marshall Islands,fdi_inflow,2030,0.6269859481440936
+MRT,Mauritania,gdp_growth,2026,3.1327548209340383
+MRT,Mauritania,gdp_growth,2027,3.1179915789904338
+MRT,Mauritania,gdp_growth,2028,3.1032283370468297
+MRT,Mauritania,gdp_growth,2029,3.088465095103225
+MRT,Mauritania,gdp_growth,2030,3.0737018531596205
+MRT,Mauritania,inflation,2026,2.739425762664905
+MRT,Mauritania,inflation,2027,2.6151213306024674
+MRT,Mauritania,inflation,2028,2.49081689854003
+MRT,Mauritania,inflation,2029,2.3665124664775927
+MRT,Mauritania,inflation,2030,2.2422080344151554
+MRT,Mauritania,fdi_inflow,2026,12.374834966566256
+MRT,Mauritania,fdi_inflow,2027,12.67610465037284
+MRT,Mauritania,fdi_inflow,2028,12.977374334179427
+MRT,Mauritania,fdi_inflow,2029,13.27864401798601
+MRT,Mauritania,fdi_inflow,2030,13.579913701792595
+MUS,Mauritius,gdp_growth,2026,3.336166146983253
+MUS,Mauritius,gdp_growth,2027,3.300407337495473
+MUS,Mauritius,gdp_growth,2028,3.2646485280076933
+MUS,Mauritius,gdp_growth,2029,3.2288897185199135
+MUS,Mauritius,gdp_growth,2030,3.1931309090321336
+MUS,Mauritius,inflation,2026,4.187326416165915
+MUS,Mauritius,inflation,2027,4.055405844416502
+MUS,Mauritius,inflation,2028,3.9234852726670906
+MUS,Mauritius,inflation,2029,3.7915647009176787
+MUS,Mauritius,inflation,2030,3.659644129168267
+MUS,Mauritius,fdi_inflow,2026,-3.9879247238885367
+MUS,Mauritius,fdi_inflow,2027,-4.294126378705026
+MUS,Mauritius,fdi_inflow,2028,-4.600328033521515
+MUS,Mauritius,fdi_inflow,2029,-4.906529688338004
+MUS,Mauritius,fdi_inflow,2030,-5.212731343154493
+MEX,Mexico,gdp_growth,2026,0.23437090141064132
+MEX,Mexico,gdp_growth,2027,0.13481336499423827
+MEX,Mexico,gdp_growth,2028,0.03525582857783521
+MEX,Mexico,gdp_growth,2029,-0.06430170783856787
+MEX,Mexico,gdp_growth,2030,-0.16385924425497095
+MEX,Mexico,inflation,2026,4.719089685743395
+MEX,Mexico,inflation,2027,4.715923487004651
+MEX,Mexico,inflation,2028,4.712757288265906
+MEX,Mexico,inflation,2029,4.709591089527161
+MEX,Mexico,inflation,2030,4.706424890788417
+MEX,Mexico,fdi_inflow,2026,2.968024659830957
+MEX,Mexico,fdi_inflow,2027,3.0034786936555626
+MEX,Mexico,fdi_inflow,2028,3.0389327274801676
+MEX,Mexico,fdi_inflow,2029,3.074386761304773
+MEX,Mexico,fdi_inflow,2030,3.109840795129378
+FSM,"Micronesia, Fed. Sts.",gdp_growth,2026,-1.3424344197132803
+FSM,"Micronesia, Fed. Sts.",gdp_growth,2027,-1.4792837387944227
+FSM,"Micronesia, Fed. Sts.",gdp_growth,2028,-1.6161330578755648
+FSM,"Micronesia, Fed. Sts.",gdp_growth,2029,-1.7529823769567074
+FSM,"Micronesia, Fed. Sts.",gdp_growth,2030,-1.8898316960378496
+FSM,"Micronesia, Fed. Sts.",inflation,2026,-3.6974674000262526
+FSM,"Micronesia, Fed. Sts.",inflation,2027,-4.232075038660507
+FSM,"Micronesia, Fed. Sts.",inflation,2028,-4.766682677294762
+FSM,"Micronesia, Fed. Sts.",inflation,2029,-5.301290315929016
+FSM,"Micronesia, Fed. Sts.",inflation,2030,-5.83589795456327
+FSM,"Micronesia, Fed. Sts.",fdi_inflow,2026,15.461954807553253
+FSM,"Micronesia, Fed. Sts.",fdi_inflow,2027,15.61659419079037
+FSM,"Micronesia, Fed. Sts.",fdi_inflow,2028,15.771233574027486
+FSM,"Micronesia, Fed. Sts.",fdi_inflow,2029,15.925872957264602
+FSM,"Micronesia, Fed. Sts.",fdi_inflow,2030,16.08051234050172
+MDA,Moldova,gdp_growth,2026,-0.41491568011740243
+MDA,Moldova,gdp_growth,2027,-0.7872749628768556
+MDA,Moldova,gdp_growth,2028,-1.159634245636309
+MDA,Moldova,gdp_growth,2029,-1.5319935283957622
+MDA,Moldova,gdp_growth,2030,-1.9043528111552155
+MDA,Moldova,inflation,2026,-49.06417308525906
+MDA,Moldova,inflation,2027,-66.16179769486845
+MDA,Moldova,inflation,2028,-83.25942230447787
+MDA,Moldova,inflation,2029,-100.35704691408728
+MDA,Moldova,inflation,2030,-117.45467152369669
+MDA,Moldova,fdi_inflow,2026,2.5786109471394605
+MDA,Moldova,fdi_inflow,2027,2.6124590291450036
+MDA,Moldova,fdi_inflow,2028,2.6463071111505463
+MDA,Moldova,fdi_inflow,2029,2.680155193156089
+MDA,Moldova,fdi_inflow,2030,2.714003275161632
+MCO,Monaco,gdp_growth,2026,4.582942227259718
+MCO,Monaco,gdp_growth,2027,4.629756021135955
+MCO,Monaco,gdp_growth,2028,4.676569815012193
+MCO,Monaco,gdp_growth,2029,4.7233836088884305
+MCO,Monaco,gdp_growth,2030,4.770197402764667
+MCO,Monaco,inflation,2026,46.207048721063096
+MCO,Monaco,inflation,2027,47.03110186965548
+MCO,Monaco,inflation,2028,47.855155018247856
+MCO,Monaco,inflation,2029,48.67920816684024
+MCO,Monaco,inflation,2030,49.50326131543262
+MCO,Monaco,fdi_inflow,2026,2.2665983556646276
+MCO,Monaco,fdi_inflow,2027,2.2234366058457207
+MCO,Monaco,fdi_inflow,2028,2.180274856026814
+MCO,Monaco,fdi_inflow,2029,2.1371131062079076
+MCO,Monaco,fdi_inflow,2030,2.0939513563890007
+MNG,Mongolia,gdp_growth,2026,5.095121649165385
+MNG,Mongolia,gdp_growth,2027,5.068197907505354
+MNG,Mongolia,gdp_growth,2028,5.041274165845324
+MNG,Mongolia,gdp_growth,2029,5.0143504241852925
+MNG,Mongolia,gdp_growth,2030,4.987426682525262
+MNG,Mongolia,inflation,2026,-29.811068004256107
+MNG,Mongolia,inflation,2027,-32.631494087239226
+MNG,Mongolia,inflation,2028,-35.45192017022235
+MNG,Mongolia,inflation,2029,-38.27234625320547
+MNG,Mongolia,inflation,2030,-41.09277233618859
+MNG,Mongolia,fdi_inflow,2026,12.124042609872786
+MNG,Mongolia,fdi_inflow,2027,12.396168232033144
+MNG,Mongolia,fdi_inflow,2028,12.668293854193504
+MNG,Mongolia,fdi_inflow,2029,12.940419476353862
+MNG,Mongolia,fdi_inflow,2030,13.21254509851422
+MNE,Montenegro,gdp_growth,2026,3.497028534306909
+MNE,Montenegro,gdp_growth,2027,3.5389257342493257
+MNE,Montenegro,gdp_growth,2028,3.5808229341917417
+MNE,Montenegro,gdp_growth,2029,3.622720134134158
+MNE,Montenegro,gdp_growth,2030,3.6646173340765746
+MNE,Montenegro,inflation,2026,-4.889126395782098
+MNE,Montenegro,inflation,2027,-7.140547530034886
+MNE,Montenegro,inflation,2028,-9.391968664287674
+MNE,Montenegro,inflation,2029,-11.643389798540461
+MNE,Montenegro,inflation,2030,-13.894810932793249
+MNE,Montenegro,fdi_inflow,2026,17.831770896783787
+MNE,Montenegro,fdi_inflow,2027,18.002151249568133
+MNE,Montenegro,fdi_inflow,2028,18.172531602352482
+MNE,Montenegro,fdi_inflow,2029,18.34291195513683
+MNE,Montenegro,fdi_inflow,2030,18.513292307921176
+MAR,Morocco,gdp_growth,2026,3.2780234906741414
+MAR,Morocco,gdp_growth,2027,3.251030495015085
+MAR,Morocco,gdp_growth,2028,3.224037499356028
+MAR,Morocco,gdp_growth,2029,3.1970445036969712
+MAR,Morocco,gdp_growth,2030,3.1700515080379144
+MAR,Morocco,inflation,2026,1.9991257684086092
+MAR,Morocco,inflation,2027,1.978600411305434
+MAR,Morocco,inflation,2028,1.9580750542022591
+MAR,Morocco,inflation,2029,1.9375496970990842
+MAR,Morocco,inflation,2030,1.9170243399959093
+MAR,Morocco,fdi_inflow,2026,0.7902912404011343
+MAR,Morocco,fdi_inflow,2027,0.6175952949830685
+MAR,Morocco,fdi_inflow,2028,0.44489934956500266
+MAR,Morocco,fdi_inflow,2029,0.2722034041469368
+MAR,Morocco,fdi_inflow,2030,0.0995074587288709
+MOZ,Mozambique,gdp_growth,2026,1.102600760566512
+MOZ,Mozambique,gdp_growth,2027,0.7098247539086645
+MOZ,Mozambique,gdp_growth,2028,0.317048747250817
+MOZ,Mozambique,gdp_growth,2029,-0.07572725940703062
+MOZ,Mozambique,gdp_growth,2030,-0.46850326606487824
+MOZ,Mozambique,inflation,2026,2.6539747867838623
+MOZ,Mozambique,inflation,2027,2.3742013016327492
+MOZ,Mozambique,inflation,2028,2.0944278164816366
+MOZ,Mozambique,inflation,2029,1.8146543313305237
+MOZ,Mozambique,inflation,2030,1.5348808461794108
+MOZ,Mozambique,fdi_inflow,2026,15.714914060041727
+MOZ,Mozambique,fdi_inflow,2027,16.00149387226798
+MOZ,Mozambique,fdi_inflow,2028,16.288073684494233
+MOZ,Mozambique,fdi_inflow,2029,16.574653496720487
+MOZ,Mozambique,fdi_inflow,2030,16.86123330894674
+MMR,Myanmar,gdp_growth,2026,-0.8468779304226802
+MMR,Myanmar,gdp_growth,2027,-0.9186199435765139
+MMR,Myanmar,gdp_growth,2028,-0.9903619567303477
+MMR,Myanmar,gdp_growth,2029,-1.0621039698841812
+MMR,Myanmar,gdp_growth,2030,-1.133845983038015
+MMR,Myanmar,inflation,2026,8.936312864471459
+MMR,Myanmar,inflation,2027,9.020171488783134
+MMR,Myanmar,inflation,2028,9.104030113094812
+MMR,Myanmar,inflation,2029,9.187888737406487
+MMR,Myanmar,inflation,2030,9.271747361718162
+MMR,Myanmar,fdi_inflow,2026,2.3370013051817495
+MMR,Myanmar,fdi_inflow,2027,2.3645481892710096
+MMR,Myanmar,fdi_inflow,2028,2.3920950733602693
+MMR,Myanmar,fdi_inflow,2029,2.419641957449529
+MMR,Myanmar,fdi_inflow,2030,2.447188841538789
+NAM,Namibia,gdp_growth,2026,2.82228425995618
+NAM,Namibia,gdp_growth,2027,2.8475612543901936
+NAM,Namibia,gdp_growth,2028,2.872838248824207
+NAM,Namibia,gdp_growth,2029,2.8981152432582205
+NAM,Namibia,gdp_growth,2030,2.923392237692234
+NAM,Namibia,inflation,2026,3.9614656322991273
+NAM,Namibia,inflation,2027,3.7990428950503707
+NAM,Namibia,inflation,2028,3.636620157801614
+NAM,Namibia,inflation,2029,3.4741974205528576
+NAM,Namibia,inflation,2030,3.311774683304101
+NAM,Namibia,fdi_inflow,2026,14.706540638801574
+NAM,Namibia,fdi_inflow,2027,14.870681014537768
+NAM,Namibia,fdi_inflow,2028,15.034821390273962
+NAM,Namibia,fdi_inflow,2029,15.198961766010155
+NAM,Namibia,fdi_inflow,2030,15.36310214174635
+NRU,Nauru,gdp_growth,2026,2.780855811888906
+NRU,Nauru,gdp_growth,2027,2.802528970614079
+NRU,Nauru,gdp_growth,2028,2.8242021293392523
+NRU,Nauru,gdp_growth,2029,2.845875288064425
+NRU,Nauru,gdp_growth,2030,2.8675484467895984
+NRU,Nauru,inflation,2026,25.478133220368047
+NRU,Nauru,inflation,2027,25.433745762590313
+NRU,Nauru,inflation,2028,25.38935830481258
+NRU,Nauru,inflation,2029,25.344970847034848
+NRU,Nauru,inflation,2030,25.300583389257113
+NRU,Nauru,fdi_inflow,2026,5.899535162965835
+NRU,Nauru,fdi_inflow,2027,5.984147210470166
+NRU,Nauru,fdi_inflow,2028,6.068759257974498
+NRU,Nauru,fdi_inflow,2029,6.15337130547883
+NRU,Nauru,fdi_inflow,2030,6.237983352983162
+NPL,Nepal,gdp_growth,2026,4.876937243209843
+NPL,Nepal,gdp_growth,2027,4.9099419135734514
+NPL,Nepal,gdp_growth,2028,4.94294658393706
+NPL,Nepal,gdp_growth,2029,4.975951254300668
+NPL,Nepal,gdp_growth,2030,5.008955924664275
+NPL,Nepal,inflation,2026,5.586312977264038
+NPL,Nepal,inflation,2027,5.505471226229399
+NPL,Nepal,inflation,2028,5.4246294751947595
+NPL,Nepal,inflation,2029,5.34378772416012
+NPL,Nepal,inflation,2030,5.262945973125482
+NPL,Nepal,fdi_inflow,2026,-10.146378278635277
+NPL,Nepal,fdi_inflow,2027,-10.693416018319326
+NPL,Nepal,fdi_inflow,2028,-11.240453758003376
+NPL,Nepal,fdi_inflow,2029,-11.787491497687427
+NPL,Nepal,fdi_inflow,2030,-12.334529237371477
+NLD,Netherlands,gdp_growth,2026,0.8450749414853606
+NLD,Netherlands,gdp_growth,2027,0.7874909495217022
+NLD,Netherlands,gdp_growth,2028,0.7299069575580439
+NLD,Netherlands,gdp_growth,2029,0.6723229655943854
+NLD,Netherlands,gdp_growth,2030,0.6147389736307272
+NLD,Netherlands,inflation,2026,3.597159344421065
+NLD,Netherlands,inflation,2027,3.618901894094308
+NLD,Netherlands,inflation,2028,3.640644443767551
+NLD,Netherlands,inflation,2029,3.662386993440794
+NLD,Netherlands,inflation,2030,3.6841295431140377
+NLD,Netherlands,fdi_inflow,2026,8.595087099480535
+NLD,Netherlands,fdi_inflow,2027,8.533865937465738
+NLD,Netherlands,fdi_inflow,2028,8.472644775450938
+NLD,Netherlands,fdi_inflow,2029,8.41142361343614
+NLD,Netherlands,fdi_inflow,2030,8.35020245142134
+NCL,New Caledonia,gdp_growth,2026,-1.9332160327943677
+NCL,New Caledonia,gdp_growth,2027,-2.0844515862427806
+NCL,New Caledonia,gdp_growth,2028,-2.2356871396911933
+NCL,New Caledonia,gdp_growth,2029,-2.386922693139606
+NCL,New Caledonia,gdp_growth,2030,-2.5381582465880186
+NCL,New Caledonia,inflation,2026,-31.39720366658281
+NCL,New Caledonia,inflation,2027,-33.40748297917866
+NCL,New Caledonia,inflation,2028,-35.41776229177451
+NCL,New Caledonia,inflation,2029,-37.42804160437035
+NCL,New Caledonia,inflation,2030,-39.4383209169662
+NCL,New Caledonia,fdi_inflow,2026,8.299631823159096
+NCL,New Caledonia,fdi_inflow,2027,8.410746382296166
+NCL,New Caledonia,fdi_inflow,2028,8.521860941433236
+NCL,New Caledonia,fdi_inflow,2029,8.632975500570307
+NCL,New Caledonia,fdi_inflow,2030,8.744090059707377
+NZL,New Zealand,gdp_growth,2026,2.2228710070691564
+NZL,New Zealand,gdp_growth,2027,2.209095509879704
+NZL,New Zealand,gdp_growth,2028,2.195320012690251
+NZL,New Zealand,gdp_growth,2029,2.181544515500798
+NZL,New Zealand,gdp_growth,2030,2.1677690183113456
+NZL,New Zealand,inflation,2026,3.1149225578316355
+NZL,New Zealand,inflation,2027,3.147306924202368
+NZL,New Zealand,inflation,2028,3.1796912905731003
+NZL,New Zealand,inflation,2029,3.2120756569438327
+NZL,New Zealand,inflation,2030,3.244460023314565
+NZL,New Zealand,fdi_inflow,2026,-2.9642977901225187
+NZL,New Zealand,fdi_inflow,2027,-3.1745150615585485
+NZL,New Zealand,fdi_inflow,2028,-3.384732332994578
+NZL,New Zealand,fdi_inflow,2029,-3.594949604430608
+NZL,New Zealand,fdi_inflow,2030,-3.8051668758666377
+NIC,Nicaragua,gdp_growth,2026,3.0703581179743775
+NIC,Nicaragua,gdp_growth,2027,3.0242040460890984
+NIC,Nicaragua,gdp_growth,2028,2.978049974203819
+NIC,Nicaragua,gdp_growth,2029,2.93189590231854
+NIC,Nicaragua,gdp_growth,2030,2.8857418304332603
+NIC,Nicaragua,inflation,2026,2.4115546753244312
+NIC,Nicaragua,inflation,2027,2.184247422513182
+NIC,Nicaragua,inflation,2028,1.9569401697019326
+NIC,Nicaragua,inflation,2029,1.7296329168906832
+NIC,Nicaragua,inflation,2030,1.5023256640794338
+NIC,Nicaragua,fdi_inflow,2026,6.999416702490311
+NIC,Nicaragua,fdi_inflow,2027,7.071980842901413
+NIC,Nicaragua,fdi_inflow,2028,7.144544983312514
+NIC,Nicaragua,fdi_inflow,2029,7.217109123723616
+NIC,Nicaragua,fdi_inflow,2030,7.289673264134717
+NER,Niger,gdp_growth,2026,5.86545934446996
+NER,Niger,gdp_growth,2027,5.94555860586963
+NER,Niger,gdp_growth,2028,6.025657867269301
+NER,Niger,gdp_growth,2029,6.10575712866897
+NER,Niger,gdp_growth,2030,6.185856390068641
+NER,Niger,inflation,2026,6.241346733449837
+NER,Niger,inflation,2027,6.192947850670503
+NER,Niger,inflation,2028,6.144548967891169
+NER,Niger,inflation,2029,6.0961500851118355
+NER,Niger,inflation,2030,6.047751202332503
+NER,Niger,fdi_inflow,2026,2.6698835066161095
+NER,Niger,fdi_inflow,2027,2.6485413395256585
+NER,Niger,fdi_inflow,2028,2.6271991724352075
+NER,Niger,fdi_inflow,2029,2.6058570053447565
+NER,Niger,fdi_inflow,2030,2.5845148382543055
+NGA,Nigeria,gdp_growth,2026,2.809869360628176
+NGA,Nigeria,gdp_growth,2027,2.791246381182768
+NGA,Nigeria,gdp_growth,2028,2.7726234017373597
+NGA,Nigeria,gdp_growth,2029,2.754000422291951
+NGA,Nigeria,gdp_growth,2030,2.735377442846543
+NGA,Nigeria,inflation,2026,33.66975481944558
+NGA,Nigeria,inflation,2027,34.097412977977946
+NGA,Nigeria,inflation,2028,34.52507113651032
+NGA,Nigeria,inflation,2029,34.95272929504269
+NGA,Nigeria,inflation,2030,35.38038745357506
+NGA,Nigeria,fdi_inflow,2026,-9.677502398610004
+NGA,Nigeria,fdi_inflow,2027,-10.21749350548029
+NGA,Nigeria,fdi_inflow,2028,-10.757484612350577
+NGA,Nigeria,fdi_inflow,2029,-11.297475719220863
+NGA,Nigeria,fdi_inflow,2030,-11.83746682609115
+MKD,North Macedonia,gdp_growth,2026,3.1835696761735477
+MKD,North Macedonia,gdp_growth,2027,3.312522335111053
+MKD,North Macedonia,gdp_growth,2028,3.4414749940485585
+MKD,North Macedonia,gdp_growth,2029,3.570427652986064
+MKD,North Macedonia,gdp_growth,2030,3.6993803119235693
+MKD,North Macedonia,inflation,2026,-3.0893248642227595
+MKD,North Macedonia,inflation,2027,-3.6662983338016852
+MKD,North Macedonia,inflation,2028,-4.24327180338061
+MKD,North Macedonia,inflation,2029,-4.820245272959536
+MKD,North Macedonia,inflation,2030,-5.3972187425384615
+MKD,North Macedonia,fdi_inflow,2026,1.1201585413179886
+MKD,North Macedonia,fdi_inflow,2027,0.8275352612601813
+MKD,North Macedonia,fdi_inflow,2028,0.5349119812023739
+MKD,North Macedonia,fdi_inflow,2029,0.2422887011445667
+MKD,North Macedonia,fdi_inflow,2030,-0.05033457891324056
+MNP,Northern Mariana Islands,gdp_growth,2026,2.1832749666001785
+MNP,Northern Mariana Islands,gdp_growth,2027,2.5223339861627188
+MNP,Northern Mariana Islands,gdp_growth,2028,2.8613930057252595
+MNP,Northern Mariana Islands,gdp_growth,2029,3.2004520252877997
+MNP,Northern Mariana Islands,gdp_growth,2030,3.5395110448503404
+MNP,Northern Mariana Islands,inflation,2026,87.37103174865594
+MNP,Northern Mariana Islands,inflation,2027,88.24206465204506
+MNP,Northern Mariana Islands,inflation,2028,89.1130975554342
+MNP,Northern Mariana Islands,inflation,2029,89.98413045882332
+MNP,Northern Mariana Islands,inflation,2030,90.85516336221244
+MNP,Northern Mariana Islands,fdi_inflow,2026,8.961353154114272
+MNP,Northern Mariana Islands,fdi_inflow,2027,9.059212956977168
+MNP,Northern Mariana Islands,fdi_inflow,2028,9.157072759840064
+MNP,Northern Mariana Islands,fdi_inflow,2029,9.25493256270296
+MNP,Northern Mariana Islands,fdi_inflow,2030,9.352792365565856
+NOR,Norway,gdp_growth,2026,1.230269893613254
+NOR,Norway,gdp_growth,2027,1.180611257620952
+NOR,Norway,gdp_growth,2028,1.1309526216286503
+NOR,Norway,gdp_growth,2029,1.0812939856363486
+NOR,Norway,gdp_growth,2030,1.031635349644047
+NOR,Norway,inflation,2026,3.5940369162616337
+NOR,Norway,inflation,2027,3.622991112321206
+NOR,Norway,inflation,2028,3.651945308380778
+NOR,Norway,inflation,2029,3.68089950444035
+NOR,Norway,inflation,2030,3.709853700499922
+NOR,Norway,fdi_inflow,2026,1.9706737962090979
+NOR,Norway,fdi_inflow,2027,1.9327899054002644
+NOR,Norway,fdi_inflow,2028,1.8949060145914312
+NOR,Norway,fdi_inflow,2029,1.8570221237825977
+NOR,Norway,fdi_inflow,2030,1.8191382329737644
+OMN,Oman,gdp_growth,2026,1.6393148613265787
+OMN,Oman,gdp_growth,2027,1.6469975112641868
+OMN,Oman,gdp_growth,2028,1.654680161201795
+OMN,Oman,gdp_growth,2029,1.6623628111394029
+OMN,Oman,gdp_growth,2030,1.670045461077011
+OMN,Oman,inflation,2026,0.20311684679296438
+OMN,Oman,inflation,2027,0.07712357313900209
+OMN,Oman,inflation,2028,-0.0488697005149602
+OMN,Oman,inflation,2029,-0.1748629741689225
+OMN,Oman,inflation,2030,-0.3008562478228848
+OMN,Oman,fdi_inflow,2026,6.851714586329158
+OMN,Oman,fdi_inflow,2027,6.870574662066906
+OMN,Oman,fdi_inflow,2028,6.889434737804653
+OMN,Oman,fdi_inflow,2029,6.908294813542401
+OMN,Oman,fdi_inflow,2030,6.927154889280149
+PAK,Pakistan,gdp_growth,2026,3.268336596715147
+PAK,Pakistan,gdp_growth,2027,3.2213160360323547
+PAK,Pakistan,gdp_growth,2028,3.1742954753495627
+PAK,Pakistan,gdp_growth,2029,3.1272749146667707
+PAK,Pakistan,gdp_growth,2030,3.080254353983978
+PAK,Pakistan,inflation,2026,12.93446274865268
+PAK,Pakistan,inflation,2027,13.034227725810211
+PAK,Pakistan,inflation,2028,13.133992702967745
+PAK,Pakistan,inflation,2029,13.23375768012528
+PAK,Pakistan,inflation,2030,13.333522657282813
+PAK,Pakistan,fdi_inflow,2026,-5.076482766735591
+PAK,Pakistan,fdi_inflow,2027,-5.35361435922205
+PAK,Pakistan,fdi_inflow,2028,-5.630745951708508
+PAK,Pakistan,fdi_inflow,2029,-5.907877544194966
+PAK,Pakistan,fdi_inflow,2030,-6.1850091366814235
+PLW,Palau,gdp_growth,2026,-0.31940973640767534
+PLW,Palau,gdp_growth,2027,-0.3672343970565304
+PLW,Palau,gdp_growth,2028,-0.4150590577053854
+PLW,Palau,gdp_growth,2029,-0.46288371835424047
+PLW,Palau,gdp_growth,2030,-0.5107083790030955
+PLW,Palau,inflation,2026,3.281815105638617
+PLW,Palau,inflation,2027,3.034291491083244
+PLW,Palau,inflation,2028,2.7867678765278714
+PLW,Palau,inflation,2029,2.539244261972499
+PLW,Palau,inflation,2030,2.291720647417126
+PLW,Palau,fdi_inflow,2026,28.906192673069
+PLW,Palau,fdi_inflow,2027,30.76901634265166
+PLW,Palau,fdi_inflow,2028,32.63184001223433
+PLW,Palau,fdi_inflow,2029,34.49466368181699
+PLW,Palau,fdi_inflow,2030,36.357487351399655
+PAN,Panama,gdp_growth,2026,4.839660270616737
+PAN,Panama,gdp_growth,2027,4.824787917163015
+PAN,Panama,gdp_growth,2028,4.809915563709291
+PAN,Panama,gdp_growth,2029,4.795043210255568
+PAN,Panama,gdp_growth,2030,4.780170856801845
+PAN,Panama,inflation,2026,0.8309540824403355
+PAN,Panama,inflation,2027,0.8394407229376304
+PAN,Panama,inflation,2028,0.8479273634349253
+PAN,Panama,inflation,2029,0.8564140039322202
+PAN,Panama,inflation,2030,0.8649006444295151
+PAN,Panama,fdi_inflow,2026,-3.6367090271648577
+PAN,Panama,fdi_inflow,2027,-4.099239537658888
+PAN,Panama,fdi_inflow,2028,-4.561770048152919
+PAN,Panama,fdi_inflow,2029,-5.024300558646949
+PAN,Panama,fdi_inflow,2030,-5.48683106914098
+PNG,Papua New Guinea,gdp_growth,2026,3.160848462112035
+PNG,Papua New Guinea,gdp_growth,2027,3.1097000427138886
+PNG,Papua New Guinea,gdp_growth,2028,3.0585516233157417
+PNG,Papua New Guinea,gdp_growth,2029,3.007403203917595
+PNG,Papua New Guinea,gdp_growth,2030,2.956254784519448
+PNG,Papua New Guinea,inflation,2026,2.329096166989587
+PNG,Papua New Guinea,inflation,2027,2.276642324030655
+PNG,Papua New Guinea,inflation,2028,2.2241884810717236
+PNG,Papua New Guinea,inflation,2029,2.171734638112792
+PNG,Papua New Guinea,inflation,2030,2.119280795153861
+PNG,Papua New Guinea,fdi_inflow,2026,-5.886126027107898
+PNG,Papua New Guinea,fdi_inflow,2027,-6.257475113506717
+PNG,Papua New Guinea,fdi_inflow,2028,-6.628824199905536
+PNG,Papua New Guinea,fdi_inflow,2029,-7.0001732863043555
+PNG,Papua New Guinea,fdi_inflow,2030,-7.371522372703175
+PRY,Paraguay,gdp_growth,2026,3.793784381111165
+PRY,Paraguay,gdp_growth,2027,3.764590540036131
+PRY,Paraguay,gdp_growth,2028,3.735396698961097
+PRY,Paraguay,gdp_growth,2029,3.7062028578860633
+PRY,Paraguay,gdp_growth,2030,3.677009016811029
+PRY,Paraguay,inflation,2026,4.091295487978222
+PRY,Paraguay,inflation,2027,4.0105667253565676
+PRY,Paraguay,inflation,2028,3.9298379627349136
+PRY,Paraguay,inflation,2029,3.849109200113259
+PRY,Paraguay,inflation,2030,3.768380437491605
+PRY,Paraguay,fdi_inflow,2026,-6.93358412530951
+PRY,Paraguay,fdi_inflow,2027,-7.321507171480929
+PRY,Paraguay,fdi_inflow,2028,-7.70943021765235
+PRY,Paraguay,fdi_inflow,2029,-8.09735326382377
+PRY,Paraguay,fdi_inflow,2030,-8.48527630999519
+PER,Peru,gdp_growth,2026,3.0509063481267473
+PER,Peru,gdp_growth,2027,3.036435830838151
+PER,Peru,gdp_growth,2028,3.0219653135495546
+PER,Peru,gdp_growth,2029,3.0074947962609584
+PER,Peru,gdp_growth,2030,2.993024278972362
+PER,Peru,inflation,2026,3.42648815773432
+PER,Peru,inflation,2027,3.364474656708756
+PER,Peru,inflation,2028,3.302461155683192
+PER,Peru,inflation,2029,3.2404476546576286
+PER,Peru,inflation,2030,3.178434153632065
+PER,Peru,fdi_inflow,2026,2.4576192779078263
+PER,Peru,fdi_inflow,2027,2.462847733364904
+PER,Peru,fdi_inflow,2028,2.468076188821981
+PER,Peru,fdi_inflow,2029,2.4733046442790587
+PER,Peru,fdi_inflow,2030,2.4785330997361363
+PHL,Philippines,gdp_growth,2026,4.525235707673706
+PHL,Philippines,gdp_growth,2027,4.5310127509578875
+PHL,Philippines,gdp_growth,2028,4.536789794242069
+PHL,Philippines,gdp_growth,2029,4.542566837526251
+PHL,Philippines,gdp_growth,2030,4.548343880810432
+PHL,Philippines,inflation,2026,3.672851003482749
+PHL,Philippines,inflation,2027,3.6406632216385875
+PHL,Philippines,inflation,2028,3.608475439794426
+PHL,Philippines,inflation,2029,3.576287657950265
+PHL,Philippines,inflation,2030,3.5440998761061038
+PHL,Philippines,fdi_inflow,2026,2.168957266007772
+PHL,Philippines,fdi_inflow,2027,2.1647887851400074
+PHL,Philippines,fdi_inflow,2028,2.1606203042722427
+PHL,Philippines,fdi_inflow,2029,2.156451823404478
+PHL,Philippines,fdi_inflow,2030,2.1522833425367134
+POL,Poland,gdp_growth,2026,3.43681329471891
+POL,Poland,gdp_growth,2027,3.4325496009839194
+POL,Poland,gdp_growth,2028,3.428285907248929
+POL,Poland,gdp_growth,2029,3.424022213513939
+POL,Poland,gdp_growth,2030,3.419758519778948
+POL,Poland,inflation,2026,6.006307534547028
+POL,Poland,inflation,2027,6.07318882021809
+POL,Poland,inflation,2028,6.140070105889151
+POL,Poland,inflation,2029,6.206951391560213
+POL,Poland,inflation,2030,6.273832677231274
+POL,Poland,fdi_inflow,2026,3.5981345695369376
+POL,Poland,fdi_inflow,2027,3.616582420901105
+POL,Poland,fdi_inflow,2028,3.6350302722652716
+POL,Poland,fdi_inflow,2029,3.6534781236294385
+POL,Poland,fdi_inflow,2030,3.6719259749936057
+PRT,Portugal,gdp_growth,2026,0.08913872457537293
+PRT,Portugal,gdp_growth,2027,-0.0013851507933032026
+PRT,Portugal,gdp_growth,2028,-0.09190902616197935
+PRT,Portugal,gdp_growth,2029,-0.18243290153065547
+PRT,Portugal,gdp_growth,2030,-0.2729567768993316
+PRT,Portugal,inflation,2026,2.5567034260358543
+PRT,Portugal,inflation,2027,2.5539171454378558
+PRT,Portugal,inflation,2028,2.5511308648398576
+PRT,Portugal,inflation,2029,2.5483445842418595
+PRT,Portugal,inflation,2030,2.5455583036438614
+PRT,Portugal,fdi_inflow,2026,4.225876085546475
+PRT,Portugal,fdi_inflow,2027,4.258744231202229
+PRT,Portugal,fdi_inflow,2028,4.291612376857982
+PRT,Portugal,fdi_inflow,2029,4.324480522513736
+PRT,Portugal,fdi_inflow,2030,4.357348668169489
+PRI,Puerto Rico (US),gdp_growth,2026,1.0608281430875828
+PRI,Puerto Rico (US),gdp_growth,2027,0.9553552916083003
+PRI,Puerto Rico (US),gdp_growth,2028,0.8498824401290181
+PRI,Puerto Rico (US),gdp_growth,2029,0.7444095886497357
+PRI,Puerto Rico (US),gdp_growth,2030,0.6389367371704535
+PRI,Puerto Rico (US),inflation,2026,16.346468093950836
+PRI,Puerto Rico (US),inflation,2027,16.50873807979055
+PRI,Puerto Rico (US),inflation,2028,16.671008065630268
+PRI,Puerto Rico (US),inflation,2029,16.833278051469982
+PRI,Puerto Rico (US),inflation,2030,16.995548037309696
+PRI,Puerto Rico (US),fdi_inflow,2026,56.421159745464195
+PRI,Puerto Rico (US),fdi_inflow,2027,57.28085257182419
+PRI,Puerto Rico (US),fdi_inflow,2028,58.14054539818419
+PRI,Puerto Rico (US),fdi_inflow,2029,59.00023822454419
+PRI,Puerto Rico (US),fdi_inflow,2030,59.85993105090419
+QAT,Qatar,gdp_growth,2026,2.072022617458096
+QAT,Qatar,gdp_growth,2027,2.070805464469718
+QAT,Qatar,gdp_growth,2028,2.06958831148134
+QAT,Qatar,gdp_growth,2029,2.068371158492962
+QAT,Qatar,gdp_growth,2030,2.0671540055045834
+QAT,Qatar,inflation,2026,1.519163183950329
+QAT,Qatar,inflation,2027,1.336114555179718
+QAT,Qatar,inflation,2028,1.1530659264091068
+QAT,Qatar,inflation,2029,0.9700172976384958
+QAT,Qatar,inflation,2030,0.7869686688678847
+QAT,Qatar,fdi_inflow,2026,0.029510588373657096
+QAT,Qatar,fdi_inflow,2027,-0.021113625177457684
+QAT,Qatar,fdi_inflow,2028,-0.07173783872857245
+QAT,Qatar,fdi_inflow,2029,-0.12236205227968724
+QAT,Qatar,fdi_inflow,2030,-0.17298626583080204
+ROU,Romania,gdp_growth,2026,1.784559513761094
+ROU,Romania,gdp_growth,2027,1.561502241577464
+ROU,Romania,gdp_growth,2028,1.3384449693938338
+ROU,Romania,gdp_growth,2029,1.115387697210204
+ROU,Romania,gdp_growth,2030,0.8923304250265738
+ROU,Romania,inflation,2026,-57.05518246441114
+ROU,Romania,inflation,2027,-62.8755470187118
+ROU,Romania,inflation,2028,-68.69591157301247
+ROU,Romania,inflation,2029,-74.51627612731312
+ROU,Romania,inflation,2030,-80.33664068161377
+ROU,Romania,fdi_inflow,2026,1.9747130510139055
+ROU,Romania,fdi_inflow,2027,2.0256797662168977
+ROU,Romania,fdi_inflow,2028,2.07664648141989
+ROU,Romania,fdi_inflow,2029,2.1276131966228826
+ROU,Romania,fdi_inflow,2030,2.178579911825875
+RUS,Russian Federation,gdp_growth,2026,4.1858835456654315
+RUS,Russian Federation,gdp_growth,2027,4.314878294961811
+RUS,Russian Federation,gdp_growth,2028,4.44387304425819
+RUS,Russian Federation,gdp_growth,2029,4.572867793554569
+RUS,Russian Federation,gdp_growth,2030,4.701862542850948
+RUS,Russian Federation,inflation,2026,-45.15633139487447
+RUS,Russian Federation,inflation,2027,-50.32806665970523
+RUS,Russian Federation,inflation,2028,-55.499801924535994
+RUS,Russian Federation,inflation,2029,-60.67153718936676
+RUS,Russian Federation,inflation,2030,-65.84327245419752
+RUS,Russian Federation,fdi_inflow,2026,-0.8428638844768721
+RUS,Russian Federation,fdi_inflow,2027,-1.0670266708247145
+RUS,Russian Federation,fdi_inflow,2028,-1.2911894571725568
+RUS,Russian Federation,fdi_inflow,2029,-1.5153522435203992
+RUS,Russian Federation,fdi_inflow,2030,-1.7395150298682416
+RWA,Rwanda,gdp_growth,2026,8.115919816189981
+RWA,Rwanda,gdp_growth,2027,8.21163982989662
+RWA,Rwanda,gdp_growth,2028,8.307359843603258
+RWA,Rwanda,gdp_growth,2029,8.403079857309898
+RWA,Rwanda,gdp_growth,2030,8.498799871016535
+RWA,Rwanda,inflation,2026,7.221878073423361
+RWA,Rwanda,inflation,2027,7.453393957312192
+RWA,Rwanda,inflation,2028,7.684909841201023
+RWA,Rwanda,inflation,2029,7.916425725089853
+RWA,Rwanda,inflation,2030,8.147941608978684
+RWA,Rwanda,fdi_inflow,2026,3.403230069277701
+RWA,Rwanda,fdi_inflow,2027,3.4159611632349645
+RWA,Rwanda,fdi_inflow,2028,3.4286922571922274
+RWA,Rwanda,fdi_inflow,2029,3.4414233511494907
+RWA,Rwanda,fdi_inflow,2030,3.4541544451067536
+WSM,Samoa,gdp_growth,2026,2.2746947798577537
+WSM,Samoa,gdp_growth,2027,2.260626443423334
+WSM,Samoa,gdp_growth,2028,2.2465581069889144
+WSM,Samoa,gdp_growth,2029,2.2324897705544946
+WSM,Samoa,gdp_growth,2030,2.218421434120075
+WSM,Samoa,inflation,2026,3.8385355383368123
+WSM,Samoa,inflation,2027,3.8566608135616174
+WSM,Samoa,inflation,2028,3.874786088786423
+WSM,Samoa,inflation,2029,3.892911364011228
+WSM,Samoa,inflation,2030,3.9110366392360336
+WSM,Samoa,fdi_inflow,2026,0.3171284061019068
+WSM,Samoa,fdi_inflow,2027,0.2645324169344407
+WSM,Samoa,fdi_inflow,2028,0.21193642776697458
+WSM,Samoa,fdi_inflow,2029,0.15934043859950847
+WSM,Samoa,fdi_inflow,2030,0.10674444943204237
+SMR,San Marino,gdp_growth,2026,1.9468387379377694
+SMR,San Marino,gdp_growth,2027,1.7800708073618277
+SMR,San Marino,gdp_growth,2028,1.6133028767858861
+SMR,San Marino,gdp_growth,2029,1.4465349462099444
+SMR,San Marino,gdp_growth,2030,1.2797670156340029
+SMR,San Marino,inflation,2026,-2.034831637610776
+SMR,San Marino,inflation,2027,-2.518438896514815
+SMR,San Marino,inflation,2028,-3.002046155418854
+SMR,San Marino,inflation,2029,-3.4856534143228934
+SMR,San Marino,inflation,2030,-3.969260673226932
+SMR,San Marino,fdi_inflow,2026,20.5898443883404
+SMR,San Marino,fdi_inflow,2027,21.176446199957315
+SMR,San Marino,fdi_inflow,2028,21.763048011574227
+SMR,San Marino,fdi_inflow,2029,22.349649823191143
+SMR,San Marino,fdi_inflow,2030,22.93625163480806
+STP,Sao Tome and Principe,gdp_growth,2026,2.533350947011855
+STP,Sao Tome and Principe,gdp_growth,2027,2.524550515380057
+STP,Sao Tome and Principe,gdp_growth,2028,2.5157500837482583
+STP,Sao Tome and Principe,gdp_growth,2029,2.5069496521164596
+STP,Sao Tome and Principe,gdp_growth,2030,2.498149220484661
+STP,Sao Tome and Principe,inflation,2026,-41.858901779835016
+STP,Sao Tome and Principe,inflation,2027,-46.87891709850408
+STP,Sao Tome and Principe,inflation,2028,-51.89893241717314
+STP,Sao Tome and Principe,inflation,2029,-56.91894773584221
+STP,Sao Tome and Principe,inflation,2030,-61.93896305451128
+STP,Sao Tome and Principe,fdi_inflow,2026,-1.201094565788762
+STP,Sao Tome and Principe,fdi_inflow,2027,-1.2624968811831387
+STP,Sao Tome and Principe,fdi_inflow,2028,-1.3238991965775155
+STP,Sao Tome and Principe,fdi_inflow,2029,-1.3853015119718923
+STP,Sao Tome and Principe,fdi_inflow,2030,-1.4467038273662691
+SAU,Saudi Arabia,gdp_growth,2026,2.4585726493997457
+SAU,Saudi Arabia,gdp_growth,2027,2.3184522211095318
+SAU,Saudi Arabia,gdp_growth,2028,2.178331792819318
+SAU,Saudi Arabia,gdp_growth,2029,2.0382113645291042
+SAU,Saudi Arabia,gdp_growth,2030,1.8980909362388907
+SAU,Saudi Arabia,inflation,2026,1.5309930920657886
+SAU,Saudi Arabia,inflation,2027,1.3740650627118969
+SAU,Saudi Arabia,inflation,2028,1.2171370333580054
+SAU,Saudi Arabia,inflation,2029,1.0602090040041137
+SAU,Saudi Arabia,inflation,2030,0.903280974650222
+SAU,Saudi Arabia,fdi_inflow,2026,1.0468374980097044
+SAU,Saudi Arabia,fdi_inflow,2027,1.0559013652188776
+SAU,Saudi Arabia,fdi_inflow,2028,1.0649652324280505
+SAU,Saudi Arabia,fdi_inflow,2029,1.0740290996372237
+SAU,Saudi Arabia,fdi_inflow,2030,1.0830929668463967
+SEN,Senegal,gdp_growth,2026,4.906743622263086
+SEN,Senegal,gdp_growth,2027,4.956006028333452
+SEN,Senegal,gdp_growth,2028,5.005268434403818
+SEN,Senegal,gdp_growth,2029,5.054530840474184
+SEN,Senegal,gdp_growth,2030,5.10379324654455
+SEN,Senegal,inflation,2026,-10.65414872123962
+SEN,Senegal,inflation,2027,-11.358259500999434
+SEN,Senegal,inflation,2028,-12.062370280759247
+SEN,Senegal,inflation,2029,-12.76648106051906
+SEN,Senegal,inflation,2030,-13.470591840278873
+SEN,Senegal,fdi_inflow,2026,7.643428488571807
+SEN,Senegal,fdi_inflow,2027,7.700051010503045
+SEN,Senegal,fdi_inflow,2028,7.756673532434282
+SEN,Senegal,fdi_inflow,2029,7.8132960543655186
+SEN,Senegal,fdi_inflow,2030,7.869918576296756
+SRB,Serbia,gdp_growth,2026,1.7727300824473544
+SRB,Serbia,gdp_growth,2027,1.6625896336224468
+SRB,Serbia,gdp_growth,2028,1.5524491847975392
+SRB,Serbia,gdp_growth,2029,1.4423087359726314
+SRB,Serbia,gdp_growth,2030,1.3321682871477236
+SRB,Serbia,inflation,2026,5.199604974344519
+SRB,Serbia,inflation,2027,4.795963774934053
+SRB,Serbia,inflation,2028,4.392322575523588
+SRB,Serbia,inflation,2029,3.9886813761131235
+SRB,Serbia,inflation,2030,3.5850401767026585
+SRB,Serbia,fdi_inflow,2026,6.3400943284739135
+SRB,Serbia,fdi_inflow,2027,6.407884736245849
+SRB,Serbia,fdi_inflow,2028,6.475675144017784
+SRB,Serbia,fdi_inflow,2029,6.543465551789719
+SRB,Serbia,fdi_inflow,2030,6.611255959561655
+SYC,Seychelles,gdp_growth,2026,3.2125456347454886
+SYC,Seychelles,gdp_growth,2027,3.171874218049253
+SYC,Seychelles,gdp_growth,2028,3.1312028013530173
+SYC,Seychelles,gdp_growth,2029,3.090531384656782
+SYC,Seychelles,gdp_growth,2030,3.049859967960546
+SYC,Seychelles,inflation,2026,0.8677220824900591
+SYC,Seychelles,inflation,2027,0.5437552768151671
+SYC,Seychelles,inflation,2028,0.2197884711402751
+SYC,Seychelles,inflation,2029,-0.104178334534617
+SYC,Seychelles,inflation,2030,-0.4281451402095091
+SYC,Seychelles,fdi_inflow,2026,13.626063275420472
+SYC,Seychelles,fdi_inflow,2027,13.785870750444348
+SYC,Seychelles,fdi_inflow,2028,13.945678225468225
+SYC,Seychelles,fdi_inflow,2029,14.1054857004921
+SYC,Seychelles,fdi_inflow,2030,14.265293175515977
+SLE,Sierra Leone,gdp_growth,2026,3.644074304750536
+SLE,Sierra Leone,gdp_growth,2027,3.672245353191716
+SLE,Sierra Leone,gdp_growth,2028,3.700416401632896
+SLE,Sierra Leone,gdp_growth,2029,3.7285874500740763
+SLE,Sierra Leone,gdp_growth,2030,3.7567584985152562
+SLE,Sierra Leone,inflation,2026,31.91333739494325
+SLE,Sierra Leone,inflation,2027,33.8215033249346
+SLE,Sierra Leone,inflation,2028,35.72966925492596
+SLE,Sierra Leone,inflation,2029,37.637835184917314
+SLE,Sierra Leone,inflation,2030,39.54600111490867
+SLE,Sierra Leone,fdi_inflow,2026,-0.488228175526485
+SLE,Sierra Leone,fdi_inflow,2027,-0.6552958836777933
+SLE,Sierra Leone,fdi_inflow,2028,-0.8223635918291017
+SLE,Sierra Leone,fdi_inflow,2029,-0.98943129998041
+SLE,Sierra Leone,fdi_inflow,2030,-1.1564990081317184
+SGP,Singapore,gdp_growth,2026,3.5833514880245434
+SGP,Singapore,gdp_growth,2027,3.4845464557253654
+SGP,Singapore,gdp_growth,2028,3.3857414234261873
+SGP,Singapore,gdp_growth,2029,3.2869363911270093
+SGP,Singapore,gdp_growth,2030,3.1881313588278313
+SGP,Singapore,inflation,2026,2.3937820643929384
+SGP,Singapore,inflation,2027,2.398052892772066
+SGP,Singapore,inflation,2028,2.402323721151194
+SGP,Singapore,inflation,2029,2.4065945495303214
+SGP,Singapore,inflation,2030,2.410865377909449
+SGP,Singapore,fdi_inflow,2026,28.097510975880873
+SGP,Singapore,fdi_inflow,2027,28.64820413130118
+SGP,Singapore,fdi_inflow,2028,29.19889728672149
+SGP,Singapore,fdi_inflow,2029,29.7495904421418
+SGP,Singapore,fdi_inflow,2030,30.300283597562107
+SXM,Sint Maarten (Dutch part),gdp_growth,2026,1.0949322646662425
+SXM,Sint Maarten (Dutch part),gdp_growth,2027,0.9925784151423556
+SXM,Sint Maarten (Dutch part),gdp_growth,2028,0.8902245656184689
+SXM,Sint Maarten (Dutch part),gdp_growth,2029,0.7878707160945819
+SXM,Sint Maarten (Dutch part),gdp_growth,2030,0.6855168665706952
+SXM,Sint Maarten (Dutch part),inflation,2026,1.9187108547848186
+SXM,Sint Maarten (Dutch part),inflation,2027,1.8863480563124921
+SXM,Sint Maarten (Dutch part),inflation,2028,1.8539852578401659
+SXM,Sint Maarten (Dutch part),inflation,2029,1.8216224593678394
+SXM,Sint Maarten (Dutch part),inflation,2030,1.789259660895513
+SXM,Sint Maarten (Dutch part),fdi_inflow,2026,-4.446030749540871
+SXM,Sint Maarten (Dutch part),fdi_inflow,2027,-5.999499796284559
+SXM,Sint Maarten (Dutch part),fdi_inflow,2028,-7.552968843028248
+SXM,Sint Maarten (Dutch part),fdi_inflow,2029,-9.106437889771936
+SXM,Sint Maarten (Dutch part),fdi_inflow,2030,-10.659906936515625
+SVK,Slovak Republic,gdp_growth,2026,3.4197641323692323
+SVK,Slovak Republic,gdp_growth,2027,3.459948926922838
+SVK,Slovak Republic,gdp_growth,2028,3.500133721476444
+SVK,Slovak Republic,gdp_growth,2029,3.5403185160300494
+SVK,Slovak Republic,gdp_growth,2030,3.5805033105836555
+SVK,Slovak Republic,inflation,2026,-13.67110789074226
+SVK,Slovak Republic,inflation,2027,-15.155578230093164
+SVK,Slovak Republic,inflation,2028,-16.64004856944407
+SVK,Slovak Republic,inflation,2029,-18.124518908794975
+SVK,Slovak Republic,inflation,2030,-19.608989248145882
+SVK,Slovak Republic,fdi_inflow,2026,2.893850218322278
+SVK,Slovak Republic,fdi_inflow,2027,2.9147474485329585
+SVK,Slovak Republic,fdi_inflow,2028,2.935644678743639
+SVK,Slovak Republic,fdi_inflow,2029,2.956541908954319
+SVK,Slovak Republic,fdi_inflow,2030,2.9774391391649995
+SVN,Slovenia,gdp_growth,2026,2.8381736501675796
+SVN,Slovenia,gdp_growth,2027,2.8777079631214804
+SVN,Slovenia,gdp_growth,2028,2.9172422760753807
+SVN,Slovenia,gdp_growth,2029,2.956776589029281
+SVN,Slovenia,gdp_growth,2030,2.9963109019831817
+SVN,Slovenia,inflation,2026,0.7936774111892602
+SVN,Slovenia,inflation,2027,-0.2979900253961083
+SVN,Slovenia,inflation,2028,-1.3896574619814768
+SVN,Slovenia,inflation,2029,-2.4813248985668452
+SVN,Slovenia,inflation,2030,-3.5729923351522133
+SVN,Slovenia,fdi_inflow,2026,2.995486633974163
+SVN,Slovenia,fdi_inflow,2027,3.0525956374798415
+SVN,Slovenia,fdi_inflow,2028,3.1097046409855205
+SVN,Slovenia,fdi_inflow,2029,3.166813644491199
+SVN,Slovenia,fdi_inflow,2030,3.223922647996878
+SLB,Solomon Islands,gdp_growth,2026,2.5301423325895476
+SLB,Solomon Islands,gdp_growth,2027,2.521948452282304
+SLB,Solomon Islands,gdp_growth,2028,2.5137545719750602
+SLB,Solomon Islands,gdp_growth,2029,2.5055606916678164
+SLB,Solomon Islands,gdp_growth,2030,2.497366811360573
+SLB,Solomon Islands,inflation,2026,3.3248859596288263
+SLB,Solomon Islands,inflation,2027,3.2088764304066255
+SLB,Solomon Islands,inflation,2028,3.092866901184425
+SLB,Solomon Islands,inflation,2029,2.976857371962225
+SLB,Solomon Islands,inflation,2030,2.860847842740024
+SLB,Solomon Islands,fdi_inflow,2026,2.471354610553593
+SLB,Solomon Islands,fdi_inflow,2027,2.514454141456119
+SLB,Solomon Islands,fdi_inflow,2028,2.5575536723586447
+SLB,Solomon Islands,fdi_inflow,2029,2.6006532032611704
+SLB,Solomon Islands,fdi_inflow,2030,2.643752734163696
+SOM,"Somalia, Fed. Rep.",gdp_growth,2026,6.449450029149013
+SOM,"Somalia, Fed. Rep.",gdp_growth,2027,6.528874392577995
+SOM,"Somalia, Fed. Rep.",gdp_growth,2028,6.608298756006977
+SOM,"Somalia, Fed. Rep.",gdp_growth,2029,6.687723119435958
+SOM,"Somalia, Fed. Rep.",gdp_growth,2030,6.7671474828649405
+SOM,"Somalia, Fed. Rep.",inflation,2026,1.7482096028043084
+SOM,"Somalia, Fed. Rep.",inflation,2027,1.354982629932255
+SOM,"Somalia, Fed. Rep.",inflation,2028,0.9617556570602013
+SOM,"Somalia, Fed. Rep.",inflation,2029,0.5685286841881478
+SOM,"Somalia, Fed. Rep.",inflation,2030,0.1753017113160944
+SOM,"Somalia, Fed. Rep.",fdi_inflow,2026,7.441505575777247
+SOM,"Somalia, Fed. Rep.",fdi_inflow,2027,7.701174540350491
+SOM,"Somalia, Fed. Rep.",fdi_inflow,2028,7.960843504923735
+SOM,"Somalia, Fed. Rep.",fdi_inflow,2029,8.22051246949698
+SOM,"Somalia, Fed. Rep.",fdi_inflow,2030,8.480181434070225
+ZAF,South Africa,gdp_growth,2026,0.5069822898385544
+ZAF,South Africa,gdp_growth,2027,0.4308637890326769
+ZAF,South Africa,gdp_growth,2028,0.3547452882267994
+ZAF,South Africa,gdp_growth,2029,0.27862678742092195
+ZAF,South Africa,gdp_growth,2030,0.2025082866150445
+ZAF,South Africa,inflation,2026,4.408419196903538
+ZAF,South Africa,inflation,2027,4.455685927913128
+ZAF,South Africa,inflation,2028,4.502952658922716
+ZAF,South Africa,inflation,2029,4.550219389932305
+ZAF,South Africa,inflation,2030,4.597486120941894
+ZAF,South Africa,fdi_inflow,2026,1.711471607875184
+ZAF,South Africa,fdi_inflow,2027,1.7337472241024974
+ZAF,South Africa,fdi_inflow,2028,1.7560228403298108
+ZAF,South Africa,fdi_inflow,2029,1.7782984565571243
+ZAF,South Africa,fdi_inflow,2030,1.8005740727844377
+SSD,South Sudan,gdp_growth,2026,-12.187105737130802
+SSD,South Sudan,gdp_growth,2027,-12.61648271962984
+SSD,South Sudan,gdp_growth,2028,-13.04585970212888
+SSD,South Sudan,gdp_growth,2029,-13.475236684627918
+SSD,South Sudan,gdp_growth,2030,-13.904613667126956
+SSD,South Sudan,inflation,2026,53.764288191795956
+SSD,South Sudan,inflation,2027,55.11933364815708
+SSD,South Sudan,inflation,2028,56.47437910451821
+SSD,South Sudan,inflation,2029,57.82942456087934
+SSD,South Sudan,inflation,2030,59.184470017240464
+SSD,South Sudan,fdi_inflow,2026,-0.67613369212541
+SSD,South Sudan,fdi_inflow,2027,-0.7638181639357303
+SSD,South Sudan,fdi_inflow,2028,-0.8515026357460507
+SSD,South Sudan,fdi_inflow,2029,-0.939187107556371
+SSD,South Sudan,fdi_inflow,2030,-1.0268715793666914
+ESP,Spain,gdp_growth,2026,2.1413000551129238
+ESP,Spain,gdp_growth,2027,2.0625904076528734
+ESP,Spain,gdp_growth,2028,1.983880760192823
+ESP,Spain,gdp_growth,2029,1.9051711127327726
+ESP,Spain,gdp_growth,2030,1.8264614652727222
+ESP,Spain,inflation,2026,2.8152404319293876
+ESP,Spain,inflation,2027,2.8397936207302283
+ESP,Spain,inflation,2028,2.864346809531069
+ESP,Spain,inflation,2029,2.88889999833191
+ESP,Spain,inflation,2030,2.9134531871327507
+ESP,Spain,fdi_inflow,2026,2.8552307121049303
+ESP,Spain,fdi_inflow,2027,2.857138030294164
+ESP,Spain,fdi_inflow,2028,2.8590453484833973
+ESP,Spain,fdi_inflow,2029,2.8609526666726306
+ESP,Spain,fdi_inflow,2030,2.8628599848618643
+LKA,Sri Lanka,gdp_growth,2026,1.6795982033544339
+LKA,Sri Lanka,gdp_growth,2027,1.632582709378377
+LKA,Sri Lanka,gdp_growth,2028,1.5855672154023197
+LKA,Sri Lanka,gdp_growth,2029,1.5385517214262627
+LKA,Sri Lanka,gdp_growth,2030,1.4915362274502058
+LKA,Sri Lanka,inflation,2026,10.44812218299772
+LKA,Sri Lanka,inflation,2027,10.560975073723972
+LKA,Sri Lanka,inflation,2028,10.673827964450222
+LKA,Sri Lanka,inflation,2029,10.786680855176472
+LKA,Sri Lanka,inflation,2030,10.899533745902724
+LKA,Sri Lanka,fdi_inflow,2026,0.7387553147127044
+LKA,Sri Lanka,fdi_inflow,2027,0.6967993155107606
+LKA,Sri Lanka,fdi_inflow,2028,0.6548433163088166
+LKA,Sri Lanka,fdi_inflow,2029,0.6128873171068727
+LKA,Sri Lanka,fdi_inflow,2030,0.5709313179049289
+KNA,St. Kitts and Nevis,gdp_growth,2026,0.8307605202337309
+KNA,St. Kitts and Nevis,gdp_growth,2027,0.7112558178929926
+KNA,St. Kitts and Nevis,gdp_growth,2028,0.5917511155522543
+KNA,St. Kitts and Nevis,gdp_growth,2029,0.47224641321151606
+KNA,St. Kitts and Nevis,gdp_growth,2030,0.35274171087077777
+KNA,St. Kitts and Nevis,inflation,2026,2.033071700027029
+KNA,St. Kitts and Nevis,inflation,2027,1.8841945289584467
+KNA,St. Kitts and Nevis,inflation,2028,1.7353173578898649
+KNA,St. Kitts and Nevis,inflation,2029,1.5864401868212827
+KNA,St. Kitts and Nevis,inflation,2030,1.4375630157527006
+KNA,St. Kitts and Nevis,fdi_inflow,2026,3.647217996102424
+KNA,St. Kitts and Nevis,fdi_inflow,2027,3.668470442466867
+KNA,St. Kitts and Nevis,fdi_inflow,2028,3.68972288883131
+KNA,St. Kitts and Nevis,fdi_inflow,2029,3.710975335195753
+KNA,St. Kitts and Nevis,fdi_inflow,2030,3.732227781560196
+LCA,St. Lucia,gdp_growth,2026,1.440872059088547
+LCA,St. Lucia,gdp_growth,2027,1.3680963362473244
+LCA,St. Lucia,gdp_growth,2028,1.295320613406102
+LCA,St. Lucia,gdp_growth,2029,1.2225448905648792
+LCA,St. Lucia,gdp_growth,2030,1.1497691677236568
+LCA,St. Lucia,inflation,2026,0.8386000978971664
+LCA,St. Lucia,inflation,2027,0.7929630063672363
+LCA,St. Lucia,inflation,2028,0.747325914837306
+LCA,St. Lucia,inflation,2029,0.7016888233073759
+LCA,St. Lucia,inflation,2030,0.6560517317774457
+LCA,St. Lucia,fdi_inflow,2026,7.353838594821973
+LCA,St. Lucia,fdi_inflow,2027,7.400416792069935
+LCA,St. Lucia,fdi_inflow,2028,7.446994989317896
+LCA,St. Lucia,fdi_inflow,2029,7.4935731865658575
+LCA,St. Lucia,fdi_inflow,2030,7.54015138381382
+MAF,St. Martin (French part),gdp_growth,2026,-2.842857425971765
+MAF,St. Martin (French part),gdp_growth,2027,-3.157143390684599
+MAF,St. Martin (French part),gdp_growth,2028,-3.471429355397433
+MAF,St. Martin (French part),gdp_growth,2029,-3.785715320110267
+MAF,St. Martin (French part),gdp_growth,2030,-4.100001284823101
+MAF,St. Martin (French part),inflation,2026,82.04556342253127
+MAF,St. Martin (French part),inflation,2027,76.71526387394185
+MAF,St. Martin (French part),inflation,2028,71.38496432535241
+MAF,St. Martin (French part),inflation,2029,66.05466477676299
+MAF,St. Martin (French part),inflation,2030,60.72436522817355
+MAF,St. Martin (French part),fdi_inflow,2026,0.6280754434661067
+MAF,St. Martin (French part),fdi_inflow,2027,0.33294402593543826
+MAF,St. Martin (French part),fdi_inflow,2028,0.037812608404769854
+MAF,St. Martin (French part),fdi_inflow,2029,-0.25731880912589866
+MAF,St. Martin (French part),fdi_inflow,2030,-0.5524502266565672
+VCT,St. Vincent and the Grenadines,gdp_growth,2026,2.4969540249603934
+VCT,St. Vincent and the Grenadines,gdp_growth,2027,2.481741221886568
+VCT,St. Vincent and the Grenadines,gdp_growth,2028,2.4665284188127434
+VCT,St. Vincent and the Grenadines,gdp_growth,2029,2.4513156157389187
+VCT,St. Vincent and the Grenadines,gdp_growth,2030,2.4361028126650934
+VCT,St. Vincent and the Grenadines,inflation,2026,-5.096116049027403
+VCT,St. Vincent and the Grenadines,inflation,2027,-5.5207667725284315
+VCT,St. Vincent and the Grenadines,inflation,2028,-5.94541749602946
+VCT,St. Vincent and the Grenadines,inflation,2029,-6.370068219530489
+VCT,St. Vincent and the Grenadines,inflation,2030,-6.794718943031517
+VCT,St. Vincent and the Grenadines,fdi_inflow,2026,11.293510509435409
+VCT,St. Vincent and the Grenadines,fdi_inflow,2027,11.423935547077603
+VCT,St. Vincent and the Grenadines,fdi_inflow,2028,11.554360584719795
+VCT,St. Vincent and the Grenadines,fdi_inflow,2029,11.684785622361987
+VCT,St. Vincent and the Grenadines,fdi_inflow,2030,11.815210660004182
+SDN,Sudan,gdp_growth,2026,-9.416480264376672
+SDN,Sudan,gdp_growth,2027,-9.599913933193376
+SDN,Sudan,gdp_growth,2028,-9.783347602010078
+SDN,Sudan,gdp_growth,2029,-9.96678127082678
+SDN,Sudan,gdp_growth,2030,-10.150214939643485
+SDN,Sudan,inflation,2026,151.5255383604592
+SDN,Sudan,inflation,2027,153.84201944652816
+SDN,Sudan,inflation,2028,156.1585005325971
+SDN,Sudan,inflation,2029,158.47498161866605
+SDN,Sudan,inflation,2030,160.79146270473498
+SDN,Sudan,fdi_inflow,2026,-3.307467779212526
+SDN,Sudan,fdi_inflow,2027,-3.5784470810526265
+SDN,Sudan,fdi_inflow,2028,-3.8494263828927275
+SDN,Sudan,fdi_inflow,2029,-4.120405684732828
+SDN,Sudan,fdi_inflow,2030,-4.391384986572929
+SUR,Suriname,gdp_growth,2026,-0.11815516045700024
+SUR,Suriname,gdp_growth,2027,-0.22146996250913362
+SUR,Suriname,gdp_growth,2028,-0.324784764561267
+SUR,Suriname,gdp_growth,2029,-0.4280995666134004
+SUR,Suriname,gdp_growth,2030,-0.5314143686655337
+SUR,Suriname,inflation,2026,16.467316516590824
+SUR,Suriname,inflation,2027,16.70501711661172
+SUR,Suriname,inflation,2028,16.94271771663262
+SUR,Suriname,inflation,2029,17.18041831665352
+SUR,Suriname,inflation,2030,17.41811891667442
+SUR,Suriname,fdi_inflow,2026,-0.9569883106821271
+SUR,Suriname,fdi_inflow,2027,-1.020115514045672
+SUR,Suriname,fdi_inflow,2028,-1.0832427174092167
+SUR,Suriname,fdi_inflow,2029,-1.1463699207727616
+SUR,Suriname,fdi_inflow,2030,-1.2094971241363064
+SWE,Sweden,gdp_growth,2026,1.1349059613279777
+SWE,Sweden,gdp_growth,2027,1.0957482670293863
+SWE,Sweden,gdp_growth,2028,1.0565905727307947
+SWE,Sweden,gdp_growth,2029,1.017432878432203
+SWE,Sweden,gdp_growth,2030,0.9782751841336116
+SWE,Sweden,inflation,2026,3.399712651149684
+SWE,Sweden,inflation,2027,3.3950071050454063
+SWE,Sweden,inflation,2028,3.390301558941129
+SWE,Sweden,inflation,2029,3.385596012836851
+SWE,Sweden,inflation,2030,3.380890466732574
+SWE,Sweden,fdi_inflow,2026,4.745721820562788
+SWE,Sweden,fdi_inflow,2027,4.801588286392213
+SWE,Sweden,fdi_inflow,2028,4.8574547522216385
+SWE,Sweden,fdi_inflow,2029,4.913321218051064
+SWE,Sweden,fdi_inflow,2030,4.969187683880489
+CHE,Switzerland,gdp_growth,2026,1.166045164660468
+CHE,Switzerland,gdp_growth,2027,1.1374269738433824
+CHE,Switzerland,gdp_growth,2028,1.108808783026297
+CHE,Switzerland,gdp_growth,2029,1.0801905922092114
+CHE,Switzerland,gdp_growth,2030,1.051572401392126
+CHE,Switzerland,inflation,2026,1.0565487976354904
+CHE,Switzerland,inflation,2027,1.0507571755913425
+CHE,Switzerland,inflation,2028,1.0449655535471944
+CHE,Switzerland,inflation,2029,1.0391739315030464
+CHE,Switzerland,inflation,2030,1.0333823094588983
+CHE,Switzerland,fdi_inflow,2026,-5.940690280762644
+CHE,Switzerland,fdi_inflow,2027,-6.458913613905242
+CHE,Switzerland,fdi_inflow,2028,-6.977136947047841
+CHE,Switzerland,fdi_inflow,2029,-7.495360280190438
+CHE,Switzerland,fdi_inflow,2030,-8.013583613333036
+SYR,Syrian Arab Republic,gdp_growth,2026,-2.534176050421039
+SYR,Syrian Arab Republic,gdp_growth,2027,-2.714342033593927
+SYR,Syrian Arab Republic,gdp_growth,2028,-2.894508016766815
+SYR,Syrian Arab Republic,gdp_growth,2029,-3.0746739999397033
+SYR,Syrian Arab Republic,gdp_growth,2030,-3.2548399831125914
+SYR,Syrian Arab Republic,inflation,2026,13.678156409149258
+SYR,Syrian Arab Republic,inflation,2027,13.836617257857961
+SYR,Syrian Arab Republic,inflation,2028,13.995078106566663
+SYR,Syrian Arab Republic,inflation,2029,14.153538955275366
+SYR,Syrian Arab Republic,inflation,2030,14.311999803984067
+SYR,Syrian Arab Republic,fdi_inflow,2026,1.098405117760188
+SYR,Syrian Arab Republic,fdi_inflow,2027,1.0677028034944205
+SYR,Syrian Arab Republic,fdi_inflow,2028,1.0370004892286533
+SYR,Syrian Arab Republic,fdi_inflow,2029,1.0062981749628859
+SYR,Syrian Arab Republic,fdi_inflow,2030,0.9755958606971185
+TJK,Tajikistan,gdp_growth,2026,8.593149136236416
+TJK,Tajikistan,gdp_growth,2027,8.737331388817514
+TJK,Tajikistan,gdp_growth,2028,8.881513641398612
+TJK,Tajikistan,gdp_growth,2029,9.02569589397971
+TJK,Tajikistan,gdp_growth,2030,9.169878146560809
+TJK,Tajikistan,inflation,2026,-14.372956539741406
+TJK,Tajikistan,inflation,2027,-16.198506865197167
+TJK,Tajikistan,inflation,2028,-18.024057190652925
+TJK,Tajikistan,inflation,2029,-19.849607516108687
+TJK,Tajikistan,inflation,2030,-21.67515784156445
+TJK,Tajikistan,fdi_inflow,2026,1.876216532856509
+TJK,Tajikistan,fdi_inflow,2027,1.888911411350119
+TJK,Tajikistan,fdi_inflow,2028,1.9016062898437291
+TJK,Tajikistan,fdi_inflow,2029,1.9143011683373394
+TJK,Tajikistan,fdi_inflow,2030,1.9269960468309495
+TZA,Tanzania,gdp_growth,2026,6.416077234954158
+TZA,Tanzania,gdp_growth,2027,6.492790034646065
+TZA,Tanzania,gdp_growth,2028,6.569502834337973
+TZA,Tanzania,gdp_growth,2029,6.646215634029881
+TZA,Tanzania,gdp_growth,2030,6.722928433721788
+TZA,Tanzania,inflation,2026,3.0266069839481458
+TZA,Tanzania,inflation,2027,2.979174032286373
+TZA,Tanzania,inflation,2028,2.9317410806246005
+TZA,Tanzania,inflation,2029,2.884308128962828
+TZA,Tanzania,inflation,2030,2.836875177301055
+TZA,Tanzania,fdi_inflow,2026,1.8745546175632684
+TZA,Tanzania,fdi_inflow,2027,1.8220658296637429
+TZA,Tanzania,fdi_inflow,2028,1.7695770417642174
+TZA,Tanzania,fdi_inflow,2029,1.717088253864692
+TZA,Tanzania,fdi_inflow,2030,1.6645994659651668
+THA,Thailand,gdp_growth,2026,2.134547760619344
+THA,Thailand,gdp_growth,2027,2.094510855351329
+THA,Thailand,gdp_growth,2028,2.0544739500833136
+THA,Thailand,gdp_growth,2029,2.0144370448152986
+THA,Thailand,gdp_growth,2030,1.9744001395472837
+THA,Thailand,inflation,2026,1.9860837487619467
+THA,Thailand,inflation,2027,1.9778046809964585
+THA,Thailand,inflation,2028,1.9695256132309702
+THA,Thailand,inflation,2029,1.961246545465482
+THA,Thailand,inflation,2030,1.952967477699994
+THA,Thailand,fdi_inflow,2026,-2.155042292060987
+THA,Thailand,fdi_inflow,2027,-2.384029189582469
+THA,Thailand,fdi_inflow,2028,-2.6130160871039507
+THA,Thailand,fdi_inflow,2029,-2.842002984625433
+THA,Thailand,fdi_inflow,2030,-3.0709898821469155
+TLS,Timor-Leste,gdp_growth,2026,-1.0316747588820134
+TLS,Timor-Leste,gdp_growth,2027,-1.3276378071477606
+TLS,Timor-Leste,gdp_growth,2028,-1.6236008554135077
+TLS,Timor-Leste,gdp_growth,2029,-1.919563903679255
+TLS,Timor-Leste,gdp_growth,2030,-2.215526951945002
+TLS,Timor-Leste,inflation,2026,-2.922323133570454
+TLS,Timor-Leste,inflation,2027,-3.9264977496517774
+TLS,Timor-Leste,inflation,2028,-4.930672365733101
+TLS,Timor-Leste,inflation,2029,-5.934846981814425
+TLS,Timor-Leste,inflation,2030,-6.939021597895748
+TLS,Timor-Leste,fdi_inflow,2026,1.4141827442490635
+TLS,Timor-Leste,fdi_inflow,2027,1.318228758809129
+TLS,Timor-Leste,fdi_inflow,2028,1.2222747733691943
+TLS,Timor-Leste,fdi_inflow,2029,1.1263207879292598
+TLS,Timor-Leste,fdi_inflow,2030,1.030366802489325
+TGO,Togo,gdp_growth,2026,6.331263781883417
+TGO,Togo,gdp_growth,2027,6.526411708046031
+TGO,Togo,gdp_growth,2028,6.721559634208646
+TGO,Togo,gdp_growth,2029,6.91670756037126
+TGO,Togo,gdp_growth,2030,7.111855486533875
+TGO,Togo,inflation,2026,-11.15650319197773
+TGO,Togo,inflation,2027,-11.896246153727768
+TGO,Togo,inflation,2028,-12.635989115477805
+TGO,Togo,inflation,2029,-13.375732077227841
+TGO,Togo,inflation,2030,-14.115475038977879
+TGO,Togo,fdi_inflow,2026,0.24192389957284438
+TGO,Togo,fdi_inflow,2027,0.19545323743670356
+TGO,Togo,fdi_inflow,2028,0.14898257530056272
+TGO,Togo,fdi_inflow,2029,0.1025119131644219
+TGO,Togo,fdi_inflow,2030,0.056041251028281086
+TON,Tonga,gdp_growth,2026,0.29758160356956403
+TON,Tonga,gdp_growth,2027,0.22583525282511788
+TON,Tonga,gdp_growth,2028,0.15408890208067172
+TON,Tonga,gdp_growth,2029,0.08234255133622553
+TON,Tonga,gdp_growth,2030,0.010596200591779348
+TON,Tonga,inflation,2026,5.0300643977466235
+TON,Tonga,inflation,2027,5.1786626486256715
+TON,Tonga,inflation,2028,5.327260899504719
+TON,Tonga,inflation,2029,5.475859150383767
+TON,Tonga,inflation,2030,5.624457401262814
+TON,Tonga,fdi_inflow,2026,0.7691100260779523
+TON,Tonga,fdi_inflow,2027,0.7841998354490891
+TON,Tonga,fdi_inflow,2028,0.799289644820226
+TON,Tonga,fdi_inflow,2029,0.8143794541913628
+TON,Tonga,fdi_inflow,2030,0.8294692635624996
+TTO,Trinidad and Tobago,gdp_growth,2026,1.7649319602687008
+TTO,Trinidad and Tobago,gdp_growth,2027,1.663876058014298
+TTO,Trinidad and Tobago,gdp_growth,2028,1.562820155759895
+TTO,Trinidad and Tobago,gdp_growth,2029,1.4617642535054922
+TTO,Trinidad and Tobago,gdp_growth,2030,1.3607083512510894
+TTO,Trinidad and Tobago,inflation,2026,0.7616141264276396
+TTO,Trinidad and Tobago,inflation,2027,0.7422283648625764
+TTO,Trinidad and Tobago,inflation,2028,0.7228426032975132
+TTO,Trinidad and Tobago,inflation,2029,0.7034568417324499
+TTO,Trinidad and Tobago,inflation,2030,0.6840710801673867
+TTO,Trinidad and Tobago,fdi_inflow,2026,-2.058649024117131
+TTO,Trinidad and Tobago,fdi_inflow,2027,-2.1465379287495066
+TTO,Trinidad and Tobago,fdi_inflow,2028,-2.234426833381882
+TTO,Trinidad and Tobago,fdi_inflow,2029,-2.322315738014258
+TTO,Trinidad and Tobago,fdi_inflow,2030,-2.4102046426466335
+TUN,Tunisia,gdp_growth,2026,1.168286107934607
+TUN,Tunisia,gdp_growth,2027,1.3478284369805769
+TUN,Tunisia,gdp_growth,2028,1.527370766026547
+TUN,Tunisia,gdp_growth,2029,1.7069130950725167
+TUN,Tunisia,gdp_growth,2030,1.8864554241184868
+TUN,Tunisia,inflation,2026,8.346599540981547
+TUN,Tunisia,inflation,2027,9.334602157812386
+TUN,Tunisia,inflation,2028,10.322604774643224
+TUN,Tunisia,inflation,2029,11.310607391474063
+TUN,Tunisia,inflation,2030,12.298610008304902
+TUN,Tunisia,fdi_inflow,2026,1.6165915417093988
+TUN,Tunisia,fdi_inflow,2027,1.6200738018452692
+TUN,Tunisia,fdi_inflow,2028,1.6235560619811393
+TUN,Tunisia,fdi_inflow,2029,1.6270383221170097
+TUN,Tunisia,fdi_inflow,2030,1.63052058225288
+TUR,Turkiye,gdp_growth,2026,4.649101610225836
+TUR,Turkiye,gdp_growth,2027,4.645863491960551
+TUR,Turkiye,gdp_growth,2028,4.6426253736952665
+TUR,Turkiye,gdp_growth,2029,4.639387255429981
+TUR,Turkiye,gdp_growth,2030,4.636149137164697
+TUR,Turkiye,inflation,2026,59.40250526014906
+TUR,Turkiye,inflation,2027,60.224059821216905
+TUR,Turkiye,inflation,2028,61.045614382284754
+TUR,Turkiye,inflation,2029,61.867168943352596
+TUR,Turkiye,inflation,2030,62.68872350442044
+TUR,Turkiye,fdi_inflow,2026,0.9263846018361545
+TUR,Turkiye,fdi_inflow,2027,0.9159164133757338
+TUR,Turkiye,fdi_inflow,2028,0.9054482249153133
+TUR,Turkiye,fdi_inflow,2029,0.8949800364548927
+TUR,Turkiye,fdi_inflow,2030,0.884511847994472
+TKM,Turkmenistan,gdp_growth,2026,9.437235534994931
+TKM,Turkmenistan,gdp_growth,2027,9.628231835023787
+TKM,Turkmenistan,gdp_growth,2028,9.819228135052642
+TKM,Turkmenistan,gdp_growth,2029,10.010224435081497
+TKM,Turkmenistan,gdp_growth,2030,10.201220735110352
+TKM,Turkmenistan,inflation,2026,4.184152853133502
+TKM,Turkmenistan,inflation,2027,4.0902041090475345
+TKM,Turkmenistan,inflation,2028,3.9962553649615673
+TKM,Turkmenistan,inflation,2029,3.9023066208756
+TKM,Turkmenistan,inflation,2030,3.808357876789633
+TKM,Turkmenistan,fdi_inflow,2026,3.1190190787609033
+TKM,Turkmenistan,fdi_inflow,2027,3.0981994406534574
+TKM,Turkmenistan,fdi_inflow,2028,3.077379802546011
+TKM,Turkmenistan,fdi_inflow,2029,3.056560164438565
+TKM,Turkmenistan,fdi_inflow,2030,3.035740526331119
+TCA,Turks and Caicos Islands,gdp_growth,2026,15.962403215118828
+TCA,Turks and Caicos Islands,gdp_growth,2027,16.849739973598304
+TCA,Turks and Caicos Islands,gdp_growth,2028,17.73707673207778
+TCA,Turks and Caicos Islands,gdp_growth,2029,18.624413490557256
+TCA,Turks and Caicos Islands,gdp_growth,2030,19.511750249036734
+TCA,Turks and Caicos Islands,inflation,2026,-2.2859999981166395
+TCA,Turks and Caicos Islands,inflation,2027,-7.057432779669779
+TCA,Turks and Caicos Islands,inflation,2028,-11.82886556122292
+TCA,Turks and Caicos Islands,inflation,2029,-16.600298342776057
+TCA,Turks and Caicos Islands,inflation,2030,-21.371731124329195
+TCA,Turks and Caicos Islands,fdi_inflow,2026,2.5019931714809407
+TCA,Turks and Caicos Islands,fdi_inflow,2027,2.483056214486031
+TCA,Turks and Caicos Islands,fdi_inflow,2028,2.464119257491121
+TCA,Turks and Caicos Islands,fdi_inflow,2029,2.4451823004962114
+TCA,Turks and Caicos Islands,fdi_inflow,2030,2.4262453435013014
+TUV,Tuvalu,gdp_growth,2026,3.7928091429535717
+TUV,Tuvalu,gdp_growth,2027,3.838020455035074
+TUV,Tuvalu,gdp_growth,2028,3.8832317671165755
+TUV,Tuvalu,gdp_growth,2029,3.928443079198077
+TUV,Tuvalu,gdp_growth,2030,3.9736543912795788
+TUV,Tuvalu,inflation,2026,-43.63516346740174
+TUV,Tuvalu,inflation,2027,-48.504582672429805
+TUV,Tuvalu,inflation,2028,-53.37400187745788
+TUV,Tuvalu,inflation,2029,-58.243421082485945
+TUV,Tuvalu,inflation,2030,-63.11284028751401
+TUV,Tuvalu,fdi_inflow,2026,-6.659195539920959
+TUV,Tuvalu,fdi_inflow,2027,-7.215531581983413
+TUV,Tuvalu,fdi_inflow,2028,-7.771867624045868
+TUV,Tuvalu,fdi_inflow,2029,-8.32820366610832
+TUV,Tuvalu,fdi_inflow,2030,-8.884539708170776
+UGA,Uganda,gdp_growth,2026,6.462728419826627
+UGA,Uganda,gdp_growth,2027,6.501852306808114
+UGA,Uganda,gdp_growth,2028,6.540976193789602
+UGA,Uganda,gdp_growth,2029,6.580100080771089
+UGA,Uganda,gdp_growth,2030,6.6192239677525775
+UGA,Uganda,inflation,2026,-41.77517850895581
+UGA,Uganda,inflation,2027,-44.7677336038968
+UGA,Uganda,inflation,2028,-47.76028869883778
+UGA,Uganda,inflation,2029,-50.752843793778766
+UGA,Uganda,inflation,2030,-53.74539888871975
+UGA,Uganda,fdi_inflow,2026,6.1201362472023355
+UGA,Uganda,fdi_inflow,2027,6.198567834943359
+UGA,Uganda,fdi_inflow,2028,6.276999422684382
+UGA,Uganda,fdi_inflow,2029,6.355431010425405
+UGA,Uganda,fdi_inflow,2030,6.433862598166428
+UKR,Ukraine,gdp_growth,2026,-1.4390615899662889
+UKR,Ukraine,gdp_growth,2027,-1.4405561478434874
+UKR,Ukraine,gdp_growth,2028,-1.4420507057206857
+UKR,Ukraine,gdp_growth,2029,-1.4435452635978843
+UKR,Ukraine,gdp_growth,2030,-1.4450398214750828
+UKR,Ukraine,inflation,2026,-174.49546384814553
+UKR,Ukraine,inflation,2027,-193.10436759247358
+UKR,Ukraine,inflation,2028,-211.7132713368016
+UKR,Ukraine,inflation,2029,-230.32217508112964
+UKR,Ukraine,inflation,2030,-248.9310788254577
+UKR,Ukraine,fdi_inflow,2026,2.144956818499141
+UKR,Ukraine,fdi_inflow,2027,2.178412745287264
+UKR,Ukraine,fdi_inflow,2028,2.2118686720753877
+UKR,Ukraine,fdi_inflow,2029,2.2453245988635113
+UKR,Ukraine,fdi_inflow,2030,2.2787805256516345
+ARE,United Arab Emirates,gdp_growth,2026,1.6125128768657815
+ARE,United Arab Emirates,gdp_growth,2027,1.1554016061808994
+ARE,United Arab Emirates,gdp_growth,2028,0.6982903354960173
+ARE,United Arab Emirates,gdp_growth,2029,0.24117906481113538
+ARE,United Arab Emirates,gdp_growth,2030,-0.2159322058737465
+ARE,United Arab Emirates,inflation,2026,-3.941522655838184
+ARE,United Arab Emirates,inflation,2027,-4.630559368460055
+ARE,United Arab Emirates,inflation,2028,-5.319596081081926
+ARE,United Arab Emirates,inflation,2029,-6.008632793703796
+ARE,United Arab Emirates,inflation,2030,-6.697669506325667
+ARE,United Arab Emirates,fdi_inflow,2026,8.392225569078764
+ARE,United Arab Emirates,fdi_inflow,2027,8.521834006479953
+ARE,United Arab Emirates,fdi_inflow,2028,8.65144244388114
+ARE,United Arab Emirates,fdi_inflow,2029,8.781050881282328
+ARE,United Arab Emirates,fdi_inflow,2030,8.910659318683516
+GBR,United Kingdom,gdp_growth,2026,1.524883504483736
+GBR,United Kingdom,gdp_growth,2027,1.5035997378783121
+GBR,United Kingdom,gdp_growth,2028,1.482315971272888
+GBR,United Kingdom,gdp_growth,2029,1.461032204667464
+GBR,United Kingdom,gdp_growth,2030,1.4397484380620398
+GBR,United Kingdom,inflation,2026,3.306465963955493
+GBR,United Kingdom,inflation,2027,3.3413589810318385
+GBR,United Kingdom,inflation,2028,3.3762519981081844
+GBR,United Kingdom,inflation,2029,3.4111450151845304
+GBR,United Kingdom,inflation,2030,3.446038032260876
+GBR,United Kingdom,fdi_inflow,2026,0.7989791673795231
+GBR,United Kingdom,fdi_inflow,2027,0.757548497036323
+GBR,United Kingdom,fdi_inflow,2028,0.7161178266931228
+GBR,United Kingdom,fdi_inflow,2029,0.6746871563499227
+GBR,United Kingdom,fdi_inflow,2030,0.6332564860067226
+USA,United States,gdp_growth,2026,1.8438931717561002
+USA,United States,gdp_growth,2027,1.8073062820663879
+USA,United States,gdp_growth,2028,1.7707193923766753
+USA,United States,gdp_growth,2029,1.734132502686963
+USA,United States,gdp_growth,2030,1.6975456129972506
+USA,United States,inflation,2026,2.972472084353709
+USA,United States,inflation,2027,2.9954189635134134
+USA,United States,inflation,2028,3.0183658426731172
+USA,United States,inflation,2029,3.0413127218328215
+USA,United States,inflation,2030,3.0642596009925254
+USA,United States,fdi_inflow,2026,1.2080615443595508
+USA,United States,fdi_inflow,2027,1.139960907843855
+USA,United States,fdi_inflow,2028,1.071860271328159
+USA,United States,fdi_inflow,2029,1.003759634812463
+USA,United States,fdi_inflow,2030,0.9356589982967671
+URY,Uruguay,gdp_growth,2026,2.9755843675594367
+URY,Uruguay,gdp_growth,2027,2.9876837408870696
+URY,Uruguay,gdp_growth,2028,2.999783114214702
+URY,Uruguay,gdp_growth,2029,3.011882487542335
+URY,Uruguay,gdp_growth,2030,3.0239818608699673
+URY,Uruguay,inflation,2026,4.331396929907821
+URY,Uruguay,inflation,2027,3.8136502013991085
+URY,Uruguay,inflation,2028,3.295903472890396
+URY,Uruguay,inflation,2029,2.7781567443816844
+URY,Uruguay,inflation,2030,2.2604100158729725
+URY,Uruguay,fdi_inflow,2026,1.8845092538708745
+URY,Uruguay,fdi_inflow,2027,1.8512630546297493
+URY,Uruguay,fdi_inflow,2028,1.818016855388624
+URY,Uruguay,fdi_inflow,2029,1.7847706561474987
+URY,Uruguay,fdi_inflow,2030,1.7515244569063735
+UZB,Uzbekistan,gdp_growth,2026,6.452083467029485
+UZB,Uzbekistan,gdp_growth,2027,6.431137858842652
+UZB,Uzbekistan,gdp_growth,2028,6.410192250655818
+UZB,Uzbekistan,gdp_growth,2029,6.389246642468985
+UZB,Uzbekistan,gdp_growth,2030,6.368301034282151
+UZB,Uzbekistan,inflation,2026,10.263670048945546
+UZB,Uzbekistan,inflation,2027,10.259132756989203
+UZB,Uzbekistan,inflation,2028,10.25459546503286
+UZB,Uzbekistan,inflation,2029,10.250058173076518
+UZB,Uzbekistan,inflation,2030,10.245520881120177
+UZB,Uzbekistan,fdi_inflow,2026,2.591515682017416
+UZB,Uzbekistan,fdi_inflow,2027,2.604546193313293
+UZB,Uzbekistan,fdi_inflow,2028,2.61757670460917
+UZB,Uzbekistan,fdi_inflow,2029,2.6306072159050466
+UZB,Uzbekistan,fdi_inflow,2030,2.6436377272009235
+VUT,Vanuatu,gdp_growth,2026,2.124754216188308
+VUT,Vanuatu,gdp_growth,2027,2.113852122468969
+VUT,Vanuatu,gdp_growth,2028,2.102950028749629
+VUT,Vanuatu,gdp_growth,2029,2.09204793503029
+VUT,Vanuatu,gdp_growth,2030,2.081145841310951
+VUT,Vanuatu,inflation,2026,8.137453266122161
+VUT,Vanuatu,inflation,2027,8.814188615130268
+VUT,Vanuatu,inflation,2028,9.490923964138375
+VUT,Vanuatu,inflation,2029,10.16765931314648
+VUT,Vanuatu,inflation,2030,10.844394662154585
+VUT,Vanuatu,fdi_inflow,2026,2.452178149318929
+VUT,Vanuatu,fdi_inflow,2027,2.464733564572644
+VUT,Vanuatu,fdi_inflow,2028,2.477288979826359
+VUT,Vanuatu,fdi_inflow,2029,2.489844395080074
+VUT,Vanuatu,fdi_inflow,2030,2.502399810333789
+VEN,"Venezuela, RB",gdp_growth,2026,4.9197373129791515
+VEN,"Venezuela, RB",gdp_growth,2027,4.958477507542121
+VEN,"Venezuela, RB",gdp_growth,2028,4.99721770210509
+VEN,"Venezuela, RB",gdp_growth,2029,5.035957896668059
+VEN,"Venezuela, RB",gdp_growth,2030,5.074698091231029
+VEN,"Venezuela, RB",inflation,2026,259.05760744371725
+VEN,"Venezuela, RB",inflation,2027,262.72064391629334
+VEN,"Venezuela, RB",inflation,2028,266.38368038886944
+VEN,"Venezuela, RB",inflation,2029,270.04671686144553
+VEN,"Venezuela, RB",inflation,2030,273.7097533340216
+VEN,"Venezuela, RB",fdi_inflow,2026,1.338912154072557
+VEN,"Venezuela, RB",fdi_inflow,2027,1.3276927970407584
+VEN,"Venezuela, RB",fdi_inflow,2028,1.3164734400089597
+VEN,"Venezuela, RB",fdi_inflow,2029,1.305254082977161
+VEN,"Venezuela, RB",fdi_inflow,2030,1.2940347259453624
+VNM,Viet Nam,gdp_growth,2026,6.933684990428497
+VNM,Viet Nam,gdp_growth,2027,7.013600480432435
+VNM,Viet Nam,gdp_growth,2028,7.093515970436373
+VNM,Viet Nam,gdp_growth,2029,7.1734314604403115
+VNM,Viet Nam,gdp_growth,2030,7.253346950444249
+VNM,Viet Nam,inflation,2026,3.2271006464338363
+VNM,Viet Nam,inflation,2027,3.140859726130201
+VNM,Viet Nam,inflation,2028,3.054618805826566
+VNM,Viet Nam,inflation,2029,2.9683778855229312
+VNM,Viet Nam,inflation,2030,2.882136965219296
+VNM,Viet Nam,fdi_inflow,2026,4.339804398476451
+VNM,Viet Nam,fdi_inflow,2027,4.445667082123115
+VNM,Viet Nam,fdi_inflow,2028,4.551529765769779
+VNM,Viet Nam,fdi_inflow,2029,4.657392449416442
+VNM,Viet Nam,fdi_inflow,2030,4.763255133063105
+VIR,Virgin Islands (U.S.),gdp_growth,2026,-1.488606610325846
+VIR,Virgin Islands (U.S.),gdp_growth,2027,-1.6501519320202394
+VIR,Virgin Islands (U.S.),gdp_growth,2028,-1.8116972537146325
+VIR,Virgin Islands (U.S.),gdp_growth,2029,-1.973242575409026
+VIR,Virgin Islands (U.S.),gdp_growth,2030,-2.1347878971034193
+VIR,Virgin Islands (U.S.),inflation,2026,37.52188063904316
+VIR,Virgin Islands (U.S.),inflation,2027,37.878910367527524
+VIR,Virgin Islands (U.S.),inflation,2028,38.235940096011895
+VIR,Virgin Islands (U.S.),inflation,2029,38.592969824496265
+VIR,Virgin Islands (U.S.),inflation,2030,38.949999552980636
+VIR,Virgin Islands (U.S.),fdi_inflow,2026,8.582661903489951
+VIR,Virgin Islands (U.S.),fdi_inflow,2027,8.45221104123827
+VIR,Virgin Islands (U.S.),fdi_inflow,2028,8.321760178986587
+VIR,Virgin Islands (U.S.),fdi_inflow,2029,8.191309316734905
+VIR,Virgin Islands (U.S.),fdi_inflow,2030,8.060858454483224
+PSE,West Bank and Gaza,gdp_growth,2026,-1.831750070735955
+PSE,West Bank and Gaza,gdp_growth,2027,-2.123970730773525
+PSE,West Bank and Gaza,gdp_growth,2028,-2.416191390811095
+PSE,West Bank and Gaza,gdp_growth,2029,-2.7084120508486653
+PSE,West Bank and Gaza,gdp_growth,2030,-3.0006327108862356
+PSE,West Bank and Gaza,inflation,2026,-5.483830352897704
+PSE,West Bank and Gaza,inflation,2027,-6.574001145688134
+PSE,West Bank and Gaza,inflation,2028,-7.664171938478565
+PSE,West Bank and Gaza,inflation,2029,-8.754342731268995
+PSE,West Bank and Gaza,inflation,2030,-9.844513524059426
+PSE,West Bank and Gaza,fdi_inflow,2026,0.9814867259050322
+PSE,West Bank and Gaza,fdi_inflow,2027,0.8971355779279043
+PSE,West Bank and Gaza,fdi_inflow,2028,0.8127844299507764
+PSE,West Bank and Gaza,fdi_inflow,2029,0.7284332819736485
+PSE,West Bank and Gaza,fdi_inflow,2030,0.6440821339965206
+YEM,"Yemen, Rep.",gdp_growth,2026,-3.3106069924668606
+YEM,"Yemen, Rep.",gdp_growth,2027,-3.5761039786578337
+YEM,"Yemen, Rep.",gdp_growth,2028,-3.8416009648488063
+YEM,"Yemen, Rep.",gdp_growth,2029,-4.107097951039779
+YEM,"Yemen, Rep.",gdp_growth,2030,-4.372594937230751
+YEM,"Yemen, Rep.",inflation,2026,7.919273045560751
+YEM,"Yemen, Rep.",inflation,2027,7.733820257645815
+YEM,"Yemen, Rep.",inflation,2028,7.548367469730879
+YEM,"Yemen, Rep.",inflation,2029,7.362914681815942
+YEM,"Yemen, Rep.",inflation,2030,7.177461893901007
+YEM,"Yemen, Rep.",fdi_inflow,2026,-1.3592452905755141
+YEM,"Yemen, Rep.",fdi_inflow,2027,-1.3970661527988377
+YEM,"Yemen, Rep.",fdi_inflow,2028,-1.434887015022161
+YEM,"Yemen, Rep.",fdi_inflow,2029,-1.4727078772454847
+YEM,"Yemen, Rep.",fdi_inflow,2030,-1.5105287394688083
+ZMB,Zambia,gdp_growth,2026,4.2125362127042685
+ZMB,Zambia,gdp_growth,2027,4.22736885784158
+ZMB,Zambia,gdp_growth,2028,4.242201502978892
+ZMB,Zambia,gdp_growth,2029,4.257034148116204
+ZMB,Zambia,gdp_growth,2030,4.2718667932535155
+ZMB,Zambia,inflation,2026,14.753074260241082
+ZMB,Zambia,inflation,2027,14.886918115577938
+ZMB,Zambia,inflation,2028,15.020761970914796
+ZMB,Zambia,inflation,2029,15.154605826251654
+ZMB,Zambia,inflation,2030,15.28844968158851
+ZMB,Zambia,fdi_inflow,2026,6.349257649863055
+ZMB,Zambia,fdi_inflow,2027,6.3839507604009516
+ZMB,Zambia,fdi_inflow,2028,6.418643870938849
+ZMB,Zambia,fdi_inflow,2029,6.453336981476746
+ZMB,Zambia,fdi_inflow,2030,6.488030092014643
+ZWE,Zimbabwe,gdp_growth,2026,2.4696562769300683
+ZWE,Zimbabwe,gdp_growth,2027,2.4384527771857494
+ZWE,Zimbabwe,gdp_growth,2028,2.407249277441431
+ZWE,Zimbabwe,gdp_growth,2029,2.3760457776971124
+ZWE,Zimbabwe,gdp_growth,2030,2.344842277952794
+ZWE,Zimbabwe,inflation,2026,131.71383218469123
+ZWE,Zimbabwe,inflation,2027,133.66011373609837
+ZWE,Zimbabwe,inflation,2028,135.60639528750548
+ZWE,Zimbabwe,inflation,2029,137.55267683891262
+ZWE,Zimbabwe,inflation,2030,139.49895839031976
+ZWE,Zimbabwe,fdi_inflow,2026,1.0066191562932638
+ZWE,Zimbabwe,fdi_inflow,2027,0.9712840705478032
+ZWE,Zimbabwe,fdi_inflow,2028,0.9359489848023427
+ZWE,Zimbabwe,fdi_inflow,2029,0.9006138990568822
+ZWE,Zimbabwe,fdi_inflow,2030,0.8652788133114216

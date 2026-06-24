@@ -1,0 +1,25 @@
+[2026-06-24T07:32:12.983+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:32:12.986+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_inference_dag.py for tasks to queue
+[2026-06-24T07:32:12.993+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:12.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:32:17.211+0000] {processor.py:840} INFO - DAG(s) 'gdip_ml_inference' retrieved from /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:32:17.594+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:17.593+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:gdip_ml_inference
+[2026-06-24T07:32:17.612+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:17.611+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:gdip_ml_inference
+[2026-06-24T07:32:17.624+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:17.623+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:gdip_ml_inference
+[2026-06-24T07:32:17.625+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:17.625+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-24T07:32:17.646+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:17.645+0000] {dag.py:3118} INFO - Creating ORM DAG for gdip_ml_inference
+[2026-06-24T07:32:17.647+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:17.647+0000] {dag.py:3954} INFO - Setting next_dagrun for gdip_ml_inference to None, run_after=None
+[2026-06-24T07:32:17.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_inference_dag.py took 4.724 seconds
+[2026-06-24T07:32:47.963+0000] {processor.py:161} INFO - Started process (PID=266) to work on /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:32:47.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_inference_dag.py for tasks to queue
+[2026-06-24T07:32:47.968+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:47.968+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:32:52.185+0000] {processor.py:840} INFO - DAG(s) 'gdip_ml_inference' retrieved from /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:32:52.263+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:52.262+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-24T07:32:52.285+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:32:52.285+0000] {dag.py:3954} INFO - Setting next_dagrun for gdip_ml_inference to None, run_after=None
+[2026-06-24T07:32:52.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_inference_dag.py took 4.382 seconds
+[2026-06-24T07:33:22.813+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:33:22.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_inference_dag.py for tasks to queue
+[2026-06-24T07:33:22.819+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:33:22.819+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:33:26.096+0000] {processor.py:840} INFO - DAG(s) 'gdip_ml_inference' retrieved from /opt/airflow/dags/ml_inference_dag.py
+[2026-06-24T07:33:26.132+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:33:26.131+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-24T07:33:26.153+0000] {logging_mixin.py:188} INFO - [2026-06-24T07:33:26.152+0000] {dag.py:3954} INFO - Setting next_dagrun for gdip_ml_inference to None, run_after=None
+[2026-06-24T07:33:26.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_inference_dag.py took 3.385 seconds
