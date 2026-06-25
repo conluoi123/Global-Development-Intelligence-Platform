@@ -14,29 +14,34 @@ psycopg2-binary==2.9.9        # Postgres driver
 great-expectations==0.18.12   # Quality gates (Bronze -> Silver)
 mlflow==2.11.3                # Model registry & tracking
 
-# 3. Machine Learning (Tháng 1 - Classifier & Forecasting)
+# 3. Machine Learning (Classifier & Forecasting)
 scikit-learn==1.4.2           # Baseline models & metrics
 xgboost==2.0.3                # Core classifier
 lightgbm==4.3.0               # Benchmark classifier
-prophet==1.1.5                # Time-series forecasting
+catboost==1.2.3               # Ensemble member
+statsmodels>=0.14.0           # Holt-Winters forecasting
 shap==0.45.0                  # Interpretability / Feature importance
 
-# 4. RAG from Scratch & NLP (Tháng 2)
-openai==1.14.0                # Embeddings & LLM Generation
-sentence-transformers==2.5.1  # Cross-encoder Reranker
-tiktoken==0.6.0               # Token counting for chunking
-pgvector==0.2.5               # Vector search in Postgres
-nltk==3.8.1                   # Sentence boundary detection
+# 4. RAG from Scratch (Hybrid Search + Gemini LLM)
+sentence-transformers>=2.7.0  # Embedding model: intfloat/multilingual-e5-base
+faiss-cpu>=1.8.0              # Vector store local (không cần server)
+google-generativeai>=0.8.0    # Gemini API (gemini-3.1-flash-lite-preview)
+python-dotenv>=1.0.0          # Đọc .env (GEMINI_API_KEY)
+nltk==3.8.1                   # NLP utilities
 
-# 5. Fine-Tuning QLoRA (Tháng 2 - Chạy trên GPU)
-# Lưu ý: Các thư viện này nên cài riêng môi trường có CUDA
-torch>=2.2.0
-transformers==4.39.0
-peft==0.10.0                  # Parameter-Efficient Fine-Tuning
-bitsandbytes==0.43.0          # Quantization (4-bit / 8-bit)
-accelerate==0.28.0            # Memory optimization
+# 5. Application Layer - Streamlit
+streamlit>=1.35.0             # Web app
+plotly>=5.20.0                # Interactive charts
+matplotlib>=3.8.0             # SHAP plots
 
-# 6. Serving Layer (Tháng 3)
-fastapi==0.110.0              # Model serving API
+# 6. Application Layer - FastAPI (Backend cho React frontend)
+fastapi==0.110.0              # REST API server
 uvicorn==0.29.0               # ASGI server
 pydantic==2.6.4               # Data validation
+
+# 7. Fine-Tuning QLoRA (GPU only - cài riêng, không dùng trong app)
+# torch>=2.2.0
+# transformers==4.39.0
+# peft==0.10.0                # Parameter-Efficient Fine-Tuning
+# bitsandbytes==0.43.0        # Quantization 4-bit/8-bit
+# accelerate==0.28.0          # Memory optimization
